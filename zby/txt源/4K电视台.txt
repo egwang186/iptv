@@ -1,0 +1,31 @@
+CCTV4K高清[1920*1080],http://liveop.cctv.cn/hls/4KHD/playlist.m3u8
+CCTV16-4K,https://cctvalih5ca.v.myalicdn.com/live/cctv16_2/index.m3u8
+冬奥8K,http://down.btvcloud.com:80/8k2021zhibo/zhibo8K2021.m3u8
+CCTV4K FHD,https://newcntv.qcloudcdn.com/asp/hls/8000/0303000a/3/default/124579183c154b209959b6d878891752/8000.m3u8
+4K修复[3840*2160],http://39.134.71.75/ott.js.chinamobile.com/PLTV/3/224/3221228141/index.m3u8
+纯享4K[3840*2160],http://39.134.71.75/ott.js.chinamobile.com/PLTV/3/224/3221228242/index.m3u8
+4K电影[3840*2144],http://39.134.71.75/ott.js.chinamobile.com/PLTV/3/224/3221228113/index.m3u8
+CCTV16UHD50FPS,http://223.110.236.4/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.236.5/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.235.24/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.235.25/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.241.23/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.242.32/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.242.33/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.242.38/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+CCTV16UHD50FPS,http://223.110.242.39/ott.js.chinamobile.com/PLTV/3/224/3221228127/index.m3u8
+咪咕体育 UHD,http://117.148.179.50/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230352/index.m3u8
+咪咕体育 UHD,http://117.148.179.50/hwltc.tv.cdn.zj.chinamobile.com/PLTV/88888888/224/3221230373/index.m3u8
+咪咕体育 UHD,http://39.134.39.4/PLTV/88888888/224/3221226227/index.m3u8
+咪咕体育 UHD,http://39.134.65.208/PLTV/88888888/224/3221225651/index.m3u8
+咪咕体育 UHD,http://39.134.39.39/TVOD/88888888/224/3221226227/index.m3u8
+咪咕体育 UHD,http://39.134.39.4/PLTV/88888888/224/3221226351/index.m3u8
+咪咕体育 UHD,http://39.134.39.37/PLTV/88888888/224/3221226227/index.m3u8
+咪咕体育 UHD,http://39.134.39.16/PLTV/88888888/224/3221226351/index.m3u8
+咪咕视频 UHD,http://39.134.65.208/PLTV/88888888/224/3221225655/index.m3u8
+咪咕体育 UHD,http://39.134.39.16/PLTV/88888888/224/3221226227/index.m3u8
+咪咕4K UHD,http://39.134.66.2/PLTV/88888888/224/3221225655/index.m3u8
+咪咕4K UHD,http://39.134.39.39/PLTV/88888888/224/3221226227/index.m3u8
+咪咕4K UHD,http://39.134.66.66/PLTV/88888888/224/3221225651/index.m3u8
+咪咕4K UHD,http://39.134.66.66/PLTV/88888888/224/3221225655/index.m3u8
+PP体育 UHD,http://39.134.65.162/PLTV/88888888/224/3221225655/index.m3u8

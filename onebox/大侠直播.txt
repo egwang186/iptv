@@ -1,0 +1,243 @@
+广播频道,#genre#
+中国之声,http://ngcdn001.cnr.cn/live/zgzs/index.m3u8
+经济之声,http://ngcdn002.cnr.cn/live/jjzs/index.m3u8
+音乐之声,http://ngcdn003.cnr.cn/live/yyzs/index.m3u8
+经典音乐广播,http://ngcdn004.cnr.cn/live/dszs/index.m3u8
+台海之声,http://ngcdn005.cnr.cn/live/zhzs/index.m3u8
+神州之声,http://ngcdn006.cnr.cn/live/szzs/index.m3u8
+大湾区之声,http://ngcdn007.cnr.cn/live/hxzs/index.m3u8
+民族之声,http://ngcdn009.cnr.cn/live/mzzs/index.m3u8
+文艺之声,http://ngcdn010.cnr.cn/live/wyzs/index.m3u8
+老年之声,http://ngcdn011.cnr.cn/live/lnzs/index.m3u8
+藏语广播,http://ngcdn012.cnr.cn/live/zygb/index.m3u8
+阅读之声,http://ngcdn014.cnr.cn/live/ylgb/index.m3u8
+维语广播,http://ngcdn013.cnr.cn/live/wygb/index.m3u8
+香港之声,http://ngcdn008.cnr.cn/live/xgzs/index.m3u8
+中国交通广播,http://ngcdn016.cnr.cn/live/gsgljtgb/index.m3u8
+中国乡村之声,http://ngcdn017.cnr.cn/live/xczs/index.m3u8
+哈语广播,http://ngcdn025.cnr.cn/live/hygb/index.m3u8
+CGTNREDIO,https://sk.cri.cn/am846.m3u8
+HITFM,http://cnlive.cnr.cn/hls/HITFM.m3u8
+环球资讯广播,http://cnlive.cnr.cn/hls/huanqiuzixunguangbo.m3u8
+轻松调频,http://sk.cri.cn/915.m3u8
+CRI南海之声,http://sk.cri.cn/nhzs.m3u8
+CRI轻松调频FM91.5,http://sk.cri.cn/915.m3u8
+CRI环球资讯广播FM90.5,http://sk.cri.cn/905.m3u8
+英语资讯广播ChinaPlusRadio,http://cnlive.cnr.cn/hls/yyzxgb.m3u8
+CRI中文环球广播,http://sk.cri.cn/hyhq.m3u8
+CRI海峡飞虹,http://sk.cri.cn/hxfh.m3u8
+CRI客家之声,http://sk.cri.cn/hakka.m3u8
+CRI闽南之音,http://sk.cri.cn/minnan.m3u8
+CRINEWSPlusAM1008,http://sk.cri.cn/am1008.m3u8
+咪咕轮播#genre#
+周星驰,http://117.148.179.153/PLTV/88888888/224/3221231562/index.m3u8
+周润发,http://117.148.179.177/PLTV/88888888/224/3221231709/index.m3u8
+成龙,http://117.148.179.163/PLTV/88888888/224/3221231687/index.m3u8
+刘德华,http://117.148.179.154/PLTV/88888888/224/3221231757/index.m3u8
+吴京,http://117.148.179.183/PLTV/88888888/224/3221231564/index.m3u8
+古天乐,http://117.148.179.176/PLTV/88888888/224/3221231645/index.m3u8
+郭富城,http://117.148.179.152/PLTV/88888888/224/3221231688/index.m3u8
+张国荣,http://117.148.179.177/PLTV/88888888/224/3221231790/index.m3u8
+刘亦菲,http://117.148.179.165/PLTV/88888888/224/3221231787/index.m3u8
+杨冪,http://117.148.179.183/PLTV/88888888/224/3221231556/index.m3u8
+金庸作品,http://117.148.179.132/PLTV/88888888/224/3221231477/index.m3u8
+僵尸剧场,http://117.148.179.165/PLTV/88888888/224/3221231742/index.m3u8
+盜墓系列,http://117.148.179.164/PLTV/88888888/224/3221231652/index.m3u8
+喜剧联盟,http://117.148.179.154/PLTV/88888888/224/3221231621/index.m3u8
+神探狄仁杰,http://117.148.179.139/PLTV/88888888/224/3221231634/index.m3u8
+高分影院,http://117.148.179.182/PLTV/88888888/224/3221231699/index.m3u8
+怀旧老片,http://117.148.179.146/PLTV/88888888/224/3221231513/index.m3u8
+午夜失眠剧场,http://117.148.179.141/PLTV/88888888/224/3221231516/index.m3u8
+云上电影院,http://117.148.179.176/PLTV/88888888/224/3221231565/index.m3u8
+TVB剧场,http://117.148.179.157/PLTV/88888888/224/3221231733/index.m3u8
+试胆大会,http://117.148.179.166/PLTV/88888888/224/3221231672/index.m3u8
+高能烧脑时刻,http://117.148.179.169/PLTV/88888888/224/3221231504/index.m3u8
+4K剧场,http://117.148.179.161/PLTV/88888888/224/3221231624/index.m3u8
+军旅剧场,http://117.148.179.145/PLTV/88888888/224/3221231585/index.m3u8
+黃金剧场,http://117.148.179.183/PLTV/88888888/224/3221231637/index.m3u8
+追剧少女,http://117.148.179.179/PLTV/88888888/224/3221231643/index.m3u8
+经典贺岁片,http://117.148.179.159/PLTV/88888888/224/3221231679/index.m3u8
+每日荐影,http://117.148.179.162/PLTV/88888888/224/3221231727/index.m3u8
+香港1#genre#
+RTHK31,http://livetv.dnsfor.me:80/channel.1.m3u8
+RTHK32,http://livetv.dnsfor.me:80/channel.2.m3u8
+Now直播331台,http://livetv.dnsfor.me:80/channel.3.m3u8
+Now新聞332台,http://livetv.dnsfor.me:80/channel.4.m3u8
+有線新聞台HD,http://livetv.dnsfor.me:80/channel.5.m3u8
+有線財經資訊台HD,http://livetv.dnsfor.me:80/channel.6.m3u8
+有線綜合娛樂台HD,http://livetv.dnsfor.me:80/channel.7.m3u8
+開電視,http://livetv.dnsfor.me:80/channel.9.m3u8
+無綫新聞台,http://livetv.dnsfor.me:80/channel.10.m3u8
+無綫財經資訊台,http://livetv.dnsfor.me:80/channel.11.m3u8
+NowSportsPrime630,http://livetv.dnsfor.me:80/channel.12.m3u8
+ATV,http://livetv.dnsfor.me:80/channel.14.m3u8
+HKS香港卫视,http://livetv.dnsfor.me:80/channel.15.m3u8
+凤凰香港台,http://livetv.dnsfor.me:80/channel.16.m3u8
+CCTV5HD,http://livetv.dnsfor.me:80/channel.17.m3u8
+翡翠台,http://livetv.dnsfor.me:80/channel.18.m3u8
+J2,http://livetv.dnsfor.me:80/channel.19.m3u8
+VIUTV,http://livetv.dnsfor.me:80/channel.20.m3u8
+鳳凰資訊台,http://livetv.dnsfor.me:80/channel.21.m3u8
+星空卫视,http://livetv.dnsfor.me:80/channel.22.m3u8
+UNIVERSETV,http://livetv.dnsfor.me:80/channel.23.m3u8
+亚旅卫视,http://livetv.dnsfor.me:80/channel.24.m3u8
+台湾1#genre#
+阿里郎頻道,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv079&nid=189
+德國之聲,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live071&nid=226
+ELTV生活英語,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-longturn20&nid=106
+LiveABC互動英語,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live030&nid=188
+LUXE TV,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live121&nid=175
+MOMO親子,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live107&nid=231
+SBN全球財經,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live060&nid=224
+TVBS新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live072&nid=129
+美國之音,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-ftv03&nid=86
+三立綜合,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live207&nid=169
+三立iNEWS,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live089&nid=229#http://for40255.sytes.net:8099/tv/iptv/live.php?id=slxwinews
+三立LIVE,http://for40255.sytes.net:8099/tv/iptv/live.php?id=slxw
+東森新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live114&nid=234#http://for40255.sytes.net:8099/tv/iptv/live.php?id=dsxw
+東森財經新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live019&nid=211#http://for40255.sytes.net:8099/tv/iptv/live.php?id=dscjxw
+東森購物一,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live047&nid=173
+東森購物二,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live046&nid=174
+中天全民最大黨,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live076&nid=248
+中天新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv009&nid=30#http://for40255.sytes.net:8099/tv/iptv/live.php?id=ztxw
+中天美食旅遊,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live123&nid=251
+中視,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv040&nid=4
+中視新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv074&nid=33
+亞洲旅遊,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-longturn17&nid=250
+人間衛視,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live008&nid=210
+公視戲劇,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv042&nid=7
+半島國際新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-ftv10&nid=85
+華視,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv041&nid=6
+華視新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv052&nid=34
+華語戲劇,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live005&nid=244
+華語綜藝,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live006&nid=245
+國會頻道1,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv084&nid=170
+國會頻道2,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv085&nid=171
+大愛電視,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live007&nid=209
+好訊息2,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-ftv17&nid=8
+客家電視,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv043&nid=107
+新唐人亞太,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live050&nid=223
+時尚運動Ｘ,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv014&nid=69
+智林體育,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv101&nid=58
+民視,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv002&nid=3
+民視臺灣,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv001&nid=2
+民視影劇,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-ftv09&nid=24
+民視新聞,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-ftv13&nid=31
+民視旅遊,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=litv-ftv07&nid=61
+民視第一,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv003&nid=1
+民視綜藝,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv004&nid=16
+滾動力,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live012&nid=249
+愛爾達生活旅遊,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live120&nid=237
+豬哥亮歌廳秀,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-4gtv006&nid=113
+精選動漫,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live024&nid=204
+經典卡通,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live022&nid=202
+經典電影,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live021&nid=201
+金光布袋戲,http://for40255.sytes.net:8099/tv/iptv/live_4gtv.php?vid=4gtv-live144&nid=236
+寰宇新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=hyxw
+TVBS新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=55tvbs
+寰宇新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=hyxw
+TVBS新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=55tvbs
+TVBS,http://for40255.sytes.net:8099/tv/iptv/live.php?id=56tvbs
+中天新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=ztxw
+東森財經新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=dscjxw
+東森新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=dsxw
+三立iNEWS,http://for40255.sytes.net:8099/tv/iptv/live.php?id=slxwinews
+三立LIVE,http://for40255.sytes.net:8099/tv/iptv/live.php?id=slxw
+中視新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=zsxw
+臺視新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=tsxw
+華視新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=hsxw
+民視新聞,http://for40255.sytes.net:8099/tv/iptv/live.php?id=msxw
+松视系列#genre#
+松視1,mitv://fccs.word-tv.com:9906/6260dfaa0008dccc1720cc33ffe57894
+松視2,mitv://fccs.word-tv.com:9906/6260dfc1000bd4ed172126cefab5cf1b
+松視3,mitv://fccs.word-tv.com:9906/6260dfda000d0d16172188c6d4d403c3
+潘朵拉粉紅,mitv://fccs.word-tv.com:9906/6260e061000b04ae172397987c1e3b34
+潘朵拉完美台,mitv://fccs.word-tv.com:9906/6260e259000d442b172b48ecdda91b31
+HOT,mitv://fccs.word-tv.com:9906/6260e0070001ff07172235b9bb1b0cb6
+HAPPY,mitv://fccs.word-tv.com:9906/6260e2420001e45e172aec2a005c42e7
+驚豔台,mitv://fccs.word-tv.com:9906/6260e27a0006cf41172bc82c06b29fb9
+香蕉台,mitv://fccs.word-tv.com:9906/6260e29a0009b4f9172c45ea502a9f98
+極限台,mitv://fccs.word-tv.com:9906/6260e2b000004933172c99712568d815
+彩虹電影,mitv://fccs.word-tv.com:9906/6260e2d0000cf56c172d19afe4aa1d66
+LOOK,mitv://fccs.word-tv.com:9906/6260e2e2000f16e6172d608b5505fbdd
+K頻道,mitv://fccs.word-tv.com:9906/6263c0cd0009e68a085c9c619861891f
+澳視,mitv://fccs.word-tv.com:9906/62685209000bd522002f77760f5e6638
+澳視二,mitv://fccs.word-tv.com:9906/6268522f000aa0b200300b97a3d1af63
+彩虹e台,mitv://fccs.word-tv.com:9906/62668da3000bd6cc134cc0d079365057
+香草天道,mitv://fccs.word-tv.com:9906/626b730a000f13ab0c686433a4aa22a5
+性愛教主,mitv://fccs.word-tv.com:9906/626b7a25000d82090c842544db6623c5
+ＶＥＮＵＳ ,mitv://fccs.word-tv.com:9906/626b732f0006b7ce0c68f297c4634035
+做愛特教班 ,mitv://fccs.word-tv.com:9906/626b7343000190970c693f6577f8facb
+奶奶按摩店 ,mitv://fccs.word-tv.com:9906/626b73510008edf70c6977f8aa9df6c2
+AV女王 ,mitv://fccs.word-tv.com:9906/626b735f000db2ec0c69afe0789a0758
+人妻不倫 ,mitv://fccs.word-tv.com:9906/626b73710005a5760c69f42172cb2df4
+水多多 ,mitv://fccs.word-tv.com:9906/626b7384000360cf0c6a3dc4c16ff53b
+近親相姦 ,mitv://fccs.word-tv.com:9906/626b7397000e653b0c6a8acea1802126
+彩虹通道 ,mitv://fccs.word-tv.com:9906/626b73a900091c810c6acfc4cd3c8df3
+PLAYBOY HD,mitv://fccs.word-tv.com:9906/626b740500067a270c6c3677cce23984
+KMP 頻道 ,mitv://fccs.word-tv.com:9906/626b7417000ebc0c0c6c7ee48913e1f0
+午夜蓝 ,mitv://fccs.word-tv.com:9906/626b7425000e83a70c6cb5863e2179e9
+櫻桃 ,mitv://fccs.word-tv.com:9906/626b7434000c38c40c6cef87e3079c78
+大學女援交妹 ,mitv://fccs.word-tv.com:9906/626b74450000c4030c6d2f0117e32ee4
+做愛輸入 ,mitv://fccs.word-tv.com:9906/626b7455000e15fa0c6d70eac57e0110
+松视系列2#genre#
+松視1,p2p://54.39.16.152:9906/6260dfaa0008dccc1720cc33ffe57894
+松視2,p2p://54.39.16.152:9906/6260dfc1000bd4ed172126cefab5cf1b
+松視3,p2p://54.39.16.152:9906/6260dfda000d0d16172188c6d4d403c3
+潘朵拉粉紅,p2p://54.39.16.152:9906/6260e061000b04ae172397987c1e3b34
+潘朵拉完美台,p2p://54.39.16.152:9906/6260e259000d442b172b48ecdda91b31
+HOT,p2p://54.39.16.152:9906/6260e0070001ff07172235b9bb1b0cb6
+HAPPY,p2p://54.39.16.152:9906/6260e2420001e45e172aec2a005c42e7
+驚豔台,p2p://54.39.16.152:9906/6260e27a0006cf41172bc82c06b29fb9
+香蕉台,p2p://54.39.16.152:9906/6260e29a0009b4f9172c45ea502a9f98
+極限台,p2p://54.39.16.152:9906/6260e2b000004933172c99712568d815
+彩虹電影,p2p://54.39.16.152:9906/6260e2d0000cf56c172d19afe4aa1d66
+LOOK,p2p://54.39.16.152:9906/6260e2e2000f16e6172d608b5505fbdd
+K頻道,p2p://54.39.16.152:9906/6263c0cd0009e68a085c9c619861891f
+澳視,p2p://54.39.16.152:9906/62685209000bd522002f77760f5e6638
+澳視二,p2p://54.39.16.152:9906/6268522f000aa0b200300b97a3d1af63
+彩虹e台,p2p://54.39.16.152:9906/62668da3000bd6cc134cc0d079365057
+香草天道,p2p://54.39.16.152:9906/626b730a000f13ab0c686433a4aa22a5
+性愛教主,p2p://54.39.16.152:9906/626b7a25000d82090c842544db6623c5
+ＶＥＮＵＳ,p2p://54.39.16.152:9906/626b732f0006b7ce0c68f297c4634035
+做愛特教班,p2p://54.39.16.152:9906/626b7343000190970c693f6577f8facb
+奶奶按摩店,p2p://54.39.16.152:9906/626b73510008edf70c6977f8aa9df6c2
+AV女王,p2p://54.39.16.152:9906/626b735f000db2ec0c69afe0789a0758
+人妻不倫,p2p://54.39.16.152:9906/626b73710005a5760c69f42172cb2df4
+水多多,p2p://54.39.16.152:9906/626b7384000360cf0c6a3dc4c16ff53b
+近親相姦,p2p://54.39.16.152:9906/626b7397000e653b0c6a8acea1802126
+彩虹通道,p2p://54.39.16.152:9906/626b73a900091c810c6acfc4cd3c8df3
+PLAYBOY HD,p2p://54.39.16.152:9906/626b740500067a270c6c3677cce23984
+KMP 頻道,p2p://54.39.16.152:9906/626b7417000ebc0c0c6c7ee48913e1f0
+午夜蓝,p2p://54.39.16.152:9906/626b7425000e83a70c6cb5863e2179e9
+櫻桃,p2p://54.39.16.152:9906/626b7434000c38c40c6cef87e3079c78
+大學女援交妹,p2p://54.39.16.152:9906/626b74450000c4030c6d2f0117e32ee4
+做愛輸入,p2p://54.39.16.152:9906/626b7455000e15fa0c6d70eac57e0110
+国外18台#genre#
+Russkaya_Noch,http://46.174.83.66/Russkaya_Noch/index.m3u8
+Шелк ТВ HD,http://live-2.otcnet.ru/shelk/index.m3u8
+Babestation,http://sdn-global-live-streaming-packager-cache-3qsdn.akamaized.net/9528/9528_264_live.m3u8
+Barely legal,http://46.181.193.122:81/udp/239.255.42.224:1234
+Blue Hustler,http://srv1.roshen.live/70s5oC8mvp/mpegts?token=qnNUnXdwRyvUqPLo
+Blue Hustler UDP,http://46.181.193.122:81/udp/239.255.42.222:1234
+BRAZZERS TV,http://46.181.193.122:81/udp/239.255.42.220:1234
+Eropuls DE,https://api.alpaca.t62a.com/hls/9108/stream0.m3u8
+Erox HD,http://94.229.250.73:8008/play/a002
+Extasy HD,http://213.151.233.20:8000/dna-6233-tv-pc.m3u8
+Extasy 4K,http://213.81.133.133:8080/extasy4k/index.m3u8
+FrenchLover,http://46.181.193.122:81/udp/239.255.42.223:1234
+Hustler HD,http://46.181.193.122:81/udp/239.255.43.53:1234
+Hustler TV,http://78.83.191.18:8000/play/a078
+Kaloopy,https://dai.google.com/linear/hls/event/FK1bjW0AThepH1W7CJrByg/master.m3u8
+Darcizzle Offshore,https://30a-tv.com/feeds/xodglobal/fishingoffshore.m3u8
+Shemale Tube TV HD (21+),https://www.ast.tv/stream/1/ultra.m3u8
+Shemale Tube TV 2 HD (21+),https://www.ast.tv/stream/2/ultra.m3u8
+FTV午夜秘密,https://fash1043.cloudycdn.services/slive/_definst_/ftv_midnite_secrets_adaptive.smil/playlist.m3u8
+Jenny For You,http://59ec5453559f0.streamlock.net:1935/jennyforyou/jennyforyou/playlist.m3u8
+Jenny Live,http://59ec5453559f0.streamlock.net:1935/JennyLive/JennyLive/playlist.m3u8
+迈阿密WEB,https://59ec5453559f0.streamlock.net/miamitv/smil:miamitvWEB/playlist.m3u8
+迈阿密canal18,https://59ec5453559f0.streamlock.net/canal18/smil:canal18/playlist.m3u8
+迈阿密拉丁裔,https://5ee7c2b857b7f.streamlock.net/latino/latino/playlist.m3u8
+迈阿密墨西哥,https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexicoROKU/playlist.m3u8
+时尚电视米德尼特秘密,https://fash1043.cloudycdn.services/slive/ftv_ftv_midnite_k1y_27049_midnite_secr_108_hls.smil/playlist.m3u8
+茉莉电视Jasmin TV,http://109.71.162.112/live/hd.jasminchannel.stream/playlist.m3u8

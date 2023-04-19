@@ -1,0 +1,29 @@
+一本道,http://127.0.0.1:8000/ub.php?id=414&type=.m3u8
+二本道,http://127.0.0.1:8000/ub.php?id=415&type=.m3u8
+TokyoHOT,http://127.0.0.1:8000/ub.php?id=416&type=.m3u8
+香蕉台,http://127.0.0.1:8000/ub.php?id=408&type=.m3u8
+松视1台,http://127.0.0.1:8000/ub.php?id=402&type=.m3u8
+松视2台,http://127.0.0.1:8000/ub.php?id=403&type=.m3u8
+松视3台,http://127.0.0.1:8000/ub.php?id=404&type=.m3u8
+HOT,http://127.0.0.1:8000/ub.php?id=407&type=.m3u8
+HAPPY,http://127.0.0.1:8000/ub.php?id=412&type=.m3u8
+惊艳台,http://127.0.0.1:8000/ub.php?id=409&type=.m3u8
+彩虹K,http://127.0.0.1:8000/ub.php?id=406&type=.m3u8
+彩虹E,http://127.0.0.1:8000/ub.php?id=405&type=.m3u8
+潘多拉完美,http://127.0.0.1:8000/ub.php?id=410&type=.m3u8
+潘多拉粉红,http://127.0.0.1:8000/ub.php?id=411&type=.m3u8
+彩虹电影,http://127.0.0.1:8000/ub.php?id=413&type=.m3u8
+Erox HD,http://127.0.0.1:8000/ub.php?id=456&type=.m3u8
+Dorcel HD,http://127.0.0.1:8000/ub.php?id=454&type=.m3u8
+Babes TV HD,http://127.0.0.1:8000/ub.php?id=458&type=.m3u8
+Hustler HD,http://127.0.0.1:8000/ub.php?id=451&type=.m3u8
+SCT Classic HD,http://127.0.0.1:8000/ub.php?id=462&type=.m3u8
+Redlight HD,http://127.0.0.1:8000/ub.php?id=452&type=.m3u8
+SEX ATION HD,http://127.0.0.1:8000/ub.php?id=459&type=.m3u8
+Super One HD,http://127.0.0.1:8000/ub.php?id=457&type=.m3u8
+Private TV,http://127.0.0.1:8000/ub.php?id=453&type=.m3u8
+Brazzers TV,http://127.0.0.1:8000/ub.php?id=461&type=.m3u8
+Vivid Red HD,http://127.0.0.1:8000/ub.php?id=455&type=.m3u8
+filmon6233,http://213.151.233.20:8000/dna-6233-tv-pc.m3u8
+filmon6170,https://www.filmon.com/vr-streams/6170.high/playlist.m3u8
+filmon6158,https://www.filmon.com/vr-streams/6158.high/playlist.m3u8

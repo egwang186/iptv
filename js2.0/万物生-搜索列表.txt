@@ -1,0 +1,259 @@
+var KEY=getVar("KEY");
+var baseURL=e2Rex(getVar("CODE"),".json(url)");
+if(baseURL.indexOf("v1.vod/vodPhbAll")!=-1){
+var baseURL=baseURL.split("/vodPhbAll")[0];
+}else if(baseURL.indexOf("api.php/app/")!=-1){
+var baseURL=baseURL.match(/http.*\//)[0];
+}else if(baseURL.indexOf("api.php/iptv/vod")!=-1){
+var baseURL=baseURL.split("?ac=list")[0];
+}
+var TODAY=new Date();
+var 年=TODAY.getFullYear();
+var 月=TODAY.getMonth()+1<10?"0"+(TODAY.getMonth() + 1):TODAY.getMonth()+1;
+var 日=TODAY.getDate()<10?"0"+TODAY.getDate():TODAY.getDate();
+if(baseURL.indexOf("nfmovies.com")!=-1){
+var UA="Mozilla/5.0";
+var COOKIE="last_browse_app="+年+"-"+月+"-"+日;
+}else{
+var UA="Mozilla/5.0 Android";
+var COOKIE="";
+}
+function 搜索列表(){
+var res={};var items=[];var LIST=[];
+if(baseURL.indexOf("zhenbuka2.com")!=-1){
+if(列表.length>10){
+var LIMIT=10;
+}else{
+var LIMIT=列表.length;
+}
+}else{
+var LIMIT=列表.length;
+}
+for(var j=0;j<LIMIT;j++){
+    if(baseURL.indexOf("api.php/v1.vod")!=-1||baseURL.indexOf("api.php/app")!=-1){
+    var CODE=JSON.stringify(列表[j]);
+    }else{
+    var CODE=列表[j];
+    }
+   var 地址=e2Rex(CODE,地址规则).indexOf("http")!=-1?e2Rex(CODE,地址规则):baseURL+e2Rex(CODE,地址规则);
+   if(baseURL.indexOf("zhenbuka3.com")!=-1){
+   var resp=getHttp(JSON.stringify({url:地址}));
+   var 标题=e2Rex(resp,".get(h1).t()");
+   var 图片=e2Rex(resp,".get(a.stui-vodlist__thumb img).a(data-original)");
+   var 简介=e2Rex(resp,".get(div.stui-content__detail).t()");
+   }else{
+    var 标题=e2Rex(CODE,标题规则);
+    var 预图片=e2Rex(CODE,图片规则);
+    if(预图片.indexOf("/mac:")!=-1){
+    var 图片="http:"+预图片.split("mac:")[1];
+    }else if(预图片.indexOf("=")!=-1){
+    var 图片=预图片.match(/.*(http.*)/)[1];
+    }else if(预图片.indexOf("http")!=-1){
+    var 图片=预图片;
+    }else if(预图片==""){
+    var 图片="https://egwang186.coding.net/p/egwang186/d/iptv/git/raw/master/js2.0/kongbai.png";
+    }else if(预图片.indexOf("//")!=-1){
+    var 图片="http:"+预图片;
+    }else{
+    var 图片=baseURL+预图片;
+    }
+    var 简介=e2Rex(CODE,简介规则);
+   }
+   LIST.push({title:标题,url:地址,img:图片,detail:简介});
+}
+var play_={};
+play_.list=LIST;
+items.push(play_);
+res.data=items;
+return JSON.stringify(res);
+}
+if(baseURL.indexOf("ikan6.vip")!=-1||baseURL.indexOf("zxzj.me")!=-1||baseURL.indexOf("447k.com")!=-1||baseURL.indexOf("unss.net")!=-1||baseURL.indexOf("nfmovies.com")!=-1){
+if(baseURL.indexOf("447k.com")!=-1){
+var URL=baseURL+"/search/-------------.html?wd="+KEY+"&submit=";
+}else if(baseURL.indexOf("nfmovies.com")!=-1){
+var URL=baseURL+"/search.php?searchword="+KEY;
+}else if(baseURL.indexOf("ikan6.vip")!=-1){
+var URL=baseURL+"/vodsearch/-------------/?wd="+KEY+"&submit=";
+}else{
+var URL=baseURL+"/vodsearch/-------------.html?wd="+KEY+"&submit=";
+}
+if(baseURL.indexOf("nfmovies.com")!=-1){
+var 源码=JZ(JSON.stringify({url:URL,head:{"User-Agent":UA,"Cookie":COOKIE}}));
+if(源码.code.indexOf("ui-vodlist__media")==-1){
+var setcookie=源码.head['set-cookie'];
+var 源码=JZ(JSON.stringify({url:URL,head:{"User-Agent":UA,"Cookie":COOKIE+";"+setcookie}})).code;
+}
+}else{
+var 源码=getHttp(JSON.stringify({url:URL}));
+}
+if(baseURL.indexOf("zxzj.me")!=-1){
+var 列表=e2Arr(源码,".get(ul[class~=ui-vodlist] li)");
+}else{
+var 列表=e2Arr(源码,".get(ul[class~=ui-vodlist__media] li)");
+}
+var 标题规则=".get(.title a).t()";
+var 地址规则=".get(.title a).a(href)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".get(span).st().t().c().get(div.detail).t()";搜索列表();
+}else if(baseURL.indexOf("zhenbuka3.com")!=-1){
+var URL=baseURL+"/vodsearch/-------------.html?wd="+KEY+"&submit=";
+var RSS=baseURL+"/rss?wd="+KEY;
+var 源码=getHttp(JSON.stringify({url:RSS}));
+var 列表=e2Arr(源码,".xml(url)");
+var 地址规则=".xml(loc).t().z(\\S+)";搜索列表();
+}else if(baseURL.indexOf("cokemv.co")!=-1){
+var URL=baseURL+"/vodsearch/-------------.html?wd="+KEY+"&submit=";
+var RSS=baseURL+"/rss?wd="+KEY;
+var 源码=getHttp(JSON.stringify({url:RSS}));
+var 列表=e2Arr(源码,".xml(item)");
+var 标题规则=".xml(title).t()";
+var 地址规则=".xml(link).t().z(\\S+).th(https://##)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".xml(pubDate).t().c().xml(author).t().xml(description).t()";搜索列表();
+}else if(baseURL.indexOf("bukaivip.com")!=-1||baseURL.indexOf("nkvod.com")!=-1||baseURL.indexOf("jpysvip.net")!=-1){
+if(baseURL.indexOf("bukaivip.com")!=-1){
+var RSS=baseURL+"/rss?wd="+KEY;
+}else if(baseURL.indexOf("jpysvip.net")!=-1){
+var RSS=baseURL+"/index.php/rss/index.xml?wd="+KEY;
+}else{
+var RSS=baseURL+"/rss.xml?wd="+KEY;
+}
+var 源码=getHttp(JSON.stringify({url:RSS}));
+var 列表=e2Arr(源码,".xml(item)");
+var 标题规则=".xml(title).t()";
+var 地址规则=".xml(link).t().z(\\S+)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".xml(pubDate).t().c().xml(author).t().xml(description).t()";搜索列表();
+}else if(baseURL.indexOf("flvweb.com")!=-1){
+var URL=baseURL+"/index.php/vod/search/page/1/wd/"+KEY+".html";
+var 总源码=JZ(JSON.stringify({url:URL}));
+var 源码=总源码.code;
+var 列表=e2Arr(源码,".get(ul#searchList li)");
+var 标题规则=".get(.title a).t()";
+var 地址规则=".get(.title a).a(href)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".get(span.pic-text).t().c().get(div.detail).t()";搜索列表();
+}else if(baseURL.indexOf("ak1080.me")!=-1){
+var URL=baseURL+"/vodsearch/"+KEY+"----------1---.html";
+var 总源码=JZ(JSON.stringify({url:URL}));
+var 源码=总源码.code;
+var 列表=e2Arr(源码,".get(dl.mo-deta-info.mo-cols-rows)");
+var 标题规则=".get(h1 a).t()";
+var 地址规则=".get(h1 a).a(href)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".get(span).t().c().get(li).st().t()";搜索列表();
+}else if(baseURL.indexOf("ys.80tvs.cn")!=-1){
+var URL=baseURL+"/index.php/vod/search.html?wd="+KEY;
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=e2Arr(源码,".get(ul li.list-width)");
+var 标题规则=".get(a.searchkey).t()";
+var 地址规则=".get(a.searchkey).a(href)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".get(span).st().t().c().get(p).st().t()";搜索列表();
+}else if(baseURL.indexOf("zjuba.com")!=-1){
+var URL=baseURL+"/index.php/vod/search.html?wd="+KEY;
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=e2Arr(源码,".get(dl.fed-deta-info)");
+var 标题规则=".get(h1 a).t()";
+var 地址规则=".get(h1 a).a(href)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".get(span).st().t().c().get(dd.fed-deta-content).t()";搜索列表();
+}else if(baseURL.indexOf("jxry.cc")!=-1||baseURL.indexOf("cjt521.com")!=-1){
+var URL=baseURL+"/index.php/vod/search.html?wd="+KEY;
+var 总源码=JZ(JSON.stringify({url:URL}));
+var 源码=总源码.code;
+var 列表=e2Arr(源码,".get(div.leo-detail-wrap)");
+var 标题规则=".get(h1).t()";
+var 地址规则=".get(div.leo-po-ab a).a(href)";
+var 图片规则=".get(img).a(src)";
+var 简介规则=".get(div.leo-detail-media).t()";搜索列表();
+}else if(baseURL.indexOf("cms.7a11l.cn")!=-1||baseURL.indexOf("moyuyingshi.com")!=-1||baseURL.indexOf("vdxj.net")!=-1||baseURL.indexOf("jiujiuyingshi.xyz")!=-1||baseURL.indexOf("hszbj.net")!=-1||baseURL.indexOf("dcds.ml")!=-1){
+if(baseURL.indexOf("cms.7a11l.cn")!=-1||baseURL.indexOf("hszbj.net")!=-1){
+var URL=baseURL+"/index.php/vod/search.html?wd="+KEY;
+}else if(baseURL.indexOf("moyuyingshi.com")!=-1||baseURL.indexOf("vdxj.net")!=-1){
+var URL=baseURL+"/vodsearch/-------------/?wd="+KEY;
+}else if(baseURL.indexOf("jiujiuyingshi.xyz")!=-1){
+var URL=baseURL+"/search?wd="+KEY;
+}else if(baseURL.indexOf("dcds.ml")!=-1){
+var URL=baseURL+"/vodsearch/1.html?wd="+KEY;
+}
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=e2Arr(源码,".get(div.module-search-item)");
+var 标题规则=".get(h3 a).t()";
+var 地址规则=".get(h3 a).a(href)";
+var 图片规则=".get(img).a(data-src)";
+var 简介规则=".get(div.video-info-header).t().c().get(div.video-info-main).t().c().get(div.video-info-items).t()";搜索列表();
+}else if(baseURL.indexOf("saohuotv.com")!=-1){
+var URL=baseURL+"/search.php?searchword="+KEY;
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=源码.match(/<li>[\s]*?<div class="v_img[\s\S]*?<\/li>/g);
+var 标题规则=".get(.v_title a).t()";
+var 地址规则=".get(.v_title a).a(href)";
+var 图片规则=".get(img).a(data-original)";
+var 简介规则=".get(div.v_note).t()";搜索列表();
+}else if(baseURL.indexOf("tvyb02.com")!=-1||baseURL.indexOf("9ehao.com")!=-1){
+if(baseURL.indexOf("9ehao.com")!=-1){
+var URL=baseURL+"/soso9e9e.html?wd="+KEY+"&submit=";
+}else{
+var URL=baseURL+"/vod/search.html?wd="+KEY+"&submit=";
+}
+var 总源码=JZ(JSON.stringify({url:URL}));
+var 源码=总源码.code;
+var 列表=e2Arr(源码,".get(ul#searchList li)");
+var 标题规则=".get(.title a).t()";
+var 地址规则=".get(.title a).a(href)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".get(span).st().t().c().get(div.detail).t()";搜索列表();
+}else if(baseURL.indexOf("dijiaxia.com")!=-1){
+var URL=baseURL+"/index.php/vod/search.html?wd="+KEY+"&submit=";
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=e2Arr(源码,".get(ul[class~=ui-vodlist__media] li)");
+var 标题规则=".get(.title a).t()";
+var 地址规则=".get(.title a).a(href)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".get(span.pic-text).t().c().get(div.detail).t()";搜索列表();
+}else if(baseURL.indexOf("qianoo.cn")!=-1){
+var URL=baseURL+"/?s="+KEY;
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=e2Arr(源码,".get(div.bt_img li)");
+var 标题规则=".get(h3 a).t()";
+var 地址规则=".get(h3 a).a(href)";
+var 图片规则=".get(img).a(data-original)";
+var 简介规则=".get(span).st().t().c().get(p).t()";搜索列表();
+}else if(baseURL.indexOf("1090ys2.com")!=-1){
+var URL=baseURL+"/search.html?wd="+KEY+"&submit=";
+var RSS=baseURL+"/index.php/rss/index.xml?wd="+KEY;
+var 源码=getHttp(JSON.stringify({url:RSS}));
+var 列表=e2Arr(源码,".xml(item)");
+var 标题规则=".xml(title).t()";
+var 地址规则=".xml(link).t().z(\\S+)";
+var 图片规则=".get(a).a(data-original)";
+var 简介规则=".xml(pubDate).t().c().xml(author).t().xml(description).t()";搜索列表();
+}else if(baseURL.indexOf("jhyun.jhdyw.vip")!=-1){
+var URL=baseURL+"/index.php/vod/search.html?wd="+KEY+"&submit=";
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=e2Arr(源码,".get(ul[class~=stui-vodlist clearfix] li)");
+var 标题规则=".get(.title a).t()";
+var 地址规则=".get(.title a).a(href)";
+var 图片规则=".c(https://egwang186.coding.net/p/egwang186/d/iptv/git/raw/master/js2.0/jhyslogo.png).get(a).a(data-original)";
+var 简介规则=".t()";搜索列表();
+}else if(baseURL.indexOf("v1.vod")!=-1){
+var URL=baseURL+"?page=1&limit=10&wd="+KEY;
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=JSON.parse(源码.replace(/<.*?>/g,"").replace(/[\s]*/g,"")).data.list;
+var 标题规则=".json(vod_name)";var 地址规则=".c(/detail?vod_id=).json(vod_id)";var 图片规则=".json(vod_pic)";var 简介规则=".json(vod_remarks).c().json(vod_actor).c().json(vod_blurb)";搜索列表();
+}else if(baseURL.indexOf("api.php/app")!=-1){
+var URL=baseURL+"search?pg=1&text="+KEY;
+var 源码=getHttp(JSON.stringify({url:URL}));
+if(源码.indexOf("跳转中")!=-1){
+var URL=baseURL+e2Rex(源码,".z(/api\\.php/app[^\"]*).ty(api.php/app/)");
+var 源码=getHttp(JSON.stringify({url:URL}));
+}
+var 列表=JSON.parse(源码.replace(/<.*?>/g,"").replace(/[\s]*/g,"")).list;
+var 标题规则=".json(vod_name)";var 地址规则=".c(video_detail?id=).json(vod_id)";var 图片规则=".json(vod_pic)";var 简介规则=".json(vod_remarks).c().json(vod_time_add)";搜索列表();
+}else if(baseURL.indexOf("api.php/iptv/vod")!=-1||baseURL.indexOf("api.php/lh/vod")!=-1){
+var URL=baseURL+"?ac=list&page=1&wd="+KEY;
+var 源码=getHttp(JSON.stringify({url:URL}));
+var 列表=e2Arr(源码,".json(data)");
+var 标题规则=".json(title)";var 地址规则=".json(nextlink)";var 图片规则=".json(pic)";var 简介规则=".json(state).c().json(type)";搜索列表();
+}

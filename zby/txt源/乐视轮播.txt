@@ -1,0 +1,10 @@
+〈企鹅国外影院〉,http://111.6.232.36/txpcdn.liveplay.egame.qq.com/live/3954_382971876.m3u8
+〈企鹅国内影院〉,http://111.6.232.36/txpcdn.liveplay.egame.qq.com/live/3954_199681168.m3u8
+〈企鹅恐怖影院〉,http://111.6.232.36/txpcdn.liveplay.egame.qq.com/live/3954_363783415.m3u8
+K•午夜影院,http://hpull.kktv8.com/livekktv/99592190/playlist.m3u8
+K•女神影院,http://hpull.kktv8.com/livekktv/99350550/playlist.m3u8
+K•经典影院,http://hpull.kktv8.com/livekktv/145242762/playlist.m3u8
+【经典老电影】,http://106.53.212.251/daili/bili.php?id=23782983
+【经典影音台】,http://103.140.229.13/BOBO/bibi.php?id=23285297
+【经典功夫台】,http://106.53.212.251/daili/bili.php?id=21715386
+【邵氏】老电影,http://106.53.212.251/daili/bili.php?id=21759196

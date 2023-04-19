@@ -1,5 +1,6 @@
 [
-    {"name":"一个盒子","icon":"t:一个#7D25FE","sign":"0232bf41409b87846a0811384683d9cd","version":"230103","type":"轻站","url":"https://gitcode.net/egwang186/iptv/-/raw/master/onebox/一个盒子.mkz"},
-    {"name":"阿里云盘","icon":"t:阿里#08736C","sign":"2b790766bab84809dff175605fa81036","version":"221227","type":"轻站","url":"https://gitcode.net/egwang186/iptv/-/raw/master/aliyun/阿里云盘.mkz"},
-    {"name":"资源采集","icon":"t:资源#5813A7","sign":"c9f171b5c90f484a7617fb55488e1e81","version":"221027","type":"轻站","url":"https://gitcode.net/egwang186/iptv/-/raw/master/zywcj/资源采集.mkz"}
+    {"name":"一个盒子","icon":"t:一个#7D25FE","sign":"0232bf41409b87846a0811384683d9cd","version":"230329","type":"轻站","url":"https://gitcode.net/egwang186/iptv/-/raw/master/onebox/一个盒子.mkz"},
+    {"name":"阿里云盘","icon":"t:阿里#08736C","sign":"2b790766bab84809dff175605fa81036","version":"230329","type":"轻站","url":"https://gitcode.net/egwang186/iptv/-/raw/master/aliyun/阿里云盘.mkz"},
+    {"name":"资源采集","icon":"t:资源#5813A7","sign":"c9f171b5c90f484a7617fb55488e1e81","version":"221027","type":"轻站","url":"https://gitcode.net/egwang186/iptv/-/raw/master/zywcj/资源采集.mkz"},
+    {"name":"资源嗅探18","icon":"t:嗅探#28C7E1","sign":"f7f67b63ea6bfc5709a4ebe5fbedf037","version":"18","type":"轻站","url":"https://gitcode.net/egwang186/iptv/-/raw/master/onebox/资源嗅探18.mkz"}
 ]

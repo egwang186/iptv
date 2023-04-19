@@ -1,0 +1,49 @@
+CNR 华夏之声,http://ls.qingting.fm/live/392.m3u8
+CNR 经典音乐广播 101.8,http://ls.qingting.fm/live/389.m3u8
+CNR 经济之声,http://ls.qingting.fm/live/387.m3u8
+CNR 老年之声,http://ls.qingting.fm/live/396.m3u8
+CNR 神州之声,http://ls.qingting.fm/live/391.m3u8
+CNR 文艺之声,http://ls.qingting.fm/live/395.m3u8
+CNR 香港之声,http://ls.qingting.fm/live/4986.m3u8
+CNR 音乐之声,http://ls.qingting.fm/live/388.m3u8
+CNR 娱乐广播,http://ls.qingting.fm/live/398.m3u8
+CNR 中国交通广播,http://ls.qingting.fm/live/4985.m3u8
+CNR 中国乡村之声,http://ls.qingting.fm/live/5039.m3u8
+CNR 中国之声,http://ls.qingting.fm/live/386.m3u8
+CNR 中华之声,http://ls.qingting.fm/live/390.m3u8
+CRI 海峡飞虹,http://ls.qingting.fm/live/1734855.m3u8
+CRI 环球资讯广播 FM90.5,http://ls.qingting.fm/live/24035.m3u8
+CRI 南海之声,http://ls.qingting.fm/live/62624.m3u8
+CRI 轻松调频 FM91.5,http://ls.qingting.fm/live/1006.m3u8
+CRI 中文环球广播,http://ls.qingting.fm/live/4995.m3u8
+CNR经典音乐,http://ngcdn004.cnr.cn/live/dszs/index.m3u8
+怀集音乐台,http://live.xmcdn.com:80/live/966/64.m3u8
+高清音乐台,http://live.xmcdn.com:80/live/1427/64.m3u8
+清晨音乐台,http://live.xmcdn.com:80/live/1011/64.m3u8
+老歌音乐台,http://live.xmcdn.com:80/live/2628/64.m3u8
+亚洲经典音乐电台,http://live.xmcdn.com:80/live/1005/64.m3u8
+香港电台第六台：香港之声,http://rthkaudio6cnr-lh.akamaihd.net/i/radio6cnr_1@575604/master.m3u8
+萤火虫网络电台,http://ls.qingting.fm/live/4998.m3u8
+500首华语经典,http://ls.qingting.fm/live/3412131.m3u8?bitrate=64
+长沙动感音乐,http://live.xmcdn.com:80/live/401/64.m3u8
+江苏音乐广播,http://live.xmcdn.com:80/live/538/64.m3u8
+北京音乐广播,http://live.xmcdn.com/live/95/64.m3u8
+贵州音乐广播,http://ls.qingting.fm/live/23937.m3u8
+海南音乐广播,http://ls.qingting.fm/live/4878.m3u8
+河北音乐广播,http://ls.qingting.fm/live/1649.m3u8
+河南音乐广播,http://ls.qingting.fm/live/1208.m3u8
+吉林音乐广播,http://ls.qingting.fm/live/1831.m3u8
+山东音乐广播,http://ls.qingting.fm/live/1665.m3u8
+山西音乐广播,http://live.xmcdn.com/live/886/64.m3u8
+上海动感101,http://ls.qingting.fm/live/274.m3u8
+重庆音乐广播,http://ls.qingting.fm/live/647.m3u8
+福建音乐广播,http://ls.qingting.fm/live/4585.m3u8
+厦门音乐广播,http://ls.qingting.fm/live/1739.m3u8
+广东音乐之声,http://ls.qingting.fm/live/1260.m3u8
+广西音乐广播,http://live.xmcdn.com:80/live/301/64.m3u8
+深圳飞扬音乐电台,http://ls.qingting.fm/live/1271.m3u8
+苏州音乐广播动听,http://live.xmcdn.com/live/65/64.m3u8
+四川岷江音乐广播,http://ls.qingting.fm/live/1110.m3u8
+新疆音乐广播,http://aod.xjbs.com.cn:1935/live/1039/32K/tzwj_video.m3u8
+云南音乐广播,http://ls.qingting.fm/live/1929.m3u8
+浙江动听,http://ls.qingting.fm/live/4866.m3u8

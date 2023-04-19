@@ -1,0 +1,73 @@
+{"data":[{
+	name: 'week_music',
+	value: '23603695',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344320.jpg'
+},
+{
+	name: 'migumusic',
+	value: '23603703',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344396.jpg'
+},
+{
+	name: 'movies',
+	value: '23603721',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344397.jpg'
+},
+{
+	name: 'mainland',
+	value: '23603926',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344390.jpg'
+},
+{
+	name: 'hktw',
+	value: '23603954',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344389.jpg'
+},
+{
+	name: 'eur_usa',
+	value: '23603974',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344391.jpg'
+},
+{
+	name: 'jpn_kor',
+	value: '23603982',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344392.jpg'
+},
+{
+	name: 'coloring',
+	value: '23604023',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344387.jpg'
+},
+{
+	name: 'original',
+	value: '23604032',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344398.jpg'
+},
+{
+	name: 'ktv',
+	value: '23604040',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344385.jpg'
+},
+{
+	name: 'network',
+	value: '23604058',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180816/1344393.jpg'
+},
+{
+	name: 'itunes',
+	value: '23634243',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180820/1344653.jpg'
+},
+{
+	name: 'billboard',
+	value: '23634252',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180820/1344652.jpg'
+},
+{
+	name: 'hito',
+	value: '23634262',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180820/1344649.jpg'
+},
+{
+	name: 'top_hktw',
+	value: '23634270',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180820/1344654.jpg'
+},
+{
+	name: 'top_mainland',
+	value: '23634280',image:'https://mcontent.migu.cn/web/fs/media/p/154/353/11161/image/20191029/1353666.jpg'
+},
+{
+	name: 'mnet',
+	value: '23634290',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180820/1344650.jpg'
+},
+{
+	name: 'uk',
+	value: '23634298',image:'https://mcontent.migu.cn/web/fs/media/p/154/359/11447/image/20180820/1344651.jpg'
+}
+]}

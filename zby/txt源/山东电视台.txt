@@ -1,0 +1,9 @@
+山东卫视,https://livealone302.iqilu.com/iqilu/sdtv.m3u8
+山东生活,https://livealone302.iqilu.com/iqilu/shpd.m3u8
+山东综艺,https://livealone302.iqilu.com/iqilu/zypd.m3u8
+山东新闻,https://livealone302.iqilu.com/iqilu/ggpd.m3u8
+山东农科,https://livealone302.iqilu.com/iqilu/nkpd.m3u8
+山东文旅,https://livealone302.iqilu.com/iqilu/yspd.m3u8
+山东少儿,https://livealone302.iqilu.com/iqilu/sepd.m3u8
+山东齐鲁,https://livealone302.iqilu.com/iqilu/qlpd.m3u8
+山东购物,https://livealone302.iqilu.com/iqilu/gwpd.m3u8

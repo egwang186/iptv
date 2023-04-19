@@ -1,0 +1,32 @@
+凤凰中文 10M1080,http://zb.ios.ifeng.com:80/live/05QGDA0CIRK/index.m3u8#http://223.110.235.3/ott.js.chinamobile.com/PLTV/3/224/3221228057/index.m3u8#http://223.110.245.139/ott.js.chinamobile.com/PLTV/3/224/3221226922/index.m3u8
+凤凰资讯 10M1080,http://zb.ios.ifeng.com:80/live/05QGCOB3T34/index.m3u8#http://223.110.235.13/ott.js.chinamobile.com/PLTV/3/224/3221228098/index.m3u8
+凤凰香港 10M1080,http://223.110.236.2/ott.js.chinamobile.com/PLTV/3/224/3221228060/index.m3u8
+凤凰中文[1920*1080],http://zb.ios.ifeng.com/live/05QGDA0CIRK/index.m3u8
+凤凰资讯[1920*1080],https://zb.ios.ifeng.com/live/05QGCOB3T34/index.m3u8
+凤凰资讯[1920*1080],http://223.110.235.4/ott.js.chinamobile.com/PLTV/3/224/3221228098/index.m3u8
+凤凰资讯[1920*1080],http://223.110.235.13/ott.js.chinamobile.com/PLTV/3/224/3221228098/index.m3u8$JS1080P
+凤凰中文[1920*1080],http://223.110.236.10/ott.js.chinamobile.com/PLTV/3/224/3221228057/index.m3u8
+TVBJ2台,https://cdn.hkdtmb.com/hls/82/index.m3u8
+TVB星河台,http://50.7.161.82:8278/streams/d/Xinhe/playlist.m3u8
+TVB明珠台,https://cdn.hkdtmb.com/hls/84/index.m3u8
+TVB翡翠台,https://cdn.hkdtmb.com/hls/81/index.m3u8#https://p2.weizan.cn/1646497941/173900819035303679/live.m3u8
+有线新闻台,https://p2.weizan.cn/1646497941/614105386721937653/live.m3u8
+有线财经台,https://api.leonardpark.dev/live/icable/108.m3u8
+无线新闻台,https://cdn.hkdtmb.com/hls/83/index.m3u8#https://p2.weizan.cn/1646497941/113158785015619767/live.m3u8
+无线财经台,https://cdn.hkdtmb.com/hls/85/index.m3u8
+NOW直播,http://livetv.dnsfor.me:80/channel.3.m3u8
+NOW新闻,http://livetv.dnsfor.me:80/channel.4.m3u8
+香港开电视,https://cdn.hkdtmb.com/hls/77/index.m3u8
+香港國際財經台,https://cdn.hkdtmb.com/hls/76/index.m3u8
+香港卫视文旅,https://myun-hw-s3.myun.tv/melj80jz/lxx27bol/1551285536499984128.m3u8
+香港C+,http://gslbmeiah.cdn.hk.chinamobile.com/livehls/MOB-U1-NO/03.m3u8
+耀才財經台,http://202.69.67.66:443/webcast/bshdlive-pc/playlist.m3u8
+HBO HD,http://50.7.161.82:8278/streams/d/Hbo/playlist.m3u8
+港台電視RTHK31,https://cdn.hkdtmb.com/hls/31/index.m3u8#https://rthklive1-lh.akamaihd.net/i/rthk31_1@167495/index_2052_av-p.m3u8
+港台新聞RTHK32,https://cdn.hkdtmb.com/hls/32/index.m3u8#https://rthklive2-lh.akamaihd.net/i/rthk32_1@168450/index_1080_av-b.m3u8
+澳门卫视,http://61.244.22.5/ch3/_definst_/ch3.live/playlist.m3u8
+足球频道,http://ivi.bupt.edu.cn:80/hls/zqhd.m3u8
+ViuTV 1080P,https://cdn.hkdtmb.com/hls/99/index.m3u8
+ViuTV 6,https://cdn.hkdtmb.com/hls/96/index.m3u8
+欢笑剧场4K,http://39.134.39.38/PLTV/88888888/224/3221226203/index.m3u8
+中国环球电视,http://live.cgtn.com/500/prog_index.m3u8

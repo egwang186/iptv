@@ -1,0 +1,103 @@
+if(getVar("url").indexOf("v1.vod/vodPhbAll")!=-1){
+var URL=getVar("url").split("/vodPhbAll")[0];
+}else if(getVar("url").indexOf("api.php/app/")!=-1){
+var URL=getVar("url").match(/http.*\//)[0];
+}else if(getVar("url").indexOf("api.php/iptv/vod")!=-1){
+var URL=getVar("url").split("?ac=list")[0];
+}else{
+var URL=getVar("url");
+}
+function TB(){
+var Arr=Array.from(arguments);
+var Newd = Arr.map(i => 总标题[i]);
+return Newd;
+}
+function TT(){
+var Arr=Array.from(arguments);
+var Newd = Arr.map(i => 总地址[i]);
+return Newd;
+}
+var 总标题=["0","电影","电视剧","综艺","动漫","5","动作片","喜剧片","爱情片","科幻片","10","恐怖片","剧情片","战争片","国产剧","15","港台剧","日韩剧","欧美剧","大陆剧","20","香港剧","台湾剧","日本剧","韩国剧","25","美国剧","泰国剧","国语配音韩剧","最近热播剧","30","热播美剧","抖音电影","福利短视频","豆瓣TOP","35","最新电影","欧美电影","韩国电影","脱口秀","40","真人秀","选秀","美食","旅游","45","访谈","纪实","搞笑","纪录片","50"];
+var 总地址=["0","1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","1&class=&area=","2&class=&area=","3&class=&area=","40","4&class=&area=","1&class=动作&area=","1&class=喜剧&area=","1&class=爱情&area=","45","1&class=科幻&area=","1&class=恐怖&area=","1&class=剧情&area=","1&class=战争&area=","50","2&class=&area=大陆","2&class=&area=香港","2&class=&area=台湾","2&class=&area=日本","55","2&class=&area=韩国","2&class=&area=美国","movie&start=&area=&type=","tvplay&start=&area=&type=","60","tvshow&start=&area=&type=","comic&start=&area=&type=","movie&start=&area=&type=动作","movie&start=&area=&type=喜剧","65","movie&start=&area=&type=爱情","movie&start=&area=&type=科幻","movie&start=&area=&type=恐怖","movie&start=&area=&type=剧情","70","movie&start=&area=&type=战争","tvplay&start=&area=大陆&type=","tvplay&start=&area=香港&type=","tvplay&start=&area=台湾&type=","75","tvplay&start=&area=日本&type=","tvplay&start=&area=韩国&type=","tvplay&start=&area=美国&type=","dianying","80","lianxuju","zongyi","dongman","dongzuopian","85","xijupian","aiqingpian","kehuanpian","kongbupian","90","juqingpian","zhanzhengpian","guoyupeiyinhanju","zuijinrebodianshiju","95","rebomeiju","guochanju","gangtaiju","rihanju","100","oumeiju","SCCCCS","qCCCCS","xCCCCS","105","ICCCCS","SCCCCS/class/动作","SCCCCS/class/喜剧","SCCCCS/class/爱情","110","SCCCCS/class/科幻","SCCCCS/class/恐怖","SCCCCS/class/剧情","SCCCCS/class/战争","115","qCCCCS/area/内地","qCCCCS/area/香港","qCCCCS/area/台湾","qCCCCS/area/日本","120","qCCCCS/area/韩国","qCCCCS/area/美国"];
+var 标题1=TB(1,2,3,4,6,7,8,9,11,12,13,14,16,17,18);
+var 地址1=TT(1,2,3,4,6,7,8,9,10,11,12,13,14,15,16);
+var 标题2=TB(1,2,3,4,6,7,8,9,11,12,13,19,21,22,23,24,26);
+var 地址2=TT(37,38,39,41,42,43,44,46,47,48,49,51,52,53,54,56,57);
+var 标题3=标题2;
+var 地址3=TT(58,59,61,62,63,64,66,67,68,69,71,72,73,74,76,77,78);
+var 标题4=TB(1,2,3,4,6,7,8,9,11,12,13,14,16,17,18,28,29,31);
+var 标题41=TB(1,2,3,4,6,7,8,9,11,12,13,14,16,17,18);
+var 地址4=TT(79,81,82,83,84,86,87,88,89,91,92,97,98,99,101,93,94,96);
+var 地址41=TT(79,81,82,83,84,86,87,88,89,91,92,97,98,99,101);
+var 标题5=标题2;
+var 地址5=TT(102,103,104,106,107,108,109,111,112,113,114,116,117,118,119,121,122);
+function 头部导航(){
+var res={};var items=[];
+for(var j=0;j<标题.length;j++){
+     分类地址=URL+前+地址[j]+后;
+     items.push({title:标题[j],url:分类地址});
+}
+res.data=items;
+return JSON.stringify(res);
+}
+if(URL.indexOf("cokemv.co")!=-1){
+var 标题=TB(1,2,3,4,32,19,21,24,18);
+var 地址=TT(1,2,3,4,5,13,14,15,16);var 前="/vodtype/";var 后="-#PN#.html";头部导航();
+}else if(URL.indexOf("jpysvip.net")!=-1||URL.indexOf("ak1080.me")!=-1||URL.indexOf("unss.net")!=-1||URL.indexOf("dcds.ml")!=-1){
+var 标题=标题1;var 地址=地址1;var 前="/vodtype/";var 后="-#PN#.html";头部导航();
+}else if(URL.indexOf("bukaivip.com")!=-1||URL.indexOf("flvweb.com")!=-1||URL.indexOf("ys.80tvs.cn")!=-1||URL.indexOf("dijiaxia.com")!=-1||URL.indexOf("hszbj.net")!=-1){
+var 标题=标题1;var 地址=地址1;var 前="/index.php/vod/show/id/";var 后="/page/#PN#.html";头部导航();
+}else if(URL.indexOf("cms.7a11l.cn")!=-1){
+var 标题=标题5;var 地址=地址5;var 前="/index.php/vod/show/id/";var 后="/page/#PN#.html";头部导航();
+}else if(URL.indexOf("moyuyingshi.com")!=-1){
+var 标题=标题41;var 地址=地址41;var 前="/vodtype/";var 后="-#PN#/";头部导航();
+}else if(URL.indexOf("ikan6.vip")!=-1||URL.indexOf("nkvod.com")!=-1){
+var 标题=标题1;var 地址=地址1;var 前="/vodtype/";var 后="-#PN#/";头部导航();
+}else if(URL.indexOf("jiujiuyingshi.xyz")!=-1){
+var 标题=TB(1,2,3,4);var 地址=TT(1,2,3,4);var 前="/type/";var 后="/#PN#.html";头部导航();
+}else if(URL.indexOf("vdxj.net")!=-1){
+var 标题=标题1;var 地址=地址1;var 前="/vodshow/";var 后="--------#PN#---.html";头部导航();
+}else if(URL.indexOf("jxry.cc")!=-1||URL.indexOf("cjt521.com")!=-1){
+var 标题=TB(1,2,3,4,6,7,8,9,11,12,13,14,16,17,18,33);var 地址=TT(1,2,3,4,6,7,8,9,10,11,12,13,14,15,16,23);var 前="/index.php/vod/show/id/";var 后="/page/#PN#.html";头部导航();
+}else if(URL.indexOf("zhenbuka3.com")!=-1){
+var 标题=标题1;var 地址=地址1;var 前="/vodtype/";var 后="-#PN#/";头部导航();
+}else if(URL.indexOf("saohuotv.com")!=-1){
+var 标题=TB(1,2,4,6,7,8,9,11,12,13,19,21,22,23,24,26,39,41,42,43,44,46,47,48);
+var 地址=TT(1,2,4,9,6,7,10,8,15,11,20,21,26,24,22,23,28,29,30,31,32,34,35,36);
+var 前="/list/";var 后="-#PN#.html";头部导航();
+}else if(URL.indexOf("zxzj.me")!=-1){
+var 标题=TB(1,26,23,24,27,4);
+var 地址=TT(1,2,3,4,5,6);var 前="/list/";var 后="-#PN#.html";头部导航();
+}else if(URL.indexOf("tvyb02.com")!=-1){
+var 标题=标题1;var 地址=地址1;var 前="/vod/type/id/";var 后="/page/#PN#.html";头部导航();
+}else if(URL.indexOf("9ehao.com")!=-1){
+var 标题=标题4;var 地址=地址4;var 前="/vodshow/";var 后="/page/#PN#.html";头部导航();
+}else if(URL.indexOf("qianoo.cn")!=-1){
+var 标题=TB(1,2,4,34,36,37,38,19,26,24,23);var 地址=["movie_bt/movie_bt_series/dyy","movie_bt/movie_bt_series/dianshiju","dm","dbtop250","zuixindianying","movie_bt/movie_bt_series/meiguodianying","movie_bt/movie_bt_series/hanguodianying","gcj","movie_bt/movie_bt_series/mj","movie_bt/movie_bt_series/hj","movie_bt/movie_bt_series/rj"];var 前="/";var 后="/page/#PN#";头部导航();
+}else if(URL.indexOf("1090ys2.com")!=-1){
+var 标题=TB(1,2,19,21,24,26,23,3,6,7,8,9,11,12);var 地址=["1","2","2/area/中国大陆","2/area/中国香港","3","4","5","22","1/class/动作","1/class/喜剧","1/class/爱情","1/class/科幻","1/class/恐怖","1/class/剧情"];var 前="/whole/";var 后="/page/#PN#.html";头部导航();
+}else if(URL.indexOf("nfmovies.com")!=-1){
+var 标题=TB(1,2,3,4,6,7,8,9,11,12,13,49,14,16,17,18);var 地址=TT(1,2,3,4,5,10,6,7,8,12,9,11,13,14,16,15);var 前="/list/";var 后="-#PN#.html";头部导航();
+}else if(URL.indexOf("jhyun.jhdyw.vip")!=-1||URL.indexOf("zjuba.com")!=-1){
+var 标题=标题1;var 地址=地址1;var 前="/index.php/vod/type/id/";var 后="/page/#PN#.html";头部导航();
+}else if(URL.indexOf("api.php/app")!=-1){
+var 标题=标题2;var 地址=地址2;var 前="video?tid=";var 后="&lang=&year=&pg=#PN#";头部导航();
+}else if(URL.indexOf("api.php/v1.vod")!=-1){
+var 标题=标题2;var 地址=地址2;var 前="?type=";var 后="&lang=&year=&page=#PN#";
+if(URL.indexOf("dxzj88.com")!=-1||URL.indexOf("ytys1122.com")!=-1){
+标题.push("纪录片","电视直播");地址.push("31&class=&area=","33&class=&area=");
+}else if(URL.indexOf("meinaikang.com")!=-1){
+标题.push("福利");地址.push("29&class=&area=");
+}else if(URL.indexOf("znyy666.top")!=-1){
+标题.push("福利");地址.push("36&class=&area=");
+}else if(URL.indexOf("huangguays.com")!=-1){
+标题.push("追番");地址.push("30&class=&area=");
+}else if(URL.indexOf("snailkya.xyz")!=-1){
+标题.push("腾讯热门");地址.push("20&class=&area=");
+}else if(URL.indexOf("miaoletv.com")!=-1){
+标题.push("电视直播","新番");地址.push("39&class=&area=","47&class=&area=");
+}
+头部导航();
+}else if(URL.indexOf("api.php/iptv/vod")!=-1||URL.indexOf("api.php/lh/vod")!=-1){
+var 标题=标题3;var 地址=地址3;var 前="?ac=list&class=";var 后="&page=#PN#";头部导航();
+}

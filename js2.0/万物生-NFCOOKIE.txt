@@ -1,0 +1,7 @@
+var TODAY=new Date();
+var 年=TODAY.getFullYear();
+var 月=TODAY.getMonth()+1<10?"0"+(TODAY.getMonth() + 1):TODAY.getMonth()+1;
+var 日=TODAY.getDate()<10?"0"+TODAY.getDate():TODAY.getDate();
+var resp=JZ(JSON.stringify({url:"https://nfmovies.com/search.php",head:{"User-Agent":"Mozilla/5.0"}}));
+var setcookie=resp.head['set-cookie'];
+"last_browse_app="+年+"-"+月+"-"+日+";"+setcookie;

@@ -1,0 +1,63 @@
+CCTV1 综合,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-1-HQ/G_CCTV-1-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV2 财*,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-2-HQ/G_CCTV-2-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV3 综艺,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-3-HQ/G_CCTV-3-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV4 中文国际,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-4-HQ/G_CCTV-4-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV5 体育,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-5-HQ/G_CCTV-5-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV5+ 体育赛事,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-5PLUS-HQ/G_CCTV-5PLUS-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV6 电影,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-6-HQ/G_CCTV-6-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV7 国防军事,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-7-HQ/G_CCTV-7-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV8 电视剧,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-8-HQ/G_CCTV-8-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV9 纪录片,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-9-HQ/G_CCTV-9-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV10 科教,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-10-HQ/G_CCTV-10-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV11 戏曲,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-11-HQ/G_CCTV-11-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV12 社会与法,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-12-HQ/G_CCTV-12-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV13 新闻,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-13-HQ/G_CCTV-13-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV14 少儿,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-14-HQ/G_CCTV-14-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV15 音乐,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-15/G_CCTV-15.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV16 奥林匹克,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-16-CQ/G_CCTV-16-CQ.m3u8?p=GITV&amp;area=GD_CMCC
+CCTV17 农业农村,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CCTV-17-HQ/G_CCTV-17-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+中国教育1套,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CETV-1-HQ/G_CETV-1-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+中国教育2套,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CETV-2/G_CETV-2.m3u8?p=GITV&amp;area=GD_CMCC
+中国教育3套,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CETV-3/G_CETV-3.m3u8?p=GITV&amp;area=GD_CMCC
+中国教育4套,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CETV-4/G_CETV-4.m3u8?p=GITV&amp;area=GD_CMCC
+浙江卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_ZHEJIANG-HQ/G_ZHEJIANG-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+江苏卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_JIANGSU-HQ/G_JIANGSU-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+湖南卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_HUNAN-HQ/G_HUNAN-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+深圳卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_SHENZHEN-HQ/G_SHENZHEN-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+东南卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_DONGNAN-HQ/G_DONGNAN-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+北京卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_BEIJING-HQ/G_BEIJING-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+安徽卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_ANHUI-HQ/G_ANHUI-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+重庆卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_CHONGQING-HQ/G_CHONGQING-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+四川卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_SICHUAN-HQ/G_SICHUAN-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+江西卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_JIANGXI-HQ/G_JIANGXI-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+北京纪实,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_BEIJINGJS-HQ/G_BEIJINGJS-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+贵州卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_GUIZHOU-HQ/G_GUIZHOU-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+东方卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_DONGFANG-HQ/G_DONGFANG-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+河北卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_HEBEI-HQ/G_HEBEI-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+河南卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_HENAN-HQ/G_HENAN-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+湖北卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_HUBEI-HQ/G_HUBEI-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+黑龙江卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_HEILONGJIANG-HQ/G_HEILONGJIANG-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+海南卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_HAINAN-HQ/G_HAINAN-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+金鹰纪实,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_JINYINGJS-HQ/G_JINYINGJS-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+辽宁卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_LIAONING-HQ/G_LIAONING-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+山东卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_SHANDONG-HQ/G_SHANDONG-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+天津卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_TIANJIN-HQ/G_TIANJIN-HQ.m3u8?p=GITV&amp;area=GD_CMCC
+兵团卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_BINGTUAN/G_BINGTUAN.m3u8?p=GITV&amp;area=GD_CMCC
+甘肃卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_GANSU/G_GANSU.m3u8?p=GITV&amp;area=GD_CMCC
+广西卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/GXWS/GXWS.m3u8?p=GITV&amp;area=GD_CMCC
+吉林卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_JILIN/G_JILIN.m3u8?p=GITV&amp;area=GD_CMCC
+金鹰卡通,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_JINYING/G_JINYING.m3u8?p=GITV&amp;area=GD_CMCC
+卡酷少儿,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_KAKU/G_KAKU.m3u8?p=GITV&amp;area=GD_CMCC
+内蒙古卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_NEIMENGGU/G_NEIMENGGU.m3u8?p=GITV&amp;area=GD_CMCC
+宁夏卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_NINGXIA/G_NINGXIA.m3u8?p=GITV&amp;area=GD_CMCC
+青海卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_QINGHAI/G_QINGHAI.m3u8?p=GITV&amp;area=GD_CMCC
+厦门卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_XIAMEN/G_XIAMEN.m3u8?p=GITV&amp;area=GD_CMCC
+山东教育,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_SDETV/G_SDETV.m3u8?p=GITV&amp;area=GD_CMCC
+山西卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/SXWS/SXWS.m3u8?p=GITV&amp;area=GD_CMCC
+陕西卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_SHANXI/G_SHANXI.m3u8?p=GITV&amp;area=GD_CMCC
+上海纪实,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_SHANGHAIJS-HD/G_SHANGHAIJS-HD.m3u8?p=GITV&amp;area=GD_CMCC
+西藏卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_XIZANG/G_XIZANG.m3u8?p=GITV&amp;area=GD_CMCC
+新疆卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_XINJIANG/G_XINJIANG.m3u8?p=GITV&amp;area=GD_CMCC
+炫动卡通,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_XUANDONG/G_XUANDONG.m3u8?p=GITV&amp;area=GD_CMCC
+云南卫视,http://gdcmcc-livod.dispatcher.gitv.tv/gitv_live/G_YUNNAN/G_YUNNAN.m3u8?p=GITV&amp;area=GD_CMCC
+

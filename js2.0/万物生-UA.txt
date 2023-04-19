@@ -1,0 +1,6 @@
+var u=getVar("url");
+if(u.indexOf("nfmovies.com")!=-1||u.indexOf("jiujiukanju.com")!=-1){
+"Mozilla/5.0";
+}else{
+"Mozilla/5.0 Android";
+}
