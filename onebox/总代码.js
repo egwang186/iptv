@@ -489,7 +489,7 @@ function 通用列表(){
         }else if(预图片.indexOf("http")==0){
             var 图片=预图片;
         }else if(预图片==""){
-            var 图片="https://gitcode.net/egwang186/iptv/-/raw/master/onebox/kongbai.gif@{'User-Agent':'Mozilla/5.0'}";
+            var 图片="https://raw.fastgit.org/egwang186/iptv/main/onebox/kongbai.gif@{'User-Agent':'Mozilla/5.0'}";
         }else{
             var 图片=baseURL+预图片;
             if(baseURL.indexOf("1090ys2.com")!=-1){

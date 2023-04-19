@@ -7,7 +7,7 @@ iptv
 ###数据
 台湾p2p
 ##
-远程$https://gitcode.net/egwang186/iptv/-/raw/master/onebox/台湾p2p.txt
+远程$https://raw.fastgit.org/egwang186/iptv/main/onebox/台湾p2p.txt
 ####
 
 ####
@@ -18,7 +18,7 @@ web
 ###标题
 XChina(VPN)
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/xchina.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/xchina.png
 ###BaseURL
 "https://xchina.xyz";
 ###首页地址
@@ -53,7 +53,7 @@ web
 ###标题
 搬淫家
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/byj.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/byj.png
 ###BaseURL
 var code=getHttp("https://byjav.me/js/home.js");e2Rex(code,".ty(byjios.).th(http://##https://).z(http.*me).or().z(http.*com).or().z(http.*tv)");
 ###首页地址
@@ -88,7 +88,7 @@ web
 ###标题
 直播盒子
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/zhibohezi.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/zhibohezi.png
 ###BaseURL
 "http://api.vipmisss.com:81";
 ###首页地址
@@ -122,7 +122,7 @@ web
 ###标题
 肉视频(VPN)
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/rouvideo.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/rouvideo.png
 ###BaseURL
 "https://rou.video";
 ###首页地址
@@ -157,7 +157,7 @@ web
 ###标题
 黄色仓库(VPN)
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/hsck.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/hsck.png
 ###BaseURL
 var url="http://hscangku.com/";var jx=e2Rex(getHttp(url),".z(http[^\"]+)");var code=JZ(JSON.stringify({url:jx+url,redirect:false}));code.head.Location;
 ###首页地址
@@ -192,7 +192,7 @@ web
 ###标题
 JableTV(VPN)
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/jable.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/jable.png
 ###BaseURL
 "https://jable.tv";
 ###首页地址
@@ -227,7 +227,7 @@ web
 ###标题
 CableAV(VPN)
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/cable.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/cable.png
 ###BaseURL
 "https://cableav.tv";
 ###首页地址
@@ -262,7 +262,7 @@ web
 ###标题
 风月同天(VPN)
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/fytt.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/fytt.png
 ###BaseURL
 "https://www.fytt1.com";
 ###首页地址
@@ -297,7 +297,7 @@ web
 ###标题
 CCAVB
 ###图片
-https://gitcode.net/egwang186/iptv/-/raw/master/onebox/ccavb.png
+https://raw.fastgit.org/egwang186/iptv/main/onebox/ccavb.png
 ###BaseURL
 var resp=getHttp("https://ccavb.tv");
 var id=resp.match(/"buildId":"(.+?)"/)[1];
