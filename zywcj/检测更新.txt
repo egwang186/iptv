@@ -1,4 +1,4 @@
-<a class="版本">221027</a>
+<a class="版本">230419</a>
 <ul class="默认提示">
 <li><font color="blue"><b>已是最新版，如有BUG可点此反馈</b></font>
 <p>mqqwpa://im/chat?chat_type=wpa&uin=1260957445</p>
