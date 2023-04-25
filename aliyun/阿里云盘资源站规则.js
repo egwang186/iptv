@@ -21,7 +21,7 @@
 {
     "title":"阿里小纸条",
     "rule":{
-        "分类":'var a=JSON.parse(getHttp(JSON.stringify({url:"https://gitcafe.net/alipaper/home.json"}))).data;for(var i in a){a[i].title=a[i].name+a[i].cat_num;a[i].url="https://gitcafe.net/tool/alipaper/$$action=viewcat&num=#PN#&cat="+a[i].code;}JSON.stringify(a);',
+        "分类":'var a=JSON.parse(getHttp(JSON.stringify({url:"https://gitcafe.net/alipaper/home.json"}))).data;var xindata=[];for(var i in a){xindata.push({title:a[i].name+a[i].cat_num,url:"https://gitcafe.net/tool/alipaper/$$action=viewcat&num=#PN#&cat="+a[i].code})}JSON.stringify(xindata);',
         "翻页数据":'var b="";for(var i=1;i<1000;i=i+1){b=b+"+第"+i+"页="+i;}"翻页"+b;',
         "列表规则":'var 列表=e2Arr(getCode(),".json()");var 地址规则=".json(key)";var 标题规则=".json(title)";var 图片规则=".json(tok)";var 简介规则=".json(des)";var NEXTPAGE="";var PREPAGE="";',
         "详情规则":'var 正文=e2Rex(getVar("源"),".json(title).c(链接:https://www.aliyundrive.com/s/).json(url).c().json(detail)");'
