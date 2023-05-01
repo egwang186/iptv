@@ -135,7 +135,7 @@ function 选集列表(){
         for(let j=0;j<列表.length;j++){
             let 选集=e2Rex(列表[j],选集规则);
             let 选集地址=e2Rex(列表[j],选集地址规则);
-            LIST.push({title:选集,url:选集地址});
+            LIST.push({title:选集,url:"http://ip111.cn/?wd="+选集地址.replace(/\?/g,"幻魔快修")});
         }
     return {title:标题,list:LIST};
     };
@@ -186,7 +186,7 @@ if(code.indexOf("#genre#")!=-1){
     var 线路=code.match(/.+#genre#.*/g);
     var 列表规则=".z(.+?,.+?://.+)";
     var 标题规则=".tz(,#genre#)";
-    var 选集地址规则=".c(http://ip111.cn/?wd=).ty(,)";
+    var 选集地址规则=".ty(,)";
     var 选集规则=".tz(,)";选集列表();
 }else if(code.indexOf("#EXTINF:")!=-1){
     var st=e2Rex("null",".time()");
@@ -205,7 +205,7 @@ if(code.indexOf("#genre#")!=-1){
     }else{
         var type="未分类";
     }
-    var 当前条目=[];当前条目.push({title:选集,url:"http://ip111.cn/?wd="+选集地址});
+    var 当前条目=[];当前条目.push({title:选集,url:"http://ip111.cn/?wd="+选集地址.replace(/\?/g,"幻魔快修")});
         return {title:type,list:当前条目};
     };
     }
@@ -253,7 +253,7 @@ JSON.stringify(res);
     var 线路=code.match(/\$c_start.+\$c_end/g);
     var 列表规则=".z(.+?,.+?://.+)";
     var 标题规则=".ty(c_start).tz($c_end)";
-    var 选集地址规则=".c(http://ip111.cn/?wd=).ty(,)";
+    var 选集地址规则=".ty(,)";
     var 选集规则=".tz(,)";选集列表();
 }else{
     var st=e2Rex("null",".time()");
@@ -270,7 +270,7 @@ JSON.stringify(res);
         var type=getVar("标题")+"-无子分类";
         var 选集标题=选集;
     }
-    var 当前条目=[];当前条目.push({title:选集标题,url:"http://ip111.cn/?wd="+选集地址});
+    var 当前条目=[];当前条目.push({title:选集标题,url:"http://ip111.cn/?wd="+选集地址.replace(/\?/g,"幻魔快修")});
     return {title:type,list:当前条目};
 };
 }
@@ -314,7 +314,7 @@ e3('提示框("重组数据完成'+(et-st)+'毫秒")')
 JSON.stringify(res);
 }
 ######直播免嗅探3
-var uu=getVar("地址").split("/?wd=")[1];
+var uu=getVar("地址").split("/?wd=")[1].replace(/幻魔快修/g,"?");
 if(uu.indexOf("#")!=-1){
 var urls=uu.split("#");
 var items=[];
