@@ -531,113 +531,178 @@ function read(path) {
 }
     var path=getVar("地址").split("?tugourl=")[1].split("$tugopath$")[0];
     var code=read(path);
-function 选集列表(){
-    var res={};var items=[];
-    var d = [];
-    for (let index = 0; index < 分类.length; index++) {
+    function 选集列表(){
+        var res={};var items=[];
+        var d = [];
+        for (let index = 0; index < 分类.length; index++) {
+                function fn(i) {
+                  return function () {
+            var 分类CODE=分类[i];
+            var 列表=e2Arr(分类CODE,列表规则).filter(Boolean);
+            if(线路){
+            var 标题=e2Rex(线路[i],标题规则);
+            }else{
+            var 标题=e2Rex(分类CODE,标题规则);
+            }
+            var LIST=[];
+            for(let j=0;j<列表.length;j++){
+                let 选集=e2Rex(列表[j],选集规则);
+                let 选集地址=e2Rex(列表[j],选集地址规则);
+                LIST.push({title:选集,url:"http://ip111.cn/?wd="+选集地址.replace(/\?/g,"幻魔快修")});
+            }
+        return {title:标题,list:LIST};
+        };
+        }
+        d.push(fn(index));
+      }
+      var s = _.submit(d, 分类.length); //n 改为你想开启的线程数
+      for (let i = 0; i < s.length; i++) {
+        for (let z of s[i].get()) {
+            /*let LIST=z.list;
+            var addLIST = [{title:LIST[0].title, url: LIST[0].url}];
+            LIST.forEach((item, index)=>{
+            addLIST.forEach((item2, index2) => {
+            if (item.title == item2.title) {
+                addLIST[index2].url += "#"+item.url.split("ip111.cn/?wd=")[1];
+            } else {
+                addLIST.push(item);
+            }
+            })
+            });
+            z.list=addLIST;*/
+          if(z.list.length/100 > 1){
+            var zz=[];
+            for (let j = 0; j < z.list.length;){
+                zz.push(z.list.slice(j, j+=100));
+            }
+            for(let k=0;k<zz.length;k++){
+                /*let 尾=(k+1)*100;
+                let 头=尾-100+1;
+                if(尾>z.list.length){
+                    尾=z.list.length;
+                }*/
+                items.push({title:z.title+"|"+zz[k][0].title,list:zz[k]});
+            }
+          }else{
+            items.push(z);
+          }
+        }
+      }
+        res.data=items;
+        var et=e2Rex("null",".time()");
+        e3('提示框("重组数据完成'+(et-st)+'毫秒")')
+        return JSON.stringify(res);
+    }
+    if(code.indexOf("#genre#")!=-1){
+        var st=e2Rex("null",".time()");
+        var 分类=code.split(/.+#genre#.*/g).filter(item=>item.indexOf("://")!=-1);
+        var 线路=code.match(/.+#genre#.*/g);
+        var 列表规则=".z(.+?,.+?://.+)";
+        var 标题规则=".tz(,#genre#)";
+        var 选集地址规则=".ty(,)";
+        var 选集规则=".tz(,)";选集列表();
+    }else if(code.indexOf("#EXTINF:")!=-1){
+        var st=e2Rex("null",".time()");
+        var code=code.match(/#EXTINF:.+[\s]+[^#"]+?:\/\/.+/g);
+        var res={};var items=[];var d=[];
+        for (let index = 0; index < code.length; index++) {
             function fn(i) {
               return function () {
-        var 分类CODE=分类[i];
-        var 列表=e2Arr(分类CODE,列表规则).filter(Boolean);
-        if(线路){
-        var 标题=e2Rex(线路[i],标题规则);
+                if(code[i].indexOf(",")!=-1){
+                    var 选集=code[i].match(/,(.*)/)[1]||"无选集名称";var 选集地址=code[i].match(/,.*[\s]+(.+)/)[1]||"无播放地址";
+                }else{
+                    var 选集=code[i].match(/.+"(.*)/)[1]||"无选集名称";var 选集地址=code[i].match(/.+[\s]+(.+)/)[1]||"无播放地址";
+                }
+        if(code[i].search(/group-title=".*?"/)!=-1){
+            var type=code[i].match(/group-title="(.*?)"/)[1]||"不规范分类";
         }else{
-        var 标题=e2Rex(分类CODE,标题规则);
+            var type="未分类";
         }
-        var LIST=[];
-        for(let j=0;j<列表.length;j++){
-            let 选集=e2Rex(列表[j],选集规则);
-            let 选集地址=e2Rex(列表[j],选集地址规则);
-            LIST.push({title:选集,url:选集地址});
+        var 当前条目=[];当前条目.push({title:选集,url:"http://ip111.cn/?wd="+选集地址.replace(/\?/g,"幻魔快修")});
+            return {title:type,list:当前条目};
+        };
         }
-    return {title:标题,list:LIST};
-    };
-    }
-    d.push(fn(index));
-  }
-  var s = _.submit(d, 分类.length); //n 改为你想开启的线程数
-  for (let i = 0; i < s.length; i++) {
-    for (let z of s[i].get()) {
-        /*let LIST=z.list;
-        var addLIST = [{title:LIST[0].title, url: LIST[0].url}];
-        LIST.forEach((item, index)=>{
-        addLIST.forEach((item2, index2) => {
-        if (item.title == item2.title) {
-            addLIST[index2].url += "#"+item.url.split("ip111.cn/?wd=")[1];
-        } else {
-            addLIST.push(item);
-        }
-        })
-        });
-        z.list=addLIST;*/
-      if(z.list.length/100 > 1){
-        var zz=[];
-        for (let j = 0; j < z.list.length;){
-            zz.push(z.list.slice(j, j+=100));
-        }
-        for(let k=0;k<zz.length;k++){
-            /*let 尾=(k+1)*100;
-            let 头=尾-100+1;
-            if(尾>z.list.length){
-                尾=z.list.length;
-            }*/
-            items.push({title:z.title+"|"+zz[k][0].title,list:zz[k]});
-        }
-      }else{
-        items.push(z);
+        d.push(fn(index));
       }
-    }
-  }
+    var s=_.submit(d, code.length); //n 改为你想开启的线程数
+    for (let i = 0; i < s.length; i++) {
+        for (let z of s[i].get()) {
+            /*let LIST=z.list;
+            var addLIST = [{title:LIST[0].title, url: LIST[0].url}];
+            LIST.forEach((item, index)=>{
+            addLIST.forEach((item2, index2) => {
+            if (item.title == item2.title) {
+                addLIST[index2].url += "#"+item.url.split("ip111.cn/?wd=")[1];
+            } else {
+                addLIST.push(item);
+            }
+            })
+            });
+            z.list=addLIST;*/
+            if(items.length==0) {
+                items.push(z);
+            }else{
+                let 寻找=items.some(item=>{
+                //判断类型，有就添加到当前项
+                  if(item.title == z.title&&item.list.length<100){
+                  item.list=item.list.concat(z.list);
+                  return true
+                  }
+                });
+                if (!寻找) {
+                //如果没找相同类型添加一个类型
+                items.push(z);
+                }
+            }
+        }
+      }
     res.data=items;
     var et=e2Rex("null",".time()");
     e3('提示框("重组数据完成'+(et-st)+'毫秒")')
-    return JSON.stringify(res);
-}
-if(code.indexOf("#genre#")!=-1){
-    var st=e2Rex("null",".time()");
-    var 分类=code.split(/.+#genre#.*/g).filter(item=>item.indexOf("://")!=-1);
-    var 线路=code.match(/.+#genre#.*/g);
-    var 列表规则=".z(.+?,.+?://.+)";
-    var 标题规则=".tz(,#genre#)";
-    var 选集地址规则=".c(http://ip111.cn/?wd=).ty(,)";
-    var 选集规则=".tz(,)";选集列表();
-}else if(code.indexOf("#EXTINF:")!=-1){
-    var st=e2Rex("null",".time()");
-    var code=code.match(/#EXTINF:.+[\s]+[^#"]+?:\/\/.+/g);
-    var res={};var items=[];var d=[];
-    for (let index = 0; index < code.length; index++) {
-        function fn(i) {
-          return function () {
-            if(code[i].indexOf(",")!=-1){
-                var 选集=code[i].match(/,(.*)/)[1]||"无选集名称";var 选集地址=code[i].match(/,.*[\s]+(.+)/)[1]||"无播放地址";
-            }else{
-                var 选集=code[i].match(/.+"(.*)/)[1]||"无选集名称";var 选集地址=code[i].match(/.+[\s]+(.+)/)[1]||"无播放地址";
-            }
-    if(code[i].search(/group-title=".*?"/)!=-1){
-        var type=code[i].match(/group-title="(.*?)"/)[1]||"不规范分类";
+    JSON.stringify(res);
+    }else if(code.search(/\$c_start.+?\$c_end/)!=-1){
+        var st=e2Rex("null",".time()");
+        var 分类=code.split(/\$c_start.+\$c_end/).filter(item=>item.indexOf("://")!=-1);
+        var 线路=code.match(/\$c_start.+\$c_end/g);
+        var 列表规则=".z(.+?,.+?://.+)";
+        var 标题规则=".ty(c_start).tz($c_end)";
+        var 选集地址规则=".ty(,)";
+        var 选集规则=".tz(,)";选集列表();
     }else{
-        var type="未分类";
-    }
-    var 当前条目=[];当前条目.push({title:选集,url:"http://ip111.cn/?wd="+选集地址});
+        var st=e2Rex("null",".time()");
+        var code=code.match(/.+?,.+?:\/\/.+/g);
+        var res={};var items=[];var d=[];
+        for (let index = 0; index < code.length; index++) {
+            function fn(i) {
+              return function () {
+        var 选集=code[i].match(/(.+),/)[1];var 选集地址=code[i].match(/,[\s]*?(.+)/)[1];
+        if(code[i].indexOf("|")!=-1){
+            var type=选集.split("|")[0];
+            var 选集标题=选集.split("|")[1];
+        }else{
+            var type=getVar("标题")+"-无子分类";
+            var 选集标题=选集;
+        }
+        var 当前条目=[];当前条目.push({title:选集标题,url:"http://ip111.cn/?wd="+选集地址.replace(/\?/g,"幻魔快修")});
         return {title:type,list:当前条目};
     };
     }
     d.push(fn(index));
-  }
-var s=_.submit(d, code.length); //n 改为你想开启的线程数
-for (let i = 0; i < s.length; i++) {
+    }
+    var s=_.submit(d, code.length); //n 改为你想开启的线程数
+    for (let i = 0; i < s.length; i++) {
     for (let z of s[i].get()) {
         /*let LIST=z.list;
         var addLIST = [{title:LIST[0].title, url: LIST[0].url}];
-        LIST.forEach((item, index)=>{
-        addLIST.forEach((item2, index2) => {
-        if (item.title == item2.title) {
-            addLIST[index2].url += "#"+item.url.split("ip111.cn/?wd=")[1];
-        } else {
-            addLIST.push(item);
-        }
-        })
-        });
+            LIST.forEach((item, index)=>{
+            addLIST.forEach((item2, index2) => {
+            if (item.title == item2.title) {
+                addLIST[index2].url += "#"+item.url.split("ip111.cn/?wd=")[1];
+            } else {
+                addLIST.push(item);
+            }
+            })
+            });
         z.list=addLIST;*/
         if(items.length==0) {
             items.push(z);
@@ -655,79 +720,14 @@ for (let i = 0; i < s.length; i++) {
             }
         }
     }
-  }
-res.data=items;
-var et=e2Rex("null",".time()");
-e3('提示框("重组数据完成'+(et-st)+'毫秒")')
-JSON.stringify(res);
-}else if(code.search(/\$c_start.+?\$c_end/)!=-1){
-    var st=e2Rex("null",".time()");
-    var 分类=code.split(/\$c_start.+\$c_end/g).filter(item=>item.indexOf("://")!=-1);
-    var 线路=code.match(/\$c_start.+\$c_end/g);
-    var 列表规则=".z(.+?,.+?://.+)";
-    var 标题规则=".ty(c_start).tz($c_end)";
-    var 选集地址规则=".c(http://ip111.cn/?wd=).ty(,)";
-    var 选集规则=".tz(,)";选集列表();
-}else{
-    var st=e2Rex("null",".time()");
-    var code=code.match(/.+?,.+?:\/\/.+/g);
-    var res={};var items=[];var d=[];
-    for (let index = 0; index < code.length; index++) {
-        function fn(i) {
-          return function () {
-    var 选集=code[i].match(/(.+),/)[1];var 选集地址=code[i].match(/,[\s]*?(.+)/)[1];
-    if(code[i].indexOf("|")!=-1){
-        var type=选集.split("|")[0];
-        var 选集标题=选集.split("|")[1];
-    }else{
-        var type=getVar("标题")+"-无子分类";
-        var 选集标题=选集;
     }
-    var 当前条目=[];当前条目.push({title:选集标题,url:"http://ip111.cn/?wd="+选集地址});
-    return {title:type,list:当前条目};
-};
-}
-d.push(fn(index));
-}
-var s=_.submit(d, code.length); //n 改为你想开启的线程数
-for (let i = 0; i < s.length; i++) {
-for (let z of s[i].get()) {
-    /*let LIST=z.list;
-    var addLIST = [{title:LIST[0].title, url: LIST[0].url}];
-        LIST.forEach((item, index)=>{
-        addLIST.forEach((item2, index2) => {
-        if (item.title == item2.title) {
-            addLIST[index2].url += "#"+item.url.split("ip111.cn/?wd=")[1];
-        } else {
-            addLIST.push(item);
-        }
-        })
-        });
-    z.list=addLIST;*/
-    if(items.length==0) {
-        items.push(z);
-    }else{
-        let 寻找=items.some(item=>{
-        //判断类型，有就添加到当前项
-          if(item.title == z.title&&item.list.length<100){
-          item.list=item.list.concat(z.list);
-          return true
-          }
-        });
-        if (!寻找) {
-        //如果没找相同类型添加一个类型
-        items.push(z);
-        }
+    res.data=items;
+    var et=e2Rex("null",".time()");
+    e3('提示框("重组数据完成'+(et-st)+'毫秒")')
+    JSON.stringify(res);
     }
-}
-}
-res.data=items;
-var et=e2Rex("null",".time()");
-e3('提示框("重组数据完成'+(et-st)+'毫秒")')
-JSON.stringify(res);
-}
 ######直播免嗅探14
-var uu=getVar("地址").split("/?wd=")[1];
+var uu=getVar("地址").split("/?wd=")[1].replace(/幻魔快修/g,"?");
 if(uu.indexOf("#")!=-1){
 var urls=uu.split("#");
 var items=[];
