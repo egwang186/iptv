@@ -451,7 +451,30 @@ for(var i in list){
 }
 JSON.stringify(items);
 }else if(getVar("url").indexOf("stariverpan.com/web/share/")!=-1){
-    var list=getVar("url").match(/[\s\S]*?https:\/\/.+?\.stariverpan\.com\/web\/.*/g);
+    if(getVar("url").indexOf("ushare.stariverpan.com/web/share/")!=-1){
+        var list=getVar("url").match(/[\s\S]*?https:\/\/.+?\.stariverpan\.com\/web\/.+/g);
+        var items=[];
+        try{
+            var ipfstoken=JSON.parse(readStr("当前ipfs配置")).token;
+        }catch(e){
+            alert("未添加ipfs配置")
+        }
+        for(var i in list){
+        if(list[i].indexOf("提取码")!=-1){
+            var pwd=list[i].match(/提取码.*?([0-9a-zA-Z]+)/)[1];
+        }else if(list[i].indexOf("密码")!=-1){
+            var pwd=list[i].match(/密码.*?([0-9a-zA-Z]+)/)[1];
+        }else{
+            var pwd="";
+        }
+        var title=list[i].replace(/\s/g,"").replace(/<.+?>/g,"").split("https://")[0]||"加个标题吧，能从历史记录找到我";
+        var share_id=e2Rex(list[i].match(/shareId=([0-9a-zA-Z]+)/)[1],".dn64()");
+        var url="q:ipfsshareinfo?tugourl="+ipfstoken+"$$usb-"+share_id+"$$"+pwd;
+        items.push({name:title,url:url,detail:url});
+        }
+        JSON.stringify(items);
+    }else{
+    var list=getVar("url").match(/[\s\S]*?https:\/\/.+?\.stariverpan\.com\/web\/.+/g);
     var items=[];
     try{
         var ipfstoken=JSON.parse(readStr("当前ipfs配置")).token;
@@ -473,6 +496,7 @@ JSON.stringify(items);
         items.push({name:title,url:url,detail:url});
     }
     JSON.stringify(items);
+    }
 }else{
     alert("请输入完整分享链接");
 }
