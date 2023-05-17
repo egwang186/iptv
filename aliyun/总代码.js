@@ -451,7 +451,7 @@ for(var i in list){
 }
 JSON.stringify(items);
 }else if(getVar("url").indexOf("stariverpan.com/web/share/")!=-1){
-    var list=getVar("url").match(/[\s\S]*?https:\/\/wx\.stariverpan\.com\/web\/.*/g);
+    var list=getVar("url").match(/[\s\S]*?https:\/\/.+?\.stariverpan\.com\/web\/.*/g);
     var items=[];
     try{
         var ipfstoken=JSON.parse(readStr("当前ipfs配置")).token;
