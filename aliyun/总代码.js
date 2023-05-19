@@ -200,11 +200,11 @@ function 过滤非视频(item) {
     }
 }
 var 过滤=JSON.parse(getVar("目录重组数据")).filter(过滤非视频);
-过滤.sort(function(a,b){
+/*过滤.sort(function(a,b){
     var 前=a.name.replace(/\(\d\)/g,"").replace(/[^\d]+/g, "")
     var 后=b.name.replace(/\(\d\)/g,"").replace(/[^\d]+/g, "")
-    return parseInt(前)-parseInt(后)
-    });
+    return parseInt(前)-parseInt(后);
+    });*/
 for(var i in 过滤){
 if(过滤[i].tugourl.indexOf("drive_id")!=-1){
     过滤[i].tugourl="http://ip111.cn/?wd="+过滤[i].url+"###"+过滤[i].drive_id+"###"+过滤[i].file_id+"###"+过滤[i].file_extension+"###"+过滤[i].category;
