@@ -1,4 +1,4 @@
-<a class="版本">230521</a>
+<a class="版本">230618</a>
 <ul class="默认提示">
 <li><font color="blue"><b>已是最新版，本轻站适用土狗浏览器，并需配合以下2个脚本</b></font>
 <p>mqqwpa://im/chat?chat_type=wpa&uin=1260957445</p>
@@ -10,7 +10,7 @@
 <p>mapi:js/https://raw.fastgit.org/egwang186/iptv/main/aliyun/阿里云文档预览.js</p>
 </li></ul>
 <ul class="更新提示">
-<li><font color="red"><b>有新版本!!![添加阿里个人云盘搜索，修复小龙播放]点击安装</b></font>
+<li><font color="red"><b>有新版本!!![修复小龙播放线路]点击安装</b></font>
 <p>mapi:qm/https://raw.fastgit.org/egwang186/iptv/main/aliyun/阿里云盘.mkz</p>
 </li>
 </ul>
