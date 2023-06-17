@@ -236,6 +236,9 @@ if(getVar("地址").indexOf("$$")!=-1){
         var mydrive_id=ALICOOKIE.match(/drive_id=(.*?)[\s;]/)[1];
         var user_id=ALICOOKIE.match(/user_id=(.*?)[\s;]/)[1];
         var device_id=ALICOOKIE.match(/device_id=(.*?)[\s;]/)[1];
+        if(device_id.length<32){
+            device_id=e2Rex(user_id,".md5()")
+        }
         var d = [];
         var A=JSON.stringify({url:"https://auth.aliyundrive.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})});
         var S=JSON.stringify({url:"https://api.aliyundrive.com/v2/share_link/get_share_token",postJson:JSON.stringify({share_pwd:pwd,share_id:share_id})});
@@ -333,6 +336,9 @@ var access_token=JSON.parse(code).access_token;
 var mydrive_id=ALICOOKIE.match(/drive_id=(.*?)[\s;]/)[1];
 var user_id=ALICOOKIE.match(/user_id=(.*?)[\s;]/)[1];
 var device_id=ALICOOKIE.match(/device_id=(.*?)[\s;]/)[1];
+if(device_id.length<32){
+    device_id=e2Rex(user_id,".md5()")
+}
 var HEAD=JSON.stringify({"Authorization":access_token});
     if(类型=="audio"){
     /*var file_id=getVar("地址").split("?wd=")[1].split("###")[2];
