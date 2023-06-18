@@ -314,7 +314,7 @@ if(getVar("地址").indexOf("$$")!=-1){
             var 转码2K会员专享='http://59.47.74.33:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/QHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
             var 转码720='http://59.47.74.33:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/HD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
             var 本地转码2K会员专享='http://127.0.0.1:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/QHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
-            var 新原画code=getHttp('http://59.47.74.33:3000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/alidownloadurl/'+mydrive_id+'/'+user_id+'/'+device_id+"/"+videoname)
+            var 新原画code=getHttp('http://59.47.74.33:3000/apis/yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/alidownloadurl/'+mydrive_id+'/'+user_id+'/'+device_id+"/"+videoname)
             var 播放模式=getVar("播放模式")||"全部";
             if(播放模式=="全部"||播放模式=="null"){
                 JSON.stringify([{name:"新原画",url:JSON.parse(新原画code).url,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
