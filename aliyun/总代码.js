@@ -314,7 +314,7 @@ if(getVar("地址").indexOf("$$")!=-1){
             var 转码2K会员专享='http://59.47.74.33:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/QHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
             var 转码720='http://59.47.74.33:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/HD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
             var 本地转码2K会员专享='http://127.0.0.1:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/QHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
-            var downloadurl='http://59.47.74.33:3000/apis/yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/alidownloadurl/'+mydrive_id+'/'+user_id+'/'+device_id+"/"+videoname;
+            var downloadurl='http://59.47.74.33:3000/apis/yun-play/'+file_id+'/'+mydrive_id+'/'+access_token+'/alidownloadurl/'+mydrive_id+'/'+user_id+'/'+device_id+"/"+videoname;
             var 新原画code=getHttp(downloadurl)
             var 播放模式=getVar("播放模式")||"全部";
             if(播放模式=="全部"||播放模式=="null"){
