@@ -1,4 +1,4 @@
-<a class="版本">40</a>
+<a class="版本">41</a>
 <ul class="默认提示">
 <li><font color="blue"><b>已是最新版，本轻站适用土狗浏览器</b></font>
 <p>mqqwpa://im/chat?chat_type=wpa&uin=1260957445</p>
