@@ -391,7 +391,7 @@ web
 ###图片
 https://raw.fastgit.org/egwang186/iptv/main/onebox/bulei.png
 ###BaseURL
-"http://movie.bulei.cc";
+"https://www.buleitv.com";
 ###首页地址
 getVar("baseURL")+"/";
 ###分类地址
