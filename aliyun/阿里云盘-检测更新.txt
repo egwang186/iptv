@@ -1,16 +1,16 @@
-<a class="版本">230702</a>
+<a class="版本">230725</a>
 <ul class="默认提示">
 <li><font color="blue"><b>已是最新版，本轻站适用土狗浏览器，并需配合以下2个脚本</b></font>
 <p>mqqwpa://im/chat?chat_type=wpa&uin=1260957445</p>
 </li>
 <li><font color="blue"><b>1.获取阿里云盘TOKEN</b></font>
-<p>mapi:js/https://raw.fastgit.org/egwang186/iptv/main/aliyun/获取阿里云盘TOKEN.js</p>
+<p>mapi:js/http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/获取阿里云盘TOKEN.js</p>
 </li>
 <li><font color="blue"><b>2.阿里云文档预览</b></font>
-<p>mapi:js/https://raw.fastgit.org/egwang186/iptv/main/aliyun/阿里云文档预览.js</p>
+<p>mapi:js/http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/阿里云文档预览.js</p>
 </li></ul>
 <ul class="更新提示">
 <li><font color="red"><b>有新版本!!![修复小纸条]点击安装</b></font>
-<p>mapi:qm/https://raw.fastgit.org/egwang186/iptv/main/aliyun/阿里云盘.mkz</p>
+<p>mapi:qm/http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/阿里云盘.mkz</p>
 </li>
 </ul>

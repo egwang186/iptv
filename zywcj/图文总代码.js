@@ -47,7 +47,7 @@ for(var j=0;j<LIMIT;j++){
     }else if(预图片.indexOf("http")!=-1){
     var 图片=预图片.match(/.*(http.*)/)[1];
     }else if(预图片==""){
-    var 图片="https://raw.fastgit.org/egwang186/iptv/main/js2.0/xscover.png";
+    var 图片="http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/js2.0/xscover.png";
     }else if(预图片.indexOf("//")!=-1){
     var 图片="http:"+预图片;
     }else{
@@ -111,7 +111,7 @@ for(var j=0;j<LIMIT;j++){
     }else if(预图片.indexOf("http")!=-1){
     var 图片=预图片;
     }else if(预图片==""){
-    var 图片="https://raw.fastgit.org/egwang186/iptv/main/js2.0/xscover.png";
+    var 图片="http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/js2.0/xscover.png";
     }else if(预图片.indexOf("//")!=-1){
     var 图片="http:"+预图片;
     }else{

@@ -1,4 +1,4 @@
-<a class="版本">230420</a>
+<a class="版本">230725</a>
 <ul class="默认提示">
 <li><font color="blue"><b>已是最新版，本轻站适用最新版土狗浏览器</b></font>
 <p>mqqwpa://im/chat?chat_type=wpa&uin=1260957445</p>
@@ -9,6 +9,6 @@
 </ul>
 <ul class="更新提示">
 <li><font color="red"><b>有新版本!!![修复批量搜索]点击安装</b></font>
-<p>mapi:qm/https://raw.fastgit.org/egwang186/iptv/main/onebox/一个盒子.mkz</p>
+<p>mapi:qm/http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/一个盒子.mkz</p>
 </li>
 </ul>

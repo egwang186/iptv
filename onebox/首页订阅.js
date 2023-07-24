@@ -8,7 +8,7 @@ iptv
 ###数据
 VCtv
 ##
-远程$https://raw.fastgit.org/vamoschuck/TV/main/M3U
+远程$http://59.47.74.33:3000/apis/my-github/vamoschuck/TV/main/M3U
 ####
 
 ####
@@ -19,7 +19,7 @@ iptv
 ###数据
 TcatIPTV
 ##
-远程$https://raw.fastgit.org/TCatCloud/IPTV/Files/IPTV.m3u
+远程$http://59.47.74.33:3000/apis/my-github/TCatCloud/IPTV/Files/IPTV.m3u
 ####
 
 ####
@@ -63,7 +63,7 @@ iptv
 ###数据
 4K频道
 ##
-远程$https://raw.fastgit.org/youshandefeiyang/IPTV/main/main/IPTV.m3u
+远程$http://59.47.74.33:3000/apis/my-github/youshandefeiyang/IPTV/main/main/IPTV.m3u
 ####
 
 ####
@@ -74,7 +74,7 @@ iptv
 ###数据
 爱尚TV
 ##
-远程$https://raw.fastgit.org/youshandefeiyang/IPTV/main/main/aishang.m3u
+远程$http://59.47.74.33:3000/apis/my-github/youshandefeiyang/IPTV/main/main/aishang.m3u
 ####
 
 ####
@@ -85,7 +85,7 @@ iptv
 ###数据
 全球直播
 ##
-远程$https://raw.fastgit.org/fanmingming/live/main/tv/m3u/global.m3u
+远程$http://59.47.74.33:3000/apis/my-github/fanmingming/live/main/tv/m3u/global.m3u
 ####
 
 ####
@@ -96,7 +96,7 @@ iptv
 ###数据
 调频广播
 ##
-远程$https://raw.fastgit.org/fanmingming/live/main/radio/m3u/index.m3u
+远程$http://59.47.74.33:3000/apis/my-github/fanmingming/live/main/radio/m3u/index.m3u
 ####
 
 ####
@@ -117,7 +117,7 @@ iptv
 ###数据
 TVbox蓝朋友
 ##
-远程$https://raw.fastgit.org/bluefriendCN/tvbox/main/live.txt
+远程$http://59.47.74.33:3000/apis/my-github/bluefriendCN/tvbox/main/live.txt
 ####
 ####
 ###type
@@ -248,7 +248,7 @@ web
 ###标题
 骚火影视
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/saohuotv.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/saohuotv.png
 ###BaseURL
 "https://saohuo.vip";
 ###首页地址
@@ -283,7 +283,7 @@ web
 ###标题
 七喵影视
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/qmapi.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/qmapi.png
 ###BaseURL
 "https://oss-qmapi.666bus.cn";
 ###首页地址
@@ -319,7 +319,7 @@ web
 ###标题
 Auete影视
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/auete.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/auete.png
 ###BaseURL
 "https://auete.org";
 ###首页地址
@@ -354,7 +354,7 @@ web
 ###标题
 氢视频
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/h1080p.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/h1080p.png
 ###BaseURL
 "https://h1080p.com";
 ###首页地址
@@ -389,7 +389,7 @@ web
 ###标题
 布蕾影城
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/bulei.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/bulei.png
 ###BaseURL
 "https://www.buleitv.com";
 ###首页地址
@@ -424,7 +424,7 @@ web
 ###标题
 蓝光影院
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/lgyy.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/lgyy.png
 ###BaseURL
 "https://www.lgyy.vip";
 ###首页地址
@@ -459,7 +459,7 @@ web
 ###标题
 555电影
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/555dy.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/555dy.png
 ###BaseURL
 "https://www.555dy1.com";
 ###首页地址
@@ -494,7 +494,7 @@ web
 ###标题
 特狗影视
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/tegouys.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/tegouys.png
 ###BaseURL
 "https://www.tegouys.com";
 ###首页地址
@@ -529,7 +529,7 @@ web
 ###标题
 虎牙直播
 ###图片
-https://raw.fastgit.org/egwang186/iptv/main/onebox/huya.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/huya.png
 ###BaseURL
 "https://m.huya.com";
 ###首页地址
