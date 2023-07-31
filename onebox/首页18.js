@@ -90,9 +90,9 @@ web
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/zhibohezi.png
 ###BaseURL
-"http://api.hclyz.com:81";
+"http://api.vipmisss.com:81";
 ###首页地址
-"http://api.vipmisss.com:81/mf/json.txt";
+"http://api.hclyz.com:81/mf/json.txt";
 ###分类地址
 getVar("baseURL")+"/分类/json.txt翻页";
 ###搜索地址
