@@ -92,7 +92,7 @@ http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/zhibohezi.png
 ###BaseURL
 "http://api.hclyz.com:81";
 ###首页地址
-"http://api.hclyz.com:81/mf/json.txt";
+"http://api.vipmisss.com:81/mf/json.txt";
 ###分类地址
 getVar("baseURL")+"/分类/json.txt翻页";
 ###搜索地址
@@ -107,7 +107,7 @@ var 列表=e2Arr(getVar("源码"),".json(pingtai)");var 标题规则=".json(titl
 ##选集规则
 var 分类=e2Arr(getVar("源码"),".all()");var 简介=getVar("标题");var 线路="";var 列表规则=".json(zhubo)";var 标题规则=getVar("标题");var 选集规则=".json(title)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(address)";
 ##搜索规则
-var 源码=getHttp(JSON.stringify({url:"http://api.hclyz.com:81/xcdsw/json.txt"}));var 列表=e2Arr(源码,".json(pingtai)").filter(item=>item.indexOf(getVar("关键字"))!=-1);if(!列表[0]){var 列表=["未匹配到任何平台"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="未匹配到任何平台";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(title)";var 地址规则=".c(/xcdsw/).json(address)";var 图片规则=".json(xinimg)";var 简介规则=".json(Number).ct(位主播)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+var 源码=getHttp(JSON.stringify({url:"http://api.vipmisss.com:81/xcdsw/json.txt"}));var 列表=e2Arr(源码,".json(pingtai)").filter(item=>item.indexOf(getVar("关键字"))!=-1);if(!列表[0]){var 列表=["未匹配到任何平台"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="未匹配到任何平台";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(title)";var 地址规则=".c(/xcdsw/).json(address)";var 图片规则=".json(xinimg)";var 简介规则=".json(Number).ct(位主播)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="翻页+全部=";b;
 ##免嗅探规则
