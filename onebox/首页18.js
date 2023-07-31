@@ -37,12 +37,12 @@ var 列表=e2Arr(getVar("源码"),".get(div.videos div.item)");var 标题规则=
 ##选集规则
 var 分类=e2Arr(getVar("源码"),".ty(video.src).ty(\").tz(\")");var 简介=getVar("简介");var 线路="";var 列表规则=".t()";var 标题规则=getVar("标题");var 选集规则=".t()";var 选集地址规则=".t()";
 ##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.videos div.item)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(div.text a).t()";var 地址规则=".get(div.text a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.tag).t()";var 图片底部规则=".get(div.duration)";var 左上规则=".get(div.series)";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.videos div.item)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(div.text a).t()";var 地址规则=".get(div.text a).a(href)";var 图片规则=".get(video).a(poster)";var 简介规则=".get(div.tag).t()";var 图片底部规则=".get(div.duration)";var 左上规则=".get(div.series)";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址"),head:{"Referer":"https://xchina.xyz"}});
+JSON.stringify([{name:"地址",url:getVar("地址"),head:{"Referer":"https://xchina.xyz"}}]);
 ####
 
 ####
@@ -77,7 +77,7 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.cell.video)");if(!
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址")});
+JSON.stringify([{name:"地址",url:getVar("地址")}]);
 ####
 
 ####
@@ -90,7 +90,7 @@ web
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/zhibohezi.png
 ###BaseURL
-"http://api.vipmisss.com:81";
+"http://api.hclyz.com:81";
 ###首页地址
 "http://api.hclyz.com:81/mf/json.txt";
 ###分类地址
@@ -107,11 +107,11 @@ var 列表=e2Arr(getVar("源码"),".json(pingtai)");var 标题规则=".json(titl
 ##选集规则
 var 分类=e2Arr(getVar("源码"),".all()");var 简介=getVar("标题");var 线路="";var 列表规则=".json(zhubo)";var 标题规则=getVar("标题");var 选集规则=".json(title)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(address)";
 ##搜索规则
-var 源码=getHttp(JSON.stringify({url:"http://api.vipmisss.com:81/xcdsw/json.txt"}));var 列表=e2Arr(源码,".json(pingtai)").filter(item=>item.indexOf(getVar("关键字"))!=-1);if(!列表[0]){var 列表=["未匹配到任何平台"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="未匹配到任何平台";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(title)";var 地址规则=".c(/xcdsw/).json(address)";var 图片规则=".json(xinimg)";var 简介规则=".json(Number).ct(位主播)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+var 源码=getHttp(JSON.stringify({url:"http://api.hclyz.com:81/xcdsw/json.txt"}));var 列表=e2Arr(源码,".json(pingtai)").filter(item=>item.indexOf(getVar("关键字"))!=-1);if(!列表[0]){var 列表=["未匹配到任何平台"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="未匹配到任何平台";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(title)";var 地址规则=".c(/xcdsw/).json(address)";var 图片规则=".json(xinimg)";var 简介规则=".json(Number).ct(位主播)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="翻页+全部=";b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址").split("http://ip111.cn/?wd=")[1]});
+JSON.stringify([{name:"地址",url:getVar("地址").split("http://ip111.cn/?wd=")[1]}]);
 ####
 
 ####
@@ -181,7 +181,7 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(ul.stui-vodlist li)");
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址")});
+JSON.stringify([{name:"地址",url:getVar("地址")}]);
 ####
 
 ####
@@ -216,7 +216,7 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.video-img-box.mb-e
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址")});
+JSON.stringify([{name:"地址",url:getVar("地址")}]);
 ####
 
 ####
@@ -251,7 +251,7 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.post-item-wrap)");
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址")});
+JSON.stringify([{name:"地址",url:getVar("地址")}]);
 ####
 
 ####
@@ -264,7 +264,7 @@ web
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/fytt.png
 ###BaseURL
-"https://www.fytt1.com";
+"https://www.fengyuetongtian.com";
 ###首页地址
 getVar("baseURL")+"/";
 ###分类地址
@@ -286,7 +286,7 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.stui-vodlist__box)
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址")});
+JSON.stringify([{name:"地址",url:getVar("地址")}]);
 ####
 
 ####
@@ -323,7 +323,7 @@ var 源码=getVar("源码");var 列表=e2Arr(getVar("源码"),".z(\\{\"aneID\":.
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址")+"&_type=.m3u8",head:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33","Referer":"http://ccavb.tv/"}});
+JSON.stringify([{name:"地址",url:getVar("地址")+"&_type=.m3u8",head:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33","Referer":"http://ccavb.tv/"}}]);
 ####
 
 #####
