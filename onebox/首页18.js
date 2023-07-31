@@ -139,7 +139,7 @@ var code=getHttp(getVar("baseURL")+"/cat");var arr=e2Arr(code,".get(div.grid).i(
 ##分类规则
 var 列表=e2Arr(getVar("源码"),".get(div.shadow.p-1)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
-var 分类=e2Arr(getVar("源码"),".get(script).i(-1).t()");;var 简介="";var 线路="";var 列表规则=".json(props).json(pageProps).json(video)";var 标题规则=".var(标题)";var 选集规则=".json(name)";var 选集地址规则=".json(videoUrl)";
+var apicode=getHttp(getVar("地址").replace('/v/','/api/v/'));var 分类=[];分类.push(apicode);var 简介="";var 线路="";var 列表规则=".json(video)";var 标题规则=".var(标题)";var 选集规则=".var(标题)";var 选集地址规则=".json(videoUrl)";
 ##搜索规则
 var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.shadow.p-1)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
