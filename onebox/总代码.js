@@ -474,13 +474,13 @@ function 通用列表(){
     var LIMIT=列表.length;
     for(var j=0;j<LIMIT;j++){
         var CODE=列表[j];
-        var 预地址=e2Rex(CODE,地址规则);
+        var 预地址=地址规则.indexOf("@js=")!=-1?eval(地址规则.split("@js=")[1]):e2Rex(CODE,地址规则);
         var 地址=预地址.indexOf("http")!=-1?预地址:baseURL+预地址;
         if(地址.search(/\.php\/.+?\.vod/)!=-1){
             var 日期=e2Rex(getVar("TIME_"),".time(MMdd)");
             var 地址=地址+"&key="+日期+"&keytime="+getVar("TIME_");
         }
-        var 标题=e2Rex(CODE,标题规则);
+        var 标题=标题规则.indexOf("@js=")!=-1?eval(标题规则.split("@js=")[1]):e2Rex(CODE,标题规则);
         var 预图片=图片规则.indexOf("@js=")!=-1?eval(图片规则.split("@js=")[1]):e2Rex(CODE,图片规则);
         if(预图片.indexOf("/mac:")!=-1){
             var 图片="http:"+预图片.split("/mac:")[1];
@@ -737,7 +737,7 @@ function 选集列表(){
         var LIST=[];
         for(var j=0;j<列表.length;j++){
             var 选集=e2Rex(列表[j],选集规则);
-            var 选集地址=e2Rex(列表[j],选集地址规则);
+            var 选集地址=选集地址规则.indexOf("@js=")!=-1?eval(选集地址规则.split("@js=")[1]):e2Rex(列表[j],选集地址规则);
             if(baseURL.indexOf("xgapp.php/v")!=-1||baseURL.indexOf("api.php/app/")!=-1||baseURL.search(/\.php\/.+?\.vod/)!=-1){
                if(选集地址.indexOf(".m3u8")>15||选集地址.indexOf(".mp4")>15){
                    if(选集地址.indexOf(".ruifenglb.com")!=-1){
