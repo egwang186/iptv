@@ -131,8 +131,8 @@ for(var i=0;i<分类.length;i++){
           var 选集=j+1;
         }
         var 选集地址=e2Rex(列表[j],选集地址规则);
-        if(选集地址.indexOf("/")==0){
-            选集地址=URL.match(/(http.+?\/\/.+?)\//)[1]+选集地址;
+        if(选集地址.indexOf("http")>=0){
+            选集地址=选集地址.match(/http.+/)[0];
         }
 //开始根据网址，线路判断前缀
 if(标题=="xhzy"){
