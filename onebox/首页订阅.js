@@ -380,39 +380,46 @@ var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "web="+getVar("地址");
 ####
 
-
+####
 ###type
 web
 ###分类
 网页影视站源
 ###标题
-特狗影视
+IPTV直播
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/tegouys.png
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/iptv345.png
 ###BaseURL
-"https://www.tegouys.com";
+"https://iptv345.com/";
 ###首页地址
-getVar("baseURL")+"/";
+"https://iptv345.com/?tid=itv";
 ###分类地址
-getVar("baseURL")+"/vodshow/id/分类/page/翻页.html";
+"https://iptv345.com/?tid=分类翻页";
 ###搜索地址
-getVar("baseURL")+"/vodsearch/page/翻页/wd/关键字.html";
+"https://iptv345.com/?wd=关键字&tid=翻页";
 ###rule
 ##首页规则
-var 列表=e2Arr(getVar("源码"),".get(ul.myui-vodlist li)");var 标题规则=".get(.title a).t()";var 地址规则=".get(.title a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".get(span).st().t().c().get(p).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+var 列表=e2Arr(getVar("源码"),".get(ul li)");var 标题规则=".get(a).t()";var 地址规则=".c(https://iptv345.com/).get(a).a(href)";var 图片规则="@js='res://tv.jpg';";var 简介规则=".get(a).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
-var a="分类+电影=1+电视剧=2+综艺=3+动漫=4+纪录片=5+动作片=1/class/动作+喜剧片=1/class/喜剧+爱情片=1/class/爱情+科幻片=1/class/科幻+恐怖片=1/class/恐怖+剧情片=1/class/剧情+国产剧=2/class/国产+港台剧=2/class/港台+日韩剧=2/class/日韩+美剧=2/class/美国+大陆剧=2/area/中国大陆+香港剧=2/area/中国香港+台湾剧=2/area/中国台湾+韩剧=2/area/韩国+日本剧=2/area/日本+美国剧=2/area/美国";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
+var a="分类+综合=itv+体育=ty+央视=ys+卫视=ws+港澳台=gt+其他=other+电影=movie+咪咕视频=migu+北方=bfiptv+广西联通=ltiptv+北京教育网=bupt+福建移动=fjitv+黑龙江移动=hlitv+Ipv6=ipv6";var b="";var b="翻页+全部=";a+"\n"+b;
 ##分类规则
-var 列表=e2Arr(getVar("源码"),".get(ul.myui-vodlist li)");var 标题规则=".get(.title a).t()";var 地址规则=".get(.title a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".get(span).st().t().c().get(p).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+var 列表=e2Arr(getVar("源码"),".get(ul li)");var 标题规则=".get(a).t()";var 地址规则=".c(https://iptv345.com/).get(a).a(href)";var 图片规则="@js='res://tv.jpg';";var 简介规则=".get(a).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
-var 分类=e2Arr(getVar("源码"),".get(ul.myui-content__list)");var 简介=e2Rex(getVar("源码"),".get(div.myui-content__detail).t()");var 线路=e2Arr(getVar("源码"),".get(ul.nav.nav-tabs li)");var 列表规则=".get(li)";var 标题规则=".get(a).t()";var 选集规则=".get(a).t()";var 选集地址规则=".get(a).a(href)";
+var 标识=e2Rex(getVar("源码"),".get(video).a(src)");var 分类=[];var a={};var data=[];var list=e2Arr(getVar("源码"),".get(select option)");for(var i in list){var no=Number(e2Rex(list[i],".t().z(\\d+)"));var p="";if(no>1){p="&p="+(no-1);}data.push({name:e2Rex(list[i],".t()"),url:标识+p});}a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(url).en64()";
 ##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(ul.myui-vodlist__media li)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("搜索地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(.title a).t()";var 地址规则=".get(.title a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE=""};
+var 列表=e2Arr(getVar("源码"),".get(ul li)").filter(item=>item.indexOf(getVar("关键字"))!=-1);if(!列表[0]){var 列表=["未匹配到任何平台"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="未匹配到任何平台";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(a).t()";var 地址规则=".c(https://iptv345.com/).get(a).a(href)";var 图片规则="@js='res://tv.jpg';";var 简介规则=".get(a).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
-var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
-"翻页"+b;
+var b="翻页+综合=itv+体育=ty+央视=ys+卫视=ws+港澳台=gt+其他=other+电影=movie+咪咕视频=migu+北方=bfiptv+广西联通=ltiptv+北京教育网=bupt+福建移动=fjitv+黑龙江移动=hlitv+Ipv6=ipv6";
+b;
 ##免嗅探规则
-"web="+getVar("地址");
+var url=e2Rex(getVar("地址").split("?wd=")[1],".dn64()");
+var resp=JZ(JSON.stringify({url:url,redirect:false}));
+var uu=resp.head.Location||resp.head.location;
+if(!uu){
+uu=url;
+}
+JSON.stringify({name:"地址",url:uu});
+####
 
 
 ####

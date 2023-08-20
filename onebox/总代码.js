@@ -486,7 +486,7 @@ function 通用列表(){
             var 图片="http:"+预图片.split("/mac:")[1];
         }else if(预图片.indexOf("=http")!=-1){
             var 图片=预图片.match(/.*(http.*)/)[1];
-        }else if(预图片.indexOf("http")==0){
+        }else if(预图片.indexOf("http")==0||预图片.indexOf("res://")==0){
             var 图片=预图片;
         }else if(预图片==""){
             var 图片="http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/kongbai.gif@{'User-Agent':'Mozilla/5.0'}";
