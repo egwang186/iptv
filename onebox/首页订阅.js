@@ -63,7 +63,7 @@ iptv
 ###数据
 4K频道
 ##
-远程$http://59.47.74.33:3000/apis/my-github/youshandefeiyang/IPTV/main/main/IPTV.m3u
+远程$http://59.47.74.33:3000/apis/my-github/Ftindy/IPTV-URL/main/IPTV.m3u
 ####
 
 ####
@@ -74,7 +74,7 @@ iptv
 ###数据
 爱尚TV
 ##
-远程$http://59.47.74.33:3000/apis/my-github/youshandefeiyang/IPTV/main/main/aishang.m3u
+远程$http://59.47.74.33:3000/apis/my-github/Ftindy/IPTV-URL/main/aishang.m3u
 ####
 
 ####
@@ -187,17 +187,6 @@ CGTN俄语,http://58.205.220.58:8088/tlivectfree-cdn.ysp.cctv.cn/ysp/2010152603.
 贵州卫视,http://58.205.220.58:8088/tlivectfree-cdn.ysp.cctv.cn/ysp/2000293303.m3u8
 四川卫视,http://58.205.220.58:8088/tlivectfree-cdn.ysp.cctv.cn/ysp/2000295003.m3u8
 海南卫视,http://58.205.220.58:8088/tlivectfree-cdn.ysp.cctv.cn/ysp/2000291503.m3u8
-####
-
-####
-###type
-iptv
-###分类
-iptv
-###数据
-ipv6直播
-##
-远程$http://wp.anxwl.cn/down.php/fa85f887ab0ad69495763d956130cbc6.txt
 ####
 
 ####
