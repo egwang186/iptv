@@ -324,6 +324,8 @@ for(var i=0;i<urls.length;i++){
         var u = resp.head.Location || resp.head.location;
         if(!u){
             u=urls[i]+"&type=.m3u8";
+        }else if(u.indexOf(".php?")!=-1){
+            u=u+"&type=.m3u8";
         }
     }else if(urls[i].indexOf("mitv://")!=-1){
         var u=urls[i].replace("mitv://","P2p://");
