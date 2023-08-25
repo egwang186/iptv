@@ -464,8 +464,8 @@ var resp=JZ(JSON.stringify({url:url,redirect:false}));
 var uu=resp.head.Location||resp.head.location;
 if(!uu){
 uu=url+"&type=.m3u8";
-}else if(uu==url){
-uu=url+"&type=.m3u8";
+}else if(uu.indexOf(".php?")!=-1){
+uu=uu+"&type=.m3u8";
 }
 JSON.stringify({name:"地址",url:uu});
 ####
