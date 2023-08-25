@@ -463,7 +463,9 @@ var url=e2Rex(getVar("地址").split("?wd=")[1],".dn64()");
 var resp=JZ(JSON.stringify({url:url,redirect:false}));
 var uu=resp.head.Location||resp.head.location;
 if(!uu){
-uu=url;
+uu=url+"&type=.m3u8";
+}else if(uu==url){
+uu=url+"&type=.m3u8";
 }
 JSON.stringify({name:"地址",url:uu});
 ####
