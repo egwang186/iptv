@@ -419,7 +419,7 @@ if(getVar("地址").indexOf("ip111.cn")!=-1){
     if(!uu){
     uu=url;
     }
-JSON.stringify({name:"地址",url:uu});
+JSON.stringify({name:"地址",url:uu,head:{"Referer":"https://www.histar.tv/"}});
 }else{
 "web="+getVar("地址");
 }
