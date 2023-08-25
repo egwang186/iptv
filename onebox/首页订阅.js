@@ -400,7 +400,7 @@ http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
 ###rule
 ##首页规则
 var 列表=e2Arr(getVar("源码"),".json(pageProps).json(list)");
-if(getVar("翻页")){var page=Number(getVar("翻页"))-1;}else{var page=Math.floor(Math.random() * (列表.length - 0 + 1)) + 0;}
+if(getVar("翻页")){var page=Number(getVar("翻页")>列表.length?0:getVar("翻页"))-1;}else{var page=Math.floor(Math.random() * (列表.length - 0 + 1)) + 0;}
 var 列表=列表[getVar("翻页")-1].match(/\{"img".+?\}/g);var 标题规则=".json(name)";var 地址规则=".c(https://www.histar.tv/live/).json(url)";var 图片规则=".json(img)";var 简介规则=".json(url)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
 var a="分类+电影+电视剧+综艺+纪录片+动漫";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
