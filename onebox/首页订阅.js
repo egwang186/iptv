@@ -399,7 +399,7 @@ http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
 'https://aws.ulivetv.net/v3/web/api/search$@{"word":"关键字","page":翻页,"pageSize":10}';
 ###rule
 ##首页规则
-var 列表=e2Rex(getVar("源码"),".json(pageProps),json(list)").match(/\{"img".+?\}/g);var 标题规则=".json(name)";var 地址规则=".c(https://www.histar.tv/live/).json(url)";var 图片规则=".json(img)";var 简介规则=".json(url)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+var 列表=e2Rex(getVar("源码"),".json(pageProps).json(list)").match(/\{"img".+?\}/g);var 标题规则=".json(name)";var 地址规则=".c(https://www.histar.tv/live/).json(url)";var 图片规则=".json(img)";var 简介规则=".json(url)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
 var a="分类+电影+电视剧+综艺+纪录片+动漫";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
 ##分类规则
