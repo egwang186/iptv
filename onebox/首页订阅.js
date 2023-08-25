@@ -386,6 +386,51 @@ web
 ###分类
 网页影视站源
 ###标题
+星视界
+###图片
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
+###BaseURL
+"https://www.histar.tv/";
+###首页地址
+"https://www.histar.tv/_next/data/b7btmgraPcgmyssf88d68/live.json";
+###分类地址
+'https://aws.ulivetv.net/v3/web/api/filter$@{"chName":"分类","pageSize":16,"page":翻页}';
+###搜索地址
+'https://aws.ulivetv.net/v3/web/api/search$@{"word":"关键字","page":翻页,"pageSize":10}';
+###rule
+##首页规则
+var 列表=e2Rex(getVar("源码"),".json(pageProps),json(list)").match(/\{"img".+?\}/g);var 标题规则=".json(name)";var 地址规则=".c(https://www.histar.tv/live/).json(url)";var 图片规则=".json(img)";var 简介规则=".json(url)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+##筛选数据
+var a="分类+电影+电视剧+综艺+纪录片+动漫";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
+##分类规则
+var 列表=e2Arr(getVar("源码"),".json(data).json(list)");var 标题规则=".json(name)";var 地址规则=".c(https://www.histar.tv/vod/detail/).json(id)";var 图片规则=".json(img)";var 简介规则=".json(countStr)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+##选集规则
+if(getVar("地址").indexOf("/live/")!=-1){var 分类=[];var a={};var data=[];var playdata=e2Rex(getVar("源码"),".get(script#__NEXT_DATA__).t()");var name=e2Rex(playdata,".json(name)");var url=e2Rex(playdata,".json(playUrl)");data.push({name:name,url:url});a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(url).en64()";}else{var 剧集=e2Rex(getVar("源码"),".get(div[class~=episode-list_selections])");if(剧集){var 分类=[];var a={};var data=[];var list=e2Arr(剧集,".get(a)");for(var i in list){data.push({name:e2Rex(list[i],".t()"),url:e2Rex(list[i],".c(https://www.histar.tv).a(href)")});}a.data=data;a.title="选集";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".json(url)";}else{var 分类=[];var a={};var data=[];var playdata=e2Rex(getVar("源码"),".get(section)");var name=e2Rex(playdata,".t()");var url=e2Rex(playdata,".get(a).a(href)");data.push({name:name,url:url});a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".json(url)";}}
+##搜索规则
+var 列表=e2Arr(getVar("源码"),".json(data).json(list)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("当前请求地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(name)";var 地址规则=".c(https://www.histar.tv/vod/detail/).json(id)";var 图片规则=".json(picurl)";var 简介规则=".json(chname).c(|).json(country).c(|).json(countStr).c(|).json(time)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+##搜索翻页
+var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
+"翻页"+b;
+##免嗅探规则
+if(getVar("地址").indexOf("ip111.cn")!=-1){
+    var url=e2Rex(getVar("地址").split("?wd=")[1],".dn64()");
+    var resp=JZ(JSON.stringify({url:url,redirect:false}));
+    var uu=resp.head.Location||resp.head.location;
+    if(!uu){
+    uu=url;
+    }
+JSON.stringify({name:"地址",url:uu});
+}else{
+"web="+getVar("地址");
+}
+####
+
+####
+###type
+web
+###分类
+网页影视站源
+###标题
 IPTV直播
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/iptv345.png
