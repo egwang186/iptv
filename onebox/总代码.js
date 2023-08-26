@@ -320,14 +320,24 @@ var urls=uu.split("#");
 var items=[];
 for(var i=0;i<urls.length;i++){
     if(urls[i].indexOf(".php")!=-1){
-        var resp = JZ(JSON.stringify({ url: urls[i], redirect: false }));
+        var resp = JZ(JSON.stringify({url:urls[i],redirect:false,head:{"User-Agent":"Mozilla/5.0","Accept-Language":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}));
         var u = resp.head.Location || resp.head.location;
         if(!u){
-            u=urls[i]+"&type=.m3u8";
+            if(urls[i].indexOf(".php?")!=-1){
+                u=urls[i]+"&type=.m3u8";
+            }else if(urls[i].indexOf(".php")!=-1){
+                u=urls[i]+"?type=.m3u8";
+            }
         }else if(u.indexOf(".php?")!=-1){
             u=u+"&type=.m3u8";
+        }else if(u.indexOf(".php")!=-1){
+            u=u+"?type=.m3u8";
         }else if(u.length<40){
-            u=urls[i]+"&type=.m3u8";
+            if(urls[i].indexOf(".php?")!=-1){
+                u=urls[i]+"&type=.m3u8";
+            }else if(urls[i].indexOf(".php")!=-1){
+                u=urls[i]+"?type=.m3u8";
+            }
         }
     }else if(urls[i].indexOf("mitv://")!=-1){
         var u=urls[i].replace("mitv://","P2p://");
@@ -342,14 +352,24 @@ for(var i=0;i<urls.length;i++){
 JSON.stringify(items);
 }else{
     if(uu.indexOf(".php")!=-1){
-        var resp=JZ(JSON.stringify({url:uu,redirect:false}));
+        var resp=JZ(JSON.stringify({url:uu,redirect:false,head:{"User-Agent":"Mozilla/5.0","Accept-Language":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}));
         var u=resp.head.Location||resp.head.location;
         if(!u){
-            u=uu+"&type=.m3u8";
+            if(uu.indexOf(".php?")!=-1){
+                u=uu+"&type=.m3u8";
+            }else if(uu.indexOf(".php")!=-1){
+                u=uu+"?type=.m3u8";
+            }
         }else if(u.indexOf(".php?")!=-1){
             u=u+"&type=.m3u8";
+        }else if(u.indexOf(".php")!=-1){
+            u=u+"?type=.m3u8";
         }else if(u.length<40){
-            u=urls[i]+"&type=.m3u8";
+            if(uu.indexOf(".php?")!=-1){
+                u=uu+"&type=.m3u8";
+            }else if(uu.indexOf(".php")!=-1){
+                u=uu+"?type=.m3u8";
+            }
         }
     }else if(uu.indexOf("mitv://")!=-1){
         var u=uu.replace("mitv://","P2p://");
