@@ -491,7 +491,7 @@ http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/tingfm.png
 ##首页规则
 var 列表=e2Arr(getHttp(JSON.stringify({url:"https://tingfm.com/wp-json/query/wnd_posts?is_main_query=true&type=radio&without_content=true&paged="+getVar("翻页")+"&update_post_term_cache=false&update_post_meta_cache=false&posts_per_page=30"})),".json(data).json(posts)");var 标题规则=".json(post_title)";var 地址规则=".c(http://player.tingfm.com/?id=).json(ID)";var 图片规则="@js='res://tv.jpg';";var 简介规则=".json(post_modified)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
-var a="分类+电视=tv";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
+var a="分类+上海=any&_term_region=7+央视=any&_term_region=81+香港=any&_term_region=35+北京=any&_term_region=4+台湾=any&_term_region=38+河南=any&_term_region=17+河北=any&_term_region=18+湖南=any&_term_region=19+山东=any&_term_region=36+广东=any&_term_region=10+黑龙江=any&_term_region=30+浙江=any&_term_region=31+辽宁=any&_term_region=32+热门电视=tv+央广电台=radio&_term_region=3+中国教育电视台=tv&_term_region=125+网络电台=radio&_term_region=41+";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
 ##分类规则
 var 列表=e2Arr(getVar("源码"),".json(data).json(posts)");var 标题规则=".json(post_title)";var 地址规则=".c(http://player.tingfm.com/?id=).json(ID)";var 图片规则="@js='res://tv.jpg';";var 简介规则=".json(post_modified)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
