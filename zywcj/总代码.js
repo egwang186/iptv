@@ -142,7 +142,7 @@ if(标题=="xhzy"){
 }else if(URL.indexOf("api.yjiexi.com")!=-1){
       选集地址="http://player.yjiexi.com/player?url="+选集地址;
 }else if(标题=="mdm3u8"){
-      选集地址="https://m3u8.mudan01.online/?url="+选集地址;
+      选集地址="https://bfq.bukazyw.com/?url="+选集地址;
 }else if(标题=="tankem3u8"){
       选集地址="https://api.tangk2.com/dplayer/?url="+选集地址;
 }else if(URL.indexOf("hikan.xyz")!=-1){

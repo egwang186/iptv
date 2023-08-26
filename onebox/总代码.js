@@ -326,6 +326,8 @@ for(var i=0;i<urls.length;i++){
             u=urls[i]+"&type=.m3u8";
         }else if(u.indexOf(".php?")!=-1){
             u=u+"&type=.m3u8";
+        }else if(u.length<40){
+            u=urls[i]+"&type=.m3u8";
         }
     }else if(urls[i].indexOf("mitv://")!=-1){
         var u=urls[i].replace("mitv://","P2p://");
@@ -335,7 +337,7 @@ for(var i=0;i<urls.length;i++){
     }else{
         var u=urls[i];
     }
-    items.push({name:"地址"+(i+1),url:u}); 
+    items.push({name:"地址"+(i+1),url:u,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}); 
 }
 JSON.stringify(items);
 }else{
@@ -344,6 +346,10 @@ JSON.stringify(items);
         var u=resp.head.Location||resp.head.location;
         if(!u){
             u=uu+"&type=.m3u8";
+        }else if(u.indexOf(".php?")!=-1){
+            u=u+"&type=.m3u8";
+        }else if(u.length<40){
+            u=urls[i]+"&type=.m3u8";
         }
     }else if(uu.indexOf("mitv://")!=-1){
         var u=uu.replace("mitv://","P2p://");
@@ -353,7 +359,7 @@ JSON.stringify(items);
     }else{
         var u=uu;
     }
-JSON.stringify({name:"地址",url:u});
+JSON.stringify({name:"地址",url:u,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
 }
 ######通用免嗅探4
 var uu=getVar("地址");
