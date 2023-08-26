@@ -467,7 +467,7 @@ uu=url+"&type=.m3u8";
 }else if(uu.indexOf(".php?")!=-1){
 uu=uu+"&type=.m3u8";
 }
-JSON.stringify({name:"地址",url:uu});
+JSON.stringify({name:"地址",url:uu,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
 ####
 
 
