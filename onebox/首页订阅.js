@@ -470,6 +470,64 @@ uu=uu+"&type=.m3u8";
 JSON.stringify({name:"地址",url:uu,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
 ####
 
+####
+###type
+web
+###分类
+网页影视站源
+###标题
+TingFM直播
+###图片
+http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/tingfm.png
+###BaseURL
+"https://tingfm.com/";
+###首页地址
+"https://tingfm.com/";
+###分类地址
+"https://tingfm.com/wp-json/query/wnd_posts?is_main_query=true&type=分类&without_content=true&paged=翻页&update_post_term_cache=false&update_post_meta_cache=false&posts_per_page=30";
+###搜索地址
+"https://tingfm.com/?type=any&s=关键字翻页";
+###rule
+##首页规则
+var 列表=e2Arr(getHttp(JSON.stringify({url:"https://tingfm.com/wp-json/query/wnd_posts?is_main_query=true&type=radio&without_content=true&paged="+getVar("翻页")+"&update_post_term_cache=false&update_post_meta_cache=false&posts_per_page=30"})),".json(data).json(posts)");var 标题规则=".json(post_title)";var 地址规则=".c(http://player.tingfm.com/?id=).json(ID)";var 图片规则="@js='res://tv.jpg';";var 简介规则=".json(post_modified)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+##筛选数据
+var a="分类+电视=tv";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
+##分类规则
+var 列表=e2Arr(getVar("源码"),".json(data).json(posts)");var 标题规则=".json(post_title)";var 地址规则=".c(http://player.tingfm.com/?id=).json(ID)";var 图片规则="@js='res://tv.jpg';";var 简介规则=".json(post_modified)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+##选集规则
+var token=getVar("源码").match(/"token":"(.+?)"/)[1];var id=getVar("源码").match(/"post_id":"(.+?)"/)[1];var code=getHttp(JSON.stringify({url:"https://tingfm.com/wp-json/query/wndt_streams?post_id="+id+"&in_web=true",head:{"Stream-Token":token}}));var 分类=[];var a={};var data=[];var list=e2Arr(code,".json(data).json(streams)");for(var i in list){data.push({name:e2Rex(list[i],".json(type)"),url:e2Rex(list[i],".json(url)")});}a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(url).en64()";
+##搜索规则
+var 列表=e2Arr(getVar("源码"),".get(div.post-list)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("当前请求地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(a).t()";var 地址规则=".get(a).a(href)";var 图片规则=".c(http://59.47.74.33:39000/tupian.php?text=).get(a).t()";var 简介规则=".get(a).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+##搜索翻页
+var b="翻页+全部=";
+b;
+##免嗅探规则
+var uu=e2Rex(getVar("地址").split("?wd=")[1],".dn64()");
+if(uu.indexOf(".php")!=-1){
+    var resp=JZ(JSON.stringify({url:uu,redirect:false,head:{"User-Agent":"Mozilla/5.0","Accept-Language":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}));
+    var u=resp.head.Location||resp.head.location;
+    if(!u){
+        if(uu.indexOf(".php?")!=-1){
+            u=uu+"&type=.m3u8";
+        }else if(uu.indexOf(".php")!=-1){
+            u=uu+"?type=.m3u8";
+        }
+    }else if(u.indexOf(".php?")!=-1){
+        u=u+"&type=.m3u8";
+    }else if(u.indexOf(".php")!=-1){
+        u=u+"?type=.m3u8";
+    }else if(u.length<40){
+        if(uu.indexOf(".php?")!=-1){
+            u=uu+"&type=.m3u8";
+        }else if(uu.indexOf(".php")!=-1){
+            u=uu+"?type=.m3u8";
+        }
+    }
+}else{
+    var u=uu;
+}
+JSON.stringify({name:"地址",url:u,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
+####
 
 ####
 ###type
