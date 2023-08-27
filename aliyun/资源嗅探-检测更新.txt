@@ -1,11 +1,11 @@
-<a class="版本">44</a>
+<a class="版本">45</a>
 <ul class="默认提示">
 <li><font color="blue"><b>已是最新版，本轻站适用土狗浏览器</b></font>
 <p>mqqwpa://im/chat?chat_type=wpa&uin=1260957445</p>
 </li>
 </ul>
 <ul class="更新提示">
-<li><font color="red"><b>有新版本!!![西瓜视频新浪微博一键解析，添加嗅探历史记录]点击安装</b></font>
+<li><font color="red"><b>有新版本!!![添加通用播放请求头，兼容部分php视频]点击安装</b></font>
 <p>mapi:qm/http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/资源嗅探.mkz</p>
 </li>
 </ul>
