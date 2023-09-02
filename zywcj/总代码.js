@@ -277,7 +277,7 @@ var 选集规则=".tz($)";选集列表();
             if(e2Rex(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content)")){
                   var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content).fg(\\$\\$\\$)");
             }else{
-                  var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_blurd).fg(\\$\\$\\$)");
+                  var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_blurb).fg(\\$\\$\\$)");
             }
 
 var 线路=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_name).fg(\\$\\$\\$)");
