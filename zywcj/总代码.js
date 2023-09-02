@@ -275,7 +275,7 @@ var 选集规则=".tz($)";选集列表();
 }else{
       if(URL.indexOf("provide/art/")!=-1){
 var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content).fg(\\$\\$\\$)");
-var 线路=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_note).fg(\\$\\$\\$)");
+var 线路=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_name).fg(\\$\\$\\$)");
 var 选集地址规则=".z2(\\$\\(.*\\)).or().z(.*)";
 var 简介=e2Rex(getVar("源码"),".c(演员表:).json(list).json(art_author).c(<br>简介:).json(list).json(art_name)");
 var 列表规则=".fg(#)";
