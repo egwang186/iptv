@@ -547,8 +547,7 @@ if(xxx_id.indexOf("share_id")!=-1){
 if(JSON.parse(code).code){
 alert(JSON.parse(code).code)
 }else{
-var resp=JZ(JSON.stringify({url:JSON.parse(code).url,redirect:false,head:{"Referer":"https://www.aliyundrive.com/"}}));
-var url=resp.head.location+'@{"Referer":"https://www.aliyundrive.com/"}';
+var url=JSON.parse(code).url+'@{"Referer":"https://www.aliyundrive.com/"}';
 JSON.stringify([{url:url}]);
 }
 }else if(xxx_id.indexOf("drive_id")!=-1){
