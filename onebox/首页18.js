@@ -174,14 +174,14 @@ var code=getHttp(getVar("baseURL")+"/categories/");var arr=e2Arr(code,".get(ul.c
 ##分类规则
 var 列表=e2Arr(getVar("源码"),".get(ul.videos li)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(span.video-overlay).t().c().get(span.left).t().c().get(span.right).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
-var 分类=e2Arr(getVar("源码"),".get(div.button_style)");var 线路=["多线路切换"];var 简介="";var 列表规则=".z(<button1>.+?</button1>)";var 标题规则=".t()";var 选集规则=".t()";var 选集地址规则=".c(http://ip111.cn/?wd=).z(http[^']+)";
+var 分类=e2Arr(getVar("源码"),".get(div.button_style)");var 线路=["多线路切换"];var 简介="";var 列表规则=".z(<button1>[\\s\\S]+?</button1>)";var 标题规则=".t()";var 选集规则=".t()";var 选集地址规则=".c(http://ip111.cn/?wd=).z(http[^']+)";
 ##搜索规则
 var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.shadow.p-1)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-var onedata=getHttp(getVar("地址").split("?wd=")[1]);if(onedata.search(/sources:.+?file:".+?"/)!=-1){var u=onedata.match(/sources:.+?file:"(.+?)"/)[1];}else{var script=onedata.match(/<script.+?>eval(.+?)<\/script>/)[1];var dedata=eval(script);var u=dedata.match(/sources:.+?file:"(.+?)"/)[1];}var 头=u.match(/http.+\//)[0];var code=getHttp(u).match(/#EXT-X-STREAM-INF[^#]+/g);var playlist=[];for(var i in code){var title=code[i].match(/RESOLUTION=(.+)/)[1];var url=头+code[i].replace(/\s+/g,'"').match(/.+"(.+?)"/)[1];playlist.push({name:title,url:url});}JSON.stringify(playlist);
+var onedata=getHttp(getVar("地址").split("?wd=")[1]);if(onedata.search(/sources:.+?file:".+?"/)!=-1){var u=onedata.match(/sources:.+?file:"(.+?)"/)[1];}else if(onedata.search(/src:\s*?'http.+?'/)!=-1){var u=onedata.match(/src:\s*?'(http.+?)'/)[1];}else{var script=onedata.match(/<script.+?>eval([\s\S]+?)<\/script>/)[1];var dedata=eval(script);var u=dedata.match(/sources:.+?file:"(.+?)"/)[1];}var 头=u.match(/http.+\//)[0];var code=getHttp(u).match(/#EXT-X-STREAM-INF[^#]+/g);var playlist=[];for(var i in code){var title=code[i].match(/RESOLUTION=(.+)/)[1];var url=头+code[i].replace(/\s+/g,'"').match(/.+"(.+?)"/)[1];playlist.push({name:title,url:url});}JSON.stringify(playlist);
 ####
 
 ####
