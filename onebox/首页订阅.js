@@ -229,11 +229,11 @@ iptv
 ###数据
 随机直播
 ##
-热歌榜,https://api.uomg.com/api/rand.music?sort=热歌榜
-新歌榜,https://api.uomg.com/api/rand.music?sort=新歌榜
-飙升榜,https://api.uomg.com/api/rand.music?sort=飙升榜
-抖音榜,https://api.uomg.com/api/rand.music?sort=抖音榜
-电音榜,https://api.uomg.com/api/rand.music?sort=电音榜
+热歌榜,https://api.uomg.com/api/rand.music?sort=热歌榜&type=.php
+新歌榜,https://api.uomg.com/api/rand.music?sort=新歌榜&type=.php
+飙升榜,https://api.uomg.com/api/rand.music?sort=飙升榜&type=.php
+抖音榜,https://api.uomg.com/api/rand.music?sort=抖音榜&type=.php
+电音榜,https://api.uomg.com/api/rand.music?sort=电音榜&type=.php
 ####
 #####
 
