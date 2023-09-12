@@ -165,7 +165,7 @@ getVar("baseURL")+"/recent";
 ###分类地址
 getVar("baseURL")+"分类recent/翻页";
 ###搜索地址
-getVar("baseURL")+"/search?q=关键字&page=翻页";
+getVar("baseURL")+"/search/video/?s=关键字&page=翻页";
 ###rule
 ##首页规则
 var 列表=e2Arr(getVar("源码"),".get(ul.videos li)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(span.video-overlay).t().c().get(span.left).t().c().get(span.right).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
