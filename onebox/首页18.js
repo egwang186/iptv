@@ -161,9 +161,9 @@ http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/javhd.png
 ###BaseURL
 "https://javhd.today";
 ###首页地址
-getVar("baseURL")+"/recent";
+getVar("baseURL")+"/recent/";
 ###分类地址
-getVar("baseURL")+"分类recent/翻页";
+getVar("baseURL")+"分类recent/翻页/";
 ###搜索地址
 getVar("baseURL")+"/search/video/?s=关键字&page=翻页";
 ###rule
