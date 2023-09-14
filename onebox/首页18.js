@@ -20,7 +20,7 @@ XChina(VPN)
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/xchina.png
 ###BaseURL
-"https://xchina.xyz";
+"https://xchina.co";
 ###首页地址
 getVar("baseURL")+"/videos.html";
 ###分类地址
@@ -31,7 +31,7 @@ getVar("baseURL")+"/videos/keyword-关键字/翻页.html";
 ##首页规则
 var 列表=e2Arr(getVar("源码"),".get(div.videos div.item)");var 标题规则=".get(div.text a).t()";var 地址规则=".get(div.text a).a(href)";var 图片规则=".get(video).a(poster)";var 简介规则=".get(div.tag).t()";var 图片底部规则=".get(div.duration)";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).get(div.series).t().ct(</font></p>)";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
-var 源码=getHttp(JSON.stringify({url:"https://xchina.xyz/videos.html",head:{"User-Agent":"Windows 10"}}));var Series=源码.match(/<a href="\/videos\/series-.+?<\/a>/g);var Model=源码.match(/<a href="\/videos\/model-.+?<\/a>/g);var a="";for(var i in Series){var title=e2Rex(Series[i],".t()");var id=e2Rex(Series[i],".ty(/).tz(.html)");a=a+"+"+title+"="+id;}for(var i in Model){var title=e2Rex(Model[i],".t()");var id=e2Rex(Model[i],".ty(/).tz(.html)");a=a+"+"+title+"="+id;}var a="分类"+a;var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页+"+b;a+"\n"+b;
+var 源码=getHttp(JSON.stringify({url:"https://xchina.co/videos.html",head:{"User-Agent":"Windows 10"}}));var Series=源码.match(/<a href="\/videos\/series-.+?<\/a>/g);var Model=源码.match(/<a href="\/videos\/model-.+?<\/a>/g);var a="";for(var i in Series){var title=e2Rex(Series[i],".t()");var id=e2Rex(Series[i],".ty(/).tz(.html)");a=a+"+"+title+"="+id;}for(var i in Model){var title=e2Rex(Model[i],".t()");var id=e2Rex(Model[i],".ty(/).tz(.html)");a=a+"+"+title+"="+id;}var a="分类"+a;var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页+"+b;a+"\n"+b;
 ##分类规则
 var 列表=e2Arr(getVar("源码"),".get(div.videos div.item)");var 标题规则=".get(div.text a).t()";var 地址规则=".get(div.text a).a(href)";var 图片规则=".get(video).a(poster)";var 简介规则=".get(div.tag).t()";var 图片底部规则=".get(div.duration)";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).get(div.series).t().ct(</font></p>)";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
@@ -163,7 +163,7 @@ http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/javhd.png
 ###首页地址
 getVar("baseURL")+"/recent/";
 ###分类地址
-getVar("baseURL")+"分类recent/翻页/";
+getVar("baseURL")+"分类recent/翻页";
 ###搜索地址
 getVar("baseURL")+"/search/video/?s=关键字&page=翻页";
 ###rule
