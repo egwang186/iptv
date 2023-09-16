@@ -176,7 +176,7 @@ var 列表=e2Arr(getVar("源码"),".get(ul.videos li)");var 标题规则=".get(i
 ##选集规则
 var 分类=e2Arr(getVar("源码"),".get(div.button_style)");var 线路=["多线路切换"];var 简介="";var 列表规则=".z(<button1[\\s\\S]+?</button1>)";var 标题规则=".t()";var 选集规则=".t()";var 选集地址规则=".c(http://ip111.cn/?wd=).z(http[^']+)";
 ##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.shadow.p-1)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+var 源码=getVar("源码");var 列表=e2Arr(源码,".get(ul.videos li)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(span.video-overlay).t().c().get(span.left).t().c().get(span.right).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
