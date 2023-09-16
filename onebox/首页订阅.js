@@ -390,7 +390,7 @@ web
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
 ###BaseURL
-"https://www.histar.tv/";
+"https://www.histar.tv";
 ###首页地址
 "https://www.histar.tv/";
 ###分类地址
@@ -438,7 +438,7 @@ IPTV直播
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/iptv345.png
 ###BaseURL
-"https://iptv345.com/";
+"https://iptv345.com";
 ###首页地址
 "https://iptv345.com/?tid=itv";
 ###分类地址
@@ -481,7 +481,7 @@ TingFM直播
 ###图片
 http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/tingfm.png
 ###BaseURL
-"https://tingfm.com/";
+"https://tingfm.com";
 ###首页地址
 "https://tingfm.com/";
 ###分类地址
