@@ -59,8 +59,8 @@ if(getVar("按钮")=="添加远程订阅"){
     }
 }
 if(记录[0]){
-if(_.read(filename).indexOf("#####")!=-1){
-    var 新记录=_.read(filename).match(/#####[\s\S]+?#####/g);
+if(readStr(filename).indexOf("#####")!=-1){
+    var 新记录=readStr(filename).match(/#####[\s\S]+?#####/g);
 }else{
     var 新记录=[];
 }
@@ -99,7 +99,7 @@ if(新记录.length==0) {
     }
 }
 }
-_.write(新记录.join("\n"),filename);
+writeStr(filename,新记录.join("\n"));
 alert("写入成功");
 }else{
 alert("写入失败");
@@ -108,12 +108,12 @@ alert("写入失败");
 eval(readStr("QJS"));
 if(getVar("地址").indexOf("远程$")!=-1){
     var u=getVar("地址").split("远程$")[1];
-    var 本地数据=_.read(u.replace(/[:\.\/\?\s]+/g,"")+".txt")+"";
+    var 本地数据=readStr(u.replace(/[:\.\/\?\s]+/g,"")+".txt")+"";
     if(本地数据.length>500){
         var code=本地数据;
     }else{
         var code=getHttp(u);
-        _.write(code,u.replace(/[:\.\/\?\s]+/g,"")+".txt");
+        writeStr(code,u.replace(/[:\.\/\?\s]+/g,"")+".txt");
     }
 }else{
     var code=getVar("地址");

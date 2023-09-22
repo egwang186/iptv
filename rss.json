@@ -1,9 +1,9 @@
 [
-    {"name":"一个盒子","icon":"t:一个#7D25FE","sign":"0232bf41409b87846a0811384683d9cd","version":"230913","type":"轻站","url":"http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/一个盒子.mkz"},
-    {"name":"阿里云盘","icon":"t:阿里#08736C","sign":"2b790766bab84809dff175605fa81036","version":"230725","type":"轻站","url":"http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/阿里云盘.mkz"},
-    {"name":"资源采集","icon":"t:资源#5813A7","sign":"c9f171b5c90f484a7617fb55488e1e81","version":"2307252","type":"轻站","url":"http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/zywcj/资源采集.mkz"},
-    {"name":"资源嗅探","icon":"t:嗅探#28C7E1","sign":"f7f67b63ea6bfc5709a4ebe5fbedf037","version":"54","type":"轻站","url":"http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/资源嗅探.mkz"},
-    {"name":"海角社区","icon":"t:海角#12a2eb","sign":"1178c70d3c126120cc0eb51b465ac4de","version":"230914","type":"轻站","url":"http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/海角社区.mkz"},
-    {"name":"MissAV","icon":"https://missav.com/img/favicon.png","sign":"97771af0a73cd1c830b82a6408fcfedf","version":"230918","type":"轻站","url":"http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/MissAV.mkz"},
-    {"name":"NetflAV","icon":"https://netflav.com/static/assets/favicon.ico","sign":"22374f1f2b233e73033365e842c39358","version":"230917","type":"轻站","url":"http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/aliyun/NetflAV.mkz"}
+    {"name":"一个盒子","icon":"t:一个#7D25FE","sign":"0232bf41409b87846a0811384683d9cd","version":"230913","type":"轻站","url":"http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/一个盒子.mkz"},
+    {"name":"阿里云盘","icon":"t:阿里#08736C","sign":"2b790766bab84809dff175605fa81036","version":"230725","type":"轻站","url":"http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/aliyun/阿里云盘.mkz"},
+    {"name":"资源采集","icon":"t:资源#5813A7","sign":"c9f171b5c90f484a7617fb55488e1e81","version":"2307252","type":"轻站","url":"http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/zywcj/资源采集.mkz"},
+    {"name":"资源嗅探","icon":"t:嗅探#28C7E1","sign":"f7f67b63ea6bfc5709a4ebe5fbedf037","version":"54","type":"轻站","url":"http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/aliyun/资源嗅探.mkz"},
+    {"name":"海角社区","icon":"t:海角#12a2eb","sign":"1178c70d3c126120cc0eb51b465ac4de","version":"230914","type":"轻站","url":"http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/aliyun/海角社区.mkz"},
+    {"name":"MissAV","icon":"https://missav.com/img/favicon.png","sign":"97771af0a73cd1c830b82a6408fcfedf","version":"230918","type":"轻站","url":"http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/aliyun/MissAV.mkz"},
+    {"name":"NetflAV","icon":"https://netflav.com/static/assets/favicon.ico","sign":"22374f1f2b233e73033365e842c39358","version":"230917","type":"轻站","url":"http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/aliyun/NetflAV.mkz"}
 ]

@@ -19,7 +19,7 @@ iptv
 ###数据
 VCtv
 ##
-远程$http://59.47.74.33:3000/apis/my-github/vamoschuck/TV/main/M3U
+远程$http://egwang186.top:3000/apis/my-github/vamoschuck/TV/main/M3U
 ####
 
 ####
@@ -30,7 +30,7 @@ iptv
 ###数据
 TcatIPTV
 ##
-远程$http://59.47.74.33:3000/apis/my-github/TCatCloud/IPTV/Files/IPTV.m3u
+远程$http://egwang186.top:3000/apis/my-github/TCatCloud/IPTV/Files/IPTV.m3u
 ####
 
 ####
@@ -74,7 +74,7 @@ iptv
 ###数据
 4K频道
 ##
-远程$http://59.47.74.33:3000/apis/my-github/Ftindy/IPTV-URL/main/IPTV.m3u
+远程$http://egwang186.top:3000/apis/my-github/Ftindy/IPTV-URL/main/IPTV.m3u
 ####
 
 ####
@@ -85,7 +85,7 @@ iptv
 ###数据
 爱尚TV
 ##
-远程$http://59.47.74.33:3000/apis/my-github/Ftindy/IPTV-URL/main/aishang.m3u
+远程$http://egwang186.top:3000/apis/my-github/Ftindy/IPTV-URL/main/aishang.m3u
 ####
 
 ####
@@ -96,7 +96,7 @@ iptv
 ###数据
 全球直播
 ##
-远程$http://59.47.74.33:3000/apis/my-github/fanmingming/live/main/tv/m3u/global.m3u
+远程$http://egwang186.top:3000/apis/my-github/fanmingming/live/main/tv/m3u/global.m3u
 ####
 
 ####
@@ -107,7 +107,7 @@ iptv
 ###数据
 调频广播
 ##
-远程$http://59.47.74.33:3000/apis/my-github/fanmingming/live/main/radio/m3u/index.m3u
+远程$http://egwang186.top:3000/apis/my-github/fanmingming/live/main/radio/m3u/index.m3u
 ####
 
 ####
@@ -128,7 +128,7 @@ iptv
 ###数据
 TVbox蓝朋友
 ##
-远程$http://59.47.74.33:3000/apis/my-github/bluefriendCN/tvbox/main/live.txt
+远程$http://egwang186.top:3000/apis/my-github/bluefriendCN/tvbox/main/live.txt
 ####
 ####
 ###type
@@ -248,7 +248,7 @@ web
 ###标题
 骚火影视
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/saohuotv.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/saohuotv.png
 ###BaseURL
 "https://saohuo.vip";
 ###首页地址
@@ -283,7 +283,7 @@ web
 ###标题
 Auete影视
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/auete.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/auete.png
 ###BaseURL
 "https://aueteys.com";
 ###首页地址
@@ -318,7 +318,7 @@ web
 ###标题
 蓝光影院
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/lgyy.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/lgyy.png
 ###BaseURL
 "https://www.lgyy.vip";
 ###首页地址
@@ -353,7 +353,7 @@ web
 ###标题
 555电影
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/555dy.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/555dy.png
 ###BaseURL
 "https://www.555dy1.com";
 ###首页地址
@@ -388,7 +388,7 @@ web
 ###标题
 星视界
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
 ###BaseURL
 "https://www.histar.tv";
 ###首页地址
@@ -436,7 +436,7 @@ web
 ###标题
 IPTV直播
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/iptv345.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/iptv345.png
 ###BaseURL
 "https://iptv345.com";
 ###首页地址
@@ -479,7 +479,7 @@ web
 ###标题
 TingFM直播
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/tingfm.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/tingfm.png
 ###BaseURL
 "https://tingfm.com";
 ###首页地址
@@ -502,7 +502,7 @@ var 列表=e2Arr(getVar("源码"),".json(data).json(posts)");var 标题规则=".
 ##选集规则
 var token=getVar("源码").match(/"token":"(.+?)"/)[1];var id=getVar("源码").match(/"post_id":"(.+?)"/)[1];var code=getHttp(JSON.stringify({url:"https://tingfm.com/wp-json/query/wndt_streams?post_id="+id+"&in_web=true",head:{"Stream-Token":token}}));var 分类=[];var a={};var data=[];var list=e2Arr(code,".json(data).json(streams)");for(var i in list){data.push({name:e2Rex(list[i],".json(type)"),url:e2Rex(list[i],".json(url)")});}a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(url).en64()";
 ##搜索规则
-var 列表=e2Arr(getVar("源码"),".get(div.post-list)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("当前请求地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(a).t()";var 地址规则=".c(http://player.tingfm.com/?id=).get(a).a(href).z(\\d+)";var 图片规则=".c(http://59.47.74.33:39000/tupian.php?text=).get(a).t()";var 简介规则=".get(a).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+var 列表=e2Arr(getVar("源码"),".get(div.post-list)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("当前请求地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(a).t()";var 地址规则=".c(http://player.tingfm.com/?id=).get(a).a(href).z(\\d+)";var 图片规则=".c(http://egwang186.top:39000/tupian.php?text=).get(a).t()";var 简介规则=".get(a).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="翻页+全部=";
 b;
@@ -542,7 +542,7 @@ web
 ###标题
 虎牙直播
 ###图片
-http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/huya.png
+http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/huya.png
 ###BaseURL
 "https://m.huya.com";
 ###首页地址
@@ -559,7 +559,7 @@ var a="分类+全部=+一起看=2135+原神=5489+英雄联盟手游=6203+英雄�
 ##分类规则
 var 列表=e2Arr(getVar("源码").replace(/\s+/g,""),".z(\\{.+).json(data).json(datas)");var 标题规则=".json(roomName)";var 地址规则=".c(/).json(profileRoom)";var 图片规则=".json(screenshot)";var 简介规则=".json(introduction)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
-var 标识=e2Rex(getVar("源码"),".ty(HNF_GLOBAL_INIT)").match(/"sStreamName":"(.+?)"/)[1];var 分类=[];var a={};var data=[];data.push({name:"EPG线路",url:"http://59.47.74.33:35455/huya/"+getVar("地址").split("huya.com/")[1]},{name:"php线路",url:"http://59.47.74.33:39000/huya.php?id="+getVar("地址").split("huya.com/")[1]},{name:"Txdirect.hls线路",url:"http://120.204.20.48/txdirect.hls.huya.com/src/"+标识+".m3u8"},{name:"Tx.hls线路",url:"http://120.204.20.48/tx.hls.huya.com/src/"+标识+".m3u8"});a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".json(url)";
+var 标识=e2Rex(getVar("源码"),".ty(HNF_GLOBAL_INIT)").match(/"sStreamName":"(.+?)"/)[1];var 分类=[];var a={};var data=[];data.push({name:"EPG线路",url:"http://egwang186.top:35455/huya/"+getVar("地址").split("huya.com/")[1]},{name:"php线路",url:"http://egwang186.top:39000/huya.php?id="+getVar("地址").split("huya.com/")[1]},{name:"Txdirect.hls线路",url:"http://120.204.20.48/txdirect.hls.huya.com/src/"+标识+".m3u8"},{name:"Tx.hls线路",url:"http://120.204.20.48/tx.hls.huya.com/src/"+标识+".m3u8"});a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".json(url)";
 ##搜索规则
 var 源码=getVar("源码");var 列表=e2Arr(源码,".json(response).json(3).json(docs)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("搜索地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(game_roomName)";var 地址规则=".c(/).json(room_id)";var 图片规则=".json(game_screenshot)";var 简介规则=".json(game_introduction)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE=""}
 ##搜索翻页

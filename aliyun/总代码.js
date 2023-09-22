@@ -188,17 +188,17 @@ var img=getVar("图片");
 var type=getVar("作者");
 var detail=getVar("简介");
 记录.push({title:title,tugourl:url,img:img,type:type,detail:detail});
-if(_.read(filename)){
-var 新记录=记录.concat(JSON.parse(_.read(filename)).filter(d=>d.tugourl!=记录[0].tugourl));
+if(readStr(filename)){
+var 新记录=记录.concat(JSON.parse(readStr(filename)).filter(d=>d.tugourl!=记录[0].tugourl));
 }else{
 var 新记录=记录;
 }
-_.write(JSON.stringify(新记录),filename);
+writeStr(filename,JSON.stringify(新记录));
 }
 ######读取历史4
 eval(readStr("QJS"));
 var filename='阿里云历史记录.txt';
-_.read(filename);
+readStr(filename);
 ######alicookie5
 alert("快去首页安装新版吧");
 ######过滤非视频6
