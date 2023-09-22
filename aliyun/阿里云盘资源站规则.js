@@ -13,7 +13,7 @@
     "title":"霸王龙字幕组",
     "rule":{
         "分类":'var a="最新资源$/$$美剧$/meiju$$韩剧$/hanju$$电影$/%e7%94%b5%e5%bd%b1$$日剧$/riju$$泰剧$/taiju$$英剧$/yingju$$动画$/%e5%8a%a8%e7%94%bb$$真人秀综艺$/%e7%9c%9f%e4%ba%ba%e7%a7%80%e7%bb%bc%e8%89%ba$$纪录片$/%e7%ba%aa%e5%bd%95%e7%89%87$$其他剧$/qitaju";var a=a.split("$$");var items=[];for(var i in a){var title=a[i].split("$")[0];var url="https://t-rex.tzfile.com"+a[i].split("$")[1]+"#PN#";items.push({title:title,url:url});}JSON.stringify(items);',
-        "翻页数据":'var b="+第1页=";for(var i=2;i<1000;i=i+1){b=b+"+第"+i+"页=/"+i;}"翻页"+b;',
+        "翻页数据":'var b="+第1页=";for(var i=2;i<1000;i=i+1){b=b+"+第"+i+"页=/page/"+i;}"翻页"+b;',
         "列表规则":'var 列表=e2Arr(getCode(),".get(ul li.post-list-item)");var 地址规则=".get(h2 a).a(href)";var 标题规则=".c([).get(a.post-list-cat-item).t().c(]).get(h2 a).t()";var 图片规则=".get(img).a(src)";var 简介规则=".t()";var NEXTPAGE="";var PREPAGE="";',
         "详情规则":'var cm=android.webkit.CookieManager.getInstance();var COOKIE=cm.getCookie(getVar("地址").match(/http.+?\\/\\/.+?\\//)[0]);var 源码=e3("读源码({模式:\\"OKHTTP\\",地址:\\""+getVar("地址")+"\\",COOKIE:\\""+COOKIE+"\\"})");var 正文=e2Rex(源码,".get(div.entry-content).t()");'
     }
