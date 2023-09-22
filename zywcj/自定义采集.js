@@ -21,7 +21,7 @@ var filename = '资源采集远程索引.txt';
 if (readStr(filename)) {
   var code = readStr(filename).match(/.+?,.+/g);
 } else {
-  var data = "内置,http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/zywcj/资源网采集.txt";
+  var data = "内置,http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/zywcj/资源网采集.txt";
   writeStr(filename,data);
   var code = readStr(filename).match(/.+?,.+/g);
 }
