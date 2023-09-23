@@ -392,7 +392,7 @@ http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
 ###BaseURL
 "https://www.histar.tv";
 ###首页地址
-"https://www.histar.tv/";
+"https://www.histar.tv/live.json";
 ###分类地址
 'https://aws.ulivetv.net/v3/web/api/filter$@{"chName":"分类","pageSize":16,"page":翻页}';
 ###搜索地址
