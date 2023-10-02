@@ -97,6 +97,15 @@ CRINEWSPlusAM1008,http://sk.cri.cn/am1008.m3u8
 松视3台,https://flv3948069e.live.126.net/live/sytv_ca330b8dfe8461e4b3bdde39ce773e83.flv
 潘多拉完美,https://flv3948069e.live.126.net/live/sytv_30630b464e846ca2cb9ddefe0e773e87.flv
 松视4台,https://flv3948069e.live.126.net/live/sytv_02630be6be846d47da6dde603e773bc3.flv
+O-la-la,http://31.148.48.15:80/O-la-la/index.m3u8?token=test
+Penthouse Gold HD,http://51.159.102.100/PenthouseGold/index.m3u8
+Кино 18+,https://autopilot.catcast.tv/content/40381/index.m3u8
+Hustler HD,https://cdn-global.lolokoko.tv/HUSTLER.stream/chunks.m3u8
+Brazzers TV Europe,https://cdn-global.lolokoko.tv/BRAZZERS.stream/chunks.m3u8
+Redlight HD,https://cdn-global.lolokoko.tv/REDLIGHT.stream/chunks.m3u8
+EroXXX,https://cdn-global.lolokoko.tv/eroxxx.stream/chunks.m3u8
+DorcelTV,https://cdn-global.lolokoko.tv/DorcelTV.stream/chunks.m3u8
+xxl,https://cdn-global.lolokoko.tv/xxl.stream/chunks.m3u8
 Babestation,http://sdn-global-live-streaming-packager-cache-3qsdn.akamaized.net/9528/9528_264_live.m3u8
 Eropuls DE,https://api.alpaca.t62a.com/hls/9108/stream0.m3u8
 Jenny For You,http://59ec5453559f0.streamlock.net:1935/jennyforyou/jennyforyou/playlist.m3u8
