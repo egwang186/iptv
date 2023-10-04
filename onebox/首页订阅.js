@@ -17,17 +17,6 @@ iptv
 ###分类
 iptv
 ###数据
-IPTVindex
-##
-远程$https://epg.pw/test_channels.txt
-####
-
-####
-###type
-iptv
-###分类
-iptv
-###数据
 VCtv
 ##
 远程$http://egwang186.top:3000/apis/my-github/vamoschuck/TV/main/M3U
