@@ -326,7 +326,7 @@ for(var i=0;i<urls.length;i++){
             if(urls[i].indexOf(".php?")!=-1){
                 u=urls[i]+"&type=.m3u8";
             }else if(urls[i].indexOf(".php")!=-1){
-                u=urls[i]+"?type=.m3u8";
+                u=urls[i];
             }
         }else if(u.indexOf(".php?")!=-1){
             u=u+"&type=.m3u8";
