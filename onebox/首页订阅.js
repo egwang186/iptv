@@ -136,6 +136,17 @@ iptv
 ###分类
 iptv
 ###数据
+全国电视
+##
+远程$http://egwang186.top:3000/apis/my-github/YanG-1989/m3u/main/Gather.m3u
+####
+
+####
+###type
+iptv
+###分类
+iptv
+###数据
 央视频
 ##
 CCTV1综合,http://182.242.215.200/tlivectfree-cdn.ysp.cctv.cn/ysp/2000210103.m3u8
@@ -563,7 +574,7 @@ var a="分类+全部=+一起看=2135+原神=5489+英雄联盟手游=6203+英雄�
 ##分类规则
 var 列表=e2Arr(getVar("源码").replace(/\s+/g,""),".z(\\{.+).json(data).json(datas)");var 标题规则=".json(roomName)";var 地址规则=".c(/).json(profileRoom)";var 图片规则=".json(screenshot)";var 简介规则=".json(introduction)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
-var 标识=e2Rex(getVar("源码"),".ty(HNF_GLOBAL_INIT)").match(/"sStreamName":"(.+?)"/)[1];var 分类=[];var a={};var data=[];data.push({name:"EPG线路",url:"http://egwang186.top:35455/huya/"+getVar("地址").split("huya.com/")[1]},{name:"php线路",url:"http://egwang186.top:39000/huya.php?id="+getVar("地址").split("huya.com/")[1]},{name:"Txdirect.hls线路",url:"http://120.204.20.48/txdirect.hls.huya.com/src/"+标识+".m3u8"},{name:"Tx.hls线路",url:"http://120.204.20.48/tx.hls.huya.com/src/"+标识+".m3u8"});a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".json(url)";
+var 标识=e2Rex(getVar("源码"),".ty(HNF_GLOBAL_INIT)").match(/"sStreamName":"(.+?)"/)[1];var 分类=[];var a={};var data=[];data.push({name:"EPG线路",url:"http://59.47.74.33:35455/huya/"+getVar("地址").split("huya.com/")[1]},{name:"php线路",url:"http://59.47.74.33:39000/huya.php?id="+getVar("地址").split("huya.com/")[1]},{name:"Txdirect.hls线路",url:"http://120.204.20.48/txdirect.hls.huya.com/src/"+标识+".m3u8"},{name:"Tx.hls线路",url:"http://120.204.20.48/tx.hls.huya.com/src/"+标识+".m3u8"});a.data=data;a.title="线路";分类.push(a);var 分类=e2Arr(JSON.stringify(分类),".json()");var 线路="";var 简介=e2Rex(getVar("name"),".t()");var 列表规则=".json(data)";var 标题规则=".json(title)";var 选集规则=".json(name)";var 选集地址规则=".json(url)";
 ##搜索规则
 var 源码=getVar("源码");var 列表=e2Arr(源码,".json(response).json(3).json(docs)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("搜索地址");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(game_roomName)";var 地址规则=".c(/).json(room_id)";var 图片规则=".json(game_screenshot)";var 简介规则=".json(game_introduction)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE=""}
 ##搜索翻页
