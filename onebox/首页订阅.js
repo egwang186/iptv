@@ -83,9 +83,9 @@ iptv
 ###分类
 iptv
 ###数据
-爱尚TV
+IPV6-ZHG
 ##
-远程$http://egwang186.top:3000/apis/my-github/Ftindy/IPTV-URL/main/aishang.m3u
+远程$http://egwang186.top:3000/apis/my-github/zhanghongguang/zhanghongguang.github.io/main/IPV6_IPTV.m3u
 ####
 
 ####
