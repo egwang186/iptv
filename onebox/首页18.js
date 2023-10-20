@@ -5,9 +5,9 @@ iptv
 ###分类
 iptv
 ###数据
-台湾p2p
+直播
 ##
-远程$http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/台湾p2p.txt
+远程$http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/大侠直播.txt
 ####
 
 ####
@@ -43,41 +43,6 @@ var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
 JSON.stringify([{name:"地址",url:getVar("地址"),head:{"Referer":"https://xchina.xyz"}}]);
-####
-
-####
-###type
-web
-###分类
-网页18站源
-###标题
-搬淫家
-###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/byj.png
-###BaseURL
-var code=getHttp("https://byjav.me/js/home.js");e2Rex(code,".ty(byjios.).th(http://##https://).z(http.*me).or().z(http.*com).or().z(http.*tv)");
-###首页地址
-getVar("baseURL")+"/index/home.html";
-###分类地址
-getVar("baseURL")+"分类翻页";
-###搜索地址
-getVar("baseURL")+"/search/video/?s=关键字&page=翻页";
-###rule
-##首页规则
-var 列表=e2Arr(getVar("源码"),".get(div.cell.video)");var 标题规则=".get(h5).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-src)";var 简介规则=".get(span.badge).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
-##筛选数据
-var code=getHttp(getVar("baseURL")+"/community/");var arr=e2Arr(code,".get(div.cell.category)");var sort=["分类"];for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".get(h5).t().ct(=)");let b=e2Rex(arr[i],".get(a).href()");sort.push(a+b);};var pn=["翻页+第1页="];for(let i=2;i<=999;i++){let a="第"+i+"页="let b=i+"/";pn.push(a+b);};sort.join("+")+"\n"+pn.join("+");
-##分类规则
-var 列表=e2Arr(getVar("源码"),".get(div.cell.video)");var 标题规则=".get(h5).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-src)";var 简介规则=".get(span.badge).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
-##选集规则
-var uri=e2Rex(getVar("源码"),".get(div#player-fluid).a(style).z(/.+/)");var uri="https://storage.banyinjia8.com"+uri.replace("tmb","hls");var hd=getVar("msg");var list=["1080p","720p","480p","playlist"];var title=["1080p","720p","480p","默认"];var j=list.indexOf(hd)>-1?list.indexOf(hd):0;var res=[];for(var i=j;i<list.length;i++){var 标题=title[i];var 地址=uri+list[i]+".m3u8";res.push({name:标题,url:地址});};var 分类=e2Arr(JSON.stringify(res),".c()");;var 简介="";var 线路="";var 列表规则=".json()";var 标题规则=".var(标题)";var 选集规则=".json(name)";var 选集地址规则=".json(url)";
-##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.cell.video)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(h5).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-src)";var 简介规则=".get(span.badge).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
-##搜索翻页
-var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
-"翻页"+b;
-##免嗅探规则
-JSON.stringify([{name:"地址",url:getVar("地址")}]);
 ####
 
 ####
@@ -314,7 +279,7 @@ var a="分类+国产=ChinaPorn+日本=JapanPorn+欧美=WesternPorn+韩国=KoreaP
 ##分类规则
 var 列表=e2Arr(getVar("源码"),".get(div.stui-vodlist__box)");var 标题规则=".get(h4).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".get(span.pic-text).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
-var 分类=e2Arr(getVar("源码"),".c()");var 线路="";var 简介="";var 列表规则=".ty(player_data=).json(url).dn64().dn(utf8)";var 标题规则=getVar("标题");var 选集规则=".var(标题)";var 选集地址规则=".t()";
+var 分类=e2Arr(getVar("源码"),".z(var player_.+?=.+)");var 线路="";var 简介="";var 列表规则=".ty(=).json(url).dn64().dn(utf8)";var 标题规则=getVar("标题");var 选集规则=".var(标题)";var 选集地址规则=".t()";
 ##搜索规则
 var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.stui-vodlist__box)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则=getVar("baseURL");var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回刷新即可";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(h4).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".get(span.pic-text).t()";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
