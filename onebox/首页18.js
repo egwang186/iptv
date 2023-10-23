@@ -59,7 +59,7 @@ var qian="https://app.";var dz="https://byjapp.com/zhongzhuan/js/zhongzhuan.js";
 ###首页地址
 getVar("baseURL")+"/html/index_m.html";
 ###分类地址
-getVar("baseURL")+"/分类翻页.html";
+getVar("baseURL")+"分类翻页.html";
 ###搜索地址
 getVar("baseURL")+"/search/video/?s=关键字&page=翻页";
 ###rule
