@@ -57,16 +57,16 @@ http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/byj.png
 ###BaseURL
 var qian="https://app.";var dz="https://byjapp.com/zhongzhuan/js/zhongzhuan.js";var jx=e2Rex(getHttp(dz),".ty(latestDomain=').tz(.tv)");var hou=".tv";var wz=qian+jx+hou;wz;
 ###首页地址
-getVar("baseURL")+"/index/home.html";
+getVar("baseURL")+"/html/index_m.html";
 ###分类地址
-getVar("baseURL")+"分类翻页";
+getVar("baseURL")+"/分类翻页.html";
 ###搜索地址
 getVar("baseURL")+"/search/video/?s=关键字&page=翻页";
 ###rule
 ##首页规则
 var 列表=e2Arr(getVar("源码"),".get(div.video_list_1)");var 标题规则=".get(div.video_list_1_2).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(.img_hengtiao_1).t().c(|).get(.img_hengtiao_2).t()";var 图片底部规则="";var 左上规则="";var 右上规则=".z(vip)";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
-var code=getHttp(getVar("baseURL")+"/community/");var arr=e2Arr(code,".get(div.cell.category)");var sort=["分类"];for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".get(h5).t().ct(=)");let b=e2Rex(arr[i],".get(a).href()");sort.push(a+b);};var pn=["翻页+第1页="];for(let i=2;i<=999;i++){let a="第"+i+"页="let b=i+"/";pn.push(a+b);};sort.join("+")+"\n"+pn.join("+");
+var code=getHttp(getVar("baseURL")+"/label/topic");var sort=["分类"];var arr=e2Arr(code,".get(div.van-tab)");for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".get(span).t().ct(=)");let b=e2Rex(arr[i],".get(a).href().tz(.)");sort.push(a+b);}var arr=e2Arr(code,".get(a.topic-item)");for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".get(.title_column_1_1).t().z(\\S+).ct(=)");let b=e2Rex(arr[i],".get(a).href().tz(.)");sort.push(a+b);}var pn=["翻页+第1页="];for(let i=2;i<=999;i++){let a="第"+i+"页="let b="/page/"+i;pn.push(a+b);};sort.join("+")+"\n"+pn.join("+");
 ##分类规则
 var 列表=e2Arr(getVar("源码"),".get(div.video_list_1)");var 标题规则=".get(div.video_list_1_2).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(.img_hengtiao_1).t().c(|).get(.img_hengtiao_2).t()";var 图片底部规则="";var 左上规则="";var 右上规则=".z(vip)";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
