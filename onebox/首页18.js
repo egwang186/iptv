@@ -351,7 +351,7 @@ getVar("baseURL")+"/zh/category/分类/翻页.json";
 getVar("baseURL")+"/zh/search/关键字/翻页.json";
 ###rule
 ##首页规则
-var 列表=e2Arr(getVar("源码"),".z(\\{\"id\":.+?\\})");var 标题规则=".json(name)";var 地址规则=".c(/zh/video/).json(id).ct(.json)";var 图片规则="@js=var id=JSON.parse(CODE).id;var 前=id.split('-')[0];var 后=id.split('-')[1];if(id.indexOf('FC2-')==0){'https://ccavb.tv/static/img/'+前+'/'+后.substr(0,2)+'/'+后+'/'+id+'_1.jpg'}else{'https://ccavb.tv/static/img/'+前+'/'+后+'/'+id+'_1.jpg'}";var 简介规则=".json(types)";var 图片底部规则=".json(updateTime)";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
+var 列表=e2Arr(getVar("源码"),".z(\\{\"id\":.+?totalView.+?\\})");var 标题规则=".json(name)";var 地址规则=".c(/zh/video/).json(id).ct(.json)";var 图片规则="@js=var id=JSON.parse(CODE).id;var 前=id.split('-')[0];var 后=id.split('-')[1];if(id.indexOf('FC2-')==0){'https://ccavb.tv/static/img/'+前+'/'+后.substr(0,2)+'/'+后+'/'+id+'_1.jpg'}else{'https://ccavb.tv/static/img/'+前+'/'+后+'/'+id+'_1.jpg'}";var 简介规则=".json(types)";var 图片底部规则=".json(updateTime)";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
 var a="分类+最新上傳=最新上傳+熱門影片=熱門影片";var b="";for(var i=1;i<999;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
 ##分类规则
