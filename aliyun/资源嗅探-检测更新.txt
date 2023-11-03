@@ -1,11 +1,11 @@
-<a class="版本">65</a>
+<a class="版本">66</a>
 <ul class="默认提示">
 <li><font color="blue"><b>已是最新版，本轻站适用土狗浏览器</b></font>
 <p>mqqwpa://im/chat?chat_type=wpa&uin=1260957445</p>
 </li>
 </ul>
 <ul class="更新提示">
-<li><font color="red"><b>有新版本!!![海角图片文本支持保存本地，添加海角评论]点击安装</b></font>
+<li><font color="red"><b>有新版本!!![适配新版M]点击安装</b></font>
 <p>mapi:qm/http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/aliyun/资源嗅探.mkz</p>
 </li>
 </ul>
