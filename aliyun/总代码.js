@@ -15,7 +15,7 @@ if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1||getVar("地址").indexOf(
         var pwd="";
         }
     }
-    if(getVar("share_token")!="null"||getVar("share_token").length>1){
+    if(getVar("share_token")!="null"&&getVar("share_token").length>1){
     getVar("share_token");
     }else{
     JSON.parse(getHttp(JSON.stringify({url:"https://api.aliyundrive.com/v2/share_link/get_share_token",postJson:JSON.stringify({share_pwd:pwd,share_id:share_id})}))).share_token;
