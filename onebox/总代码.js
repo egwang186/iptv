@@ -352,8 +352,8 @@ for(var i=0;i<urls.length;i++){
 }
 JSON.stringify(items);
 }else{
-    if(urls[i].indexOf("43.224.33.165/php/")!=-1){
-    JSON.stringify({name:"地址",url:urls[i],head:{"User-Agent":"python","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
+    if(uu.indexOf("43.224.33.165/php/")!=-1){
+    JSON.stringify({name:"地址",url:uu,head:{"User-Agent":"python","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
     }else{
     if(uu.indexOf(".php")!=-1){
         var resp=JZ(JSON.stringify({url:uu,redirect:false,head:{"User-Agent":"Mozilla/5.0","Accept-Language":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}));
