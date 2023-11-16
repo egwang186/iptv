@@ -319,6 +319,7 @@ if(uu.indexOf("#")!=-1){
 var urls=uu.split("#");
 var items=[];
 for(var i=0;i<urls.length;i++){
+    
     if(urls[i].indexOf(".php")!=-1){
         var resp = JZ(JSON.stringify({url:urls[i],redirect:false,head:{"User-Agent":"Mozilla/5.0","Accept-Language":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}));
         var u = resp.head.Location || resp.head.location;
@@ -347,10 +348,13 @@ for(var i=0;i<urls.length;i++){
     }else{
         var u=urls[i];
     }
-    items.push({name:"地址"+(i+1),url:u,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}); 
+    items.push({name:"地址"+(i+1),url:u,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
 }
 JSON.stringify(items);
 }else{
+    if(urls[i].indexOf("43.224.33.165/php/")!=-1){
+    JSON.stringify({name:"地址",url:urls[i],head:{"User-Agent":"python","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
+    }else{
     if(uu.indexOf(".php")!=-1){
         var resp=JZ(JSON.stringify({url:uu,redirect:false,head:{"User-Agent":"Mozilla/5.0","Accept-Language":"zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}}));
         var u=resp.head.Location||resp.head.location;
@@ -380,6 +384,7 @@ JSON.stringify(items);
         var u=uu;
     }
 JSON.stringify({name:"地址",url:u,head:{"User-Agent":"Mozilla/5.0","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
+    }
 }
 ######通用免嗅探4
 var uu=getVar("地址");
