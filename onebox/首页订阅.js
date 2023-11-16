@@ -17,6 +17,17 @@ iptv
 ###分类
 iptv
 ###数据
+港台
+##
+远程$http://bad-ass.site/爬.txt
+####
+
+####
+###type
+iptv
+###分类
+iptv
+###数据
 VCtv
 ##
 远程$http://egwang186.top:3000/apis/my-github/vamoschuck/TV/main/M3U
