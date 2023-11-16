@@ -352,7 +352,7 @@ for(var i=0;i<urls.length;i++){
 }
 JSON.stringify(items);
 }else{
-    if(uu.indexOf("43.224.33.165/php/")!=-1){
+    if(uu.indexOf("43.224.33.165/")!=-1){
         if(uu.indexOf(".m3u8")!=-1||uu.indexOf(".php?url=http")!=-1){
             JSON.stringify({name:"地址",url:uu,head:{"User-Agent":"python","Accept-Language": "zh-CN,zh;q=0.9,en-US;q=0.8,en;q=0.7"}});
         }else{
