@@ -9,7 +9,7 @@
         "详情规则":'var 回复=e2Arr(getHttp(getVar("地址")),".json(included)").filter(item=>JSON.parse(item).type=="posts");var 正文=[];for(var i in 回复){正文.push(JSON.parse(回复[i]).attributes.contentHtml);}var 正文=正文.join("\\n");'
     }
 },
-{
+/*{
     "title":"霸王龙字幕组",
     "rule":{
         "分类":'var a="最新资源$/$$电影$/movies$$电视剧$/tvshow$$国产剧$/guochantv$$美剧$/meiju$$韩剧$/hanju$$日剧$/riju$$泰剧$/taiju$$英剧$/yingju$$动画$/animation$$真人秀综艺$/show$$纪录片$/faction$$其他剧$/qitaju";var a=a.split("$$");var items=[];for(var i in a){var title=a[i].split("$")[0];var url="https://t-rex.tzfile.com"+a[i].split("$")[1]+"#PN#";items.push({title:title,url:url});}JSON.stringify(items);',
@@ -17,11 +17,11 @@
         "列表规则":'var 列表=e2Arr(getCode(),".get(ul li.post-list-item)");var 地址规则=".get(h2 a).a(href)";var 标题规则=".c([).get(a.post-list-cat-item).t().c(]).get(h2 a).t()";var 图片规则=".get(img).a(src)";var 简介规则=".t()";var NEXTPAGE="";var PREPAGE="";',
         "详情规则":'var cm=android.webkit.CookieManager.getInstance();var COOKIE=cm.getCookie(getVar("地址").match(/http.+?\\/\\/.+?\\//)[0]);var 源码=e3("读源码({模式:\\"OKHTTP\\",地址:\\""+getVar("地址")+"\\",COOKIE:\\""+COOKIE+"\\"})");var 正文=e2Rex(源码,".get(div.entry-content).t()");'
     }
-},
+},*/
 {
     "title":"阿里小纸条",
     "rule":{
-        "分类":'var a=getHttp(JSON.stringify({url:"http://a.gitcafe.net/",head:{"Referer":"http://a.gitcafe.net/","User-Agent":"okhttp/4.2.2"}})).match(/<a onclick="load_data.+?<\/a>/g);var xindata=[];for(var i in a){xindata.push({title:e2Rex(a[i],".t()"),url:"https://gitcafe.net/tool/alipaper/$$action=viewcat&num=#PN#&cat="+e2Rex(a[i],".ty(\').tz(\')")})}JSON.stringify(xindata);',
+        "分类":'var a=getHttp(JSON.stringify({url:"http://a.gitcafe.net/",head:{"Referer":"http://a.gitcafe.net/","User-Agent":"okhttp/4.2.2"}})).match(/<a onclick="load_data.+?<\\/a>/g);var xindata=[];for(var i in a){xindata.push({title:e2Rex(a[i],".t()"),url:"https://gitcafe.net/tool/alipaper/$$action=viewcat&num=#PN#&cat="+e2Rex(a[i],".ty(\').tz(\')")})}JSON.stringify(xindata);',
         "翻页数据":'var b="";for(var i=1;i<1000;i=i+1){b=b+"+第"+i+"页="+i;}"翻页"+b;',
         "列表规则":'var 列表=e2Arr(getCode(),".json(data)");var 地址规则=".json(alikey)";var 标题规则=".json(title)";var 图片规则=".json(tok)";var 简介规则=".c(分享者:).json(aliuser).c(<br>分享时间:).json(creatime)";var NEXTPAGE="";var PREPAGE="";',
         "详情规则":'var 正文=e2Rex(getVar("源"),".json(title).c(链接:https://www.aliyundrive.com/s/).json(url).c(<br>).json(detail)");'
