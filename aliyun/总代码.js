@@ -1,7 +1,7 @@
 ######share_token1
 if(getVar("地址").length>1&&getVar("地址")!="null"){
-if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1||getVar("地址").indexOf("share_id-")!=-1){
-    if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1){
+if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1||getVar("地址").indexOf("alipan.com/s/")!=-1||getVar("地址").indexOf("share_id-")!=-1){
+    if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1||getVar("地址").indexOf("alipan.com/s/")!=-1){
     var share_id=getVar("地址").match(/\.com\/s\/([0-9a-zA-Z]+)/)[1];
     }else if(getVar("地址").indexOf("share_id-")!=-1){
     var share_id=getVar("地址").split("$$")[0].split("share_id-")[1];
@@ -30,7 +30,7 @@ if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1||getVar("地址").indexOf(
 }
 ######目录重组数据root2
 if(getVar("地址")&&getVar("地址").length>1&&getVar("地址")!="null"){
-if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1){
+if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1||getVar("地址").indexOf("alipan.com/s/")!=-1){
     var xxx_id="share_id-"+getVar("地址").match(/\.com\/s\/([0-9a-zA-Z]+)/)[1];
     var file_id="root";
 }else if(getVar("地址").indexOf("$$")!=-1){
@@ -464,14 +464,14 @@ JSON.stringify([{name:name,url:url}]);
 ]
 ######多链接10
 if(getVar("url")&&getVar("url")!="null"){
-if(getVar("url").indexOf("aliyundrive.com/s/")!=-1){
-var list=getVar("url").match(/[\s\S]*?https:\/\/www\.aliyundrive\.com\/s\/.*/g);
+if(getVar("url").indexOf("aliyundrive.com/s/")!=-1||getVar("url").indexOf("alipan.com/s/")!=-1){
+var list=getVar("url").match(/[\s\S]*?https:\/\/www\.ali.+?\.com\/s\/.*/g);
 var items=[];
 for(var i in list){
     var title=list[i].replace(/\s/g,"").replace(/<.+?>/g,"").split("https://")[0]||"加个标题吧，能从历史记录找到我";
-    var share_id=list[i].match(/aliyundrive\.com\/s\/([0-9a-zA-Z]+)/)[1];
+    var share_id=list[i].match(/\.com\/s\/([0-9a-zA-Z]+)/)[1];
     if(list[i].search(/\/s\/.+?\/folder\/.+/)!=-1){
-        file_id=list[i].match(/aliyundrive\.com\/s\/.+?\/folder\/([0-9a-zA-Z]+)/)[1];
+        file_id=list[i].match(/\.com\/s\/.+?\/folder\/([0-9a-zA-Z]+)/)[1];
     }else{
         file_id="root";
     }
