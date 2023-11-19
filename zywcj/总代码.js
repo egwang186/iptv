@@ -274,14 +274,14 @@ var 标题规则=".t()";
 var 选集规则=".tz($)";选集列表();
 }else{
       if(URL.indexOf("provide/art/")!=-1){
-            if(e2Rex(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content)")){
-                  if(e2Rex(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content)").indexOf("<iframe")!=-1){
-                        var 播放地址=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content).get(iframe)");
+            if(e2Rex(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content)")){ 
+                  if(e2Rex(getVar("源码"),".json(list).json(art_content)").indexOf("<iframe")!=-1){
+                        var 播放地址=e2Arr(getVar("源码"),".json(list).json(art_content).get(iframe)");
                         var 分类="";
                         for(var i in 播放地址){
                         分类=分类+"$$$"+e2Rex(播放地址[i],".a(src).z(http.+).tz(&)");
                         }
-                        var 分类=e2Arr(分类,".fg(\\$\\$\\$)");
+                        var 分类=e2Arr(分类,".fg(\\$\\$\\$)").filter(Boolean);
                   }else{
                         var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content).fg(\\$\\$\\$)");
                   }
