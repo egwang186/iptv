@@ -10,7 +10,7 @@ for(var j=0;j<列表.length;j++){
      items.push({title:标题,url:分类地址});
 }
 }else{
-    var 自定义数据="电影=1+电视剧=2+综艺=3+动漫=4+动作片=6+喜剧片=7+爱情片=8+科幻片=9+恐怖片=10+剧情片=11+国产剧=13+港台剧=14+日韩剧=15+欧美剧=16";
+    var 自定义数据="网红主播=20+偷拍自拍=21+麻豆原创=22+国产精品=23+名人明星=24+网曝门事件=25+无码专区=26+有码专区=27+福利姬=28+娇妻素人=29+强奸乱伦=30+制服职场=31+国模私拍=32+抖阴视频=33";
     var Arr=自定义数据.split("+");
     for(var i in Arr){
           var 标题=Arr[i].split("=")[0];var 地址=Arr[i].split("=")[1];
@@ -275,7 +275,17 @@ var 选集规则=".tz($)";选集列表();
 }else{
       if(URL.indexOf("provide/art/")!=-1){
             if(e2Rex(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content)")){
-                  var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content).fg(\\$\\$\\$)");
+                  if(e2Rex(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content)").indexOf("<iframe")!=-1){
+                        var 播放地址=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content).get(iframe)");
+                        var 分类="";
+                        for(var i in 播放地址){
+                        分类=分类+"$$$"+e2Rex(播放地址[i],".a(src).z(http.+).tz(&)");
+                        }
+                        var 分类=e2Arr(分类,".fg(\\$\\$\\$)");
+                  }else{
+                        var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content).fg(\\$\\$\\$)");
+                  }
+                  
             }else{
                   var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_blurb).fg(\\$\\$\\$)");
             }

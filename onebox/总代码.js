@@ -494,13 +494,13 @@ var playurl=uu.split("ip111.cn/?wd=")[1];
 ##首页规则
 if(getVar("源码").indexOf("<rss")!=-1){var 列表=e2Arr(getVar("源码"),".xml(list video)");var 标题规则=".xml(name).ty(CDATA).tz2(])";var 地址规则=".c(?ac=videolist&ids=).xml(id).z(\\d+)";var 图片规则=".xml(pic).t().z(\\S.*\\S)";var 简介规则=".c(<font color='#0997F7'><b>).xml(dt).t().ct(</b></font><br>)";var 图片底部规则=".xml(last).t()";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).xml(type).t().ct(</font></p>)";var 右上规则=".tx(<p style='background-color:#CC00FF'><font color='#FFFFFF'>).xml(note).t().ct(</font></p>)";var NEXTPAGE="";var PREPAGE="";}else if(baseURL.indexOf("?")!=-1){var 列表=e2Arr(getVar("源码"),".json(list)");var 标题规则=".json(vod_name)";var 地址规则=".c(&ac=videolist&ids=).json(vod_id)";var 图片规则=".json(vod_pic)";var 简介规则=".c(<font color='#0997F7'><b>).json(vod_play_from).ct(</b></font><br>)";var 图片底部规则=".json(vod_time)";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).json(type_name).ct(</font></p>)";var 右上规则=".tx(<p style='background-color:#CC00FF'><font color='#FFFFFF'>).json(vod_remarks).ct(</font></p>)";var NEXTPAGE="";var PREPAGE="";}else{var 列表=e2Arr(getVar("源码"),".json(list)");var 标题规则=".json(vod_name).or().json(art_name)";var 地址规则=".c(?ac=videolist&ids=).json(vod_id).or().json(art_id)";var 图片规则=".json(vod_pic).or().json(art_pic)";var 简介规则=".c(<font color='#0997F7'><b>).json(vod_play_from).or().json(art_from).ct(</b></font><br>)";var 图片底部规则=".json(vod_time).or().json(art_time)";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).json(type_name).ct(</font></p>)";var 右上规则=".tx(<p style='background-color:#CC00FF'><font color='#FFFFFF'>).json(vod_remarks).or().json(art_remarks).ct(</font></p>)";var NEXTPAGE="";var PREPAGE="";}
 ##筛选数据
-try{var 源码=getHttp(getVar("首页地址"));}catch(err){alert("筛选数据获取失败，错误描述："+err.message);}var baseURL=getVar("baseURL");alert("筛选数据获取成功");if(源码.indexOf("<rss")!=-1){var 列表=e2Arr(源码,".xml(class ty)");var a="";for(var i in 列表){var t=e2Rex(列表[i],".t()");var id=e2Rex(列表[i],".a(id)");a=a+"+"+t+"=&t="+id;}var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var a="分类+全部="+a;var b="翻页"+b;a+"\n"+b;}else if(baseURL.indexOf("?")!=-1){var 列表=e2Arr(源码,".json(class)");var a="";for(var i in 列表){var t=e2Rex(列表[i],".json(type_name)");var id=e2Rex(列表[i],".json(type_id)");a=a+"+"+t+"=&t="+id;}var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var a="分类+全部="+a;var b="翻页"+b;a+"\n"+b;}else{var 列表=e2Arr(源码.replace(/<.*?>/g,""),".json(class)");if(列表[0]){var a="";for(var i in 列表){var t=e2Rex(列表[i],".json(type_name).or().json(type_title)");var id=e2Rex(列表[i],".json(type_id)");a=a+"+"+t+"=&t="+id;}}else{var a="+电影=&t=1+电视剧=&t=2+综艺=&t=3+动漫=&t=4+动作片=&t=6+喜剧片=&t=7+爱情片=&t=8+科幻片=&t=9+恐怖片=&t=10+剧情片=&t=11+国产剧=&t=13+港台剧=&t=14+日韩剧=&t=15+欧美剧=&t=16";}var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var a="分类+全部="+a;var b="翻页"+b;a+"\n"+b;}
+try{var 源码=getHttp(getVar("首页地址"));}catch(err){alert("筛选数据获取失败，错误描述："+err.message);}var baseURL=getVar("baseURL");alert("筛选数据获取成功");if(源码.indexOf("<rss")!=-1){var 列表=e2Arr(源码,".xml(class ty)");var a="";for(var i in 列表){var t=e2Rex(列表[i],".t()");var id=e2Rex(列表[i],".a(id)");a=a+"+"+t+"=&t="+id;}var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var a="分类+全部="+a;var b="翻页"+b;a+"\n"+b;}else if(baseURL.indexOf("?")!=-1){var 列表=e2Arr(源码,".json(class)");var a="";for(var i in 列表){var t=e2Rex(列表[i],".json(type_name)");var id=e2Rex(列表[i],".json(type_id)");a=a+"+"+t+"=&t="+id;}var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var a="分类+全部="+a;var b="翻页"+b;a+"\n"+b;}else{var 列表=e2Arr(源码.replace(/<.*?>/g,""),".json(class)");if(列表[0]){var a="";for(var i in 列表){var t=e2Rex(列表[i],".json(type_name).or().json(type_title)");var id=e2Rex(列表[i],".json(type_id)");a=a+"+"+t+"=&t="+id;}}else{var a="+网红主播=&t=20+偷拍自拍=&t=21+麻豆原创=&t=22+国产精品=&t=23+名人明星=&t=24+网曝门事件=&t=25+无码专区=&t=26+有码专区=&t=27+福利姬=&t=28+娇妻素人=&t=29+强奸乱伦=&t=30+制服职场=&t=31+国模私拍=&t=32+抖阴视频=&t=33";}var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var a="分类+全部="+a;var b="翻页"+b;a+"\n"+b;}
 ##分类规则
 if(getVar("源码").indexOf("<rss")!=-1){var 列表=e2Arr(getVar("源码"),".xml(list video)");var 标题规则=".xml(name).ty(CDATA).tz2(])";var 地址规则=".c(?ac=videolist&ids=).xml(id).z(\\d+)";var 图片规则=".xml(pic).t().z(\\S.*\\S)";var 简介规则=".c(<font color='#0997F7'><b>).xml(dt).t().ct(</b></font><br>)";var 图片底部规则=".xml(last).t()";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).xml(type).t().ct(</font></p>)";var 右上规则=".tx(<p style='background-color:#CC00FF'><font color='#FFFFFF'>).xml(note).t().ct(</font></p>)";var NEXTPAGE="";var PREPAGE="";}else if(baseURL.indexOf("?")!=-1){var 列表=e2Arr(getVar("源码"),".json(list)");var 标题规则=".json(vod_name)";var 地址规则=".c(&ac=videolist&ids=).json(vod_id)";var 图片规则=".json(vod_pic)";var 简介规则=".c(<font color='#0997F7'><b>).json(vod_play_from).ct(</b></font><br>)";var 图片底部规则=".json(vod_time)";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).json(type_name).ct(</font></p>)";var 右上规则=".tx(<p style='background-color:#CC00FF'><font color='#FFFFFF'>).json(vod_remarks).ct(</font></p>)";var NEXTPAGE="";var PREPAGE="";}else{var 列表=e2Arr(getVar("源码"),".json(list)");var 标题规则=".json(vod_name).or().json(art_name)";var 地址规则=".c(?ac=videolist&ids=).json(vod_id).or().json(art_id)";var 图片规则=".json(vod_pic).or().json(art_pic)";var 简介规则=".c(<font color='#0997F7'><b>).json(vod_play_from).or().json(art_from).ct(</b></font><br>)";var 图片底部规则=".json(vod_time).or().json(art_time)";var 左上规则=".tx(<p style='background-color:#7091fc'><font color='#FFFFFF' size='40px'>).json(type_name).ct(</font></p>)";var 右上规则=".tx(<p style='background-color:#CC00FF'><font color='#FFFFFF'>).json(vod_remarks).or().json(art_remarks).ct(</font></p>)";var NEXTPAGE="";var PREPAGE="";}
 ##选集规则
 var type="CMS";var baseURL=getVar("baseURL");if(getVar("源码").indexOf("<rss")!=-1){var 分类=e2Arr(getVar("源码"),".get(dd)");var 简介=e2Rex(getVar("源码"),".c(类型:).xml(type).c(<br>演员表:).xml(actor).c(<br>简介:).xml(des)");var 列表规则=".z2(CDATA\\[\\([\\s\\S]*?\\)[#]*?\\]).fg(#)";var 标题规则=".a(flag)";var 选集规则=".tz($)";var 选集地址规则=".z2(\\$\\([^\$|&]*\\)).or().z(.*)";}else{if(baseURL.indexOf("61783.xyz")!=-1){var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_remarks).fg(\\$\\$\\$)");var 线路=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_name).fg(\\$\\$\\$)");var 选集地址规则=".z2(\\$\\(.*\\)).or().z(.*)";var 简介=e2Rex(getVar("源码"),".c(演员表:).json(list).json(art_author).c(<br>简介:).json(list).json(art_name)");var 列表规则=".fg(#)";var 标题规则=".t()";var 选集规则=".tz($)";}else{var 分类=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(vod_play_url).fg(\\$\\$\\$)");var 线路=e2Arr(getVar("源码").replace(/<.*?>/g,""),".json(list).json(vod_play_from).fg(\\$\\$\\$)");var 选集地址规则=".z2(\\$\\(.*\\)).or().z(.*)";var 简介=e2Rex(getVar("源码"),".c(演员表:).json(list).json(vod_actor).c(<br>简介:).json(list).json(vod_content)");var 列表规则=".fg(#)";var 标题规则=".t()";var 选集规则=".tz($)";}}
 ##搜索规则
-var 源码=getVar("源码");if(源码.indexOf("<rss")!=-1){var 列表=e2Arr(源码,".xml(video)");var 标题规则=".xml(name).ty(CDATA).tz2(])";var 地址规则=".c(?ac=videolist&ids=).xml(id).z(\\d+)";var 图片规则=".xml(pic).t().z(http.*\\S)";var 简介规则=".c(<font color='#0997F7'><b>).xml(dt).t().c(</b></font><br>).xml(last).t()";var NEXTPAGE="";var PREPAGE="";}else{var 列表=e2Arr(源码.replace(/<.*?>/g,""),".json(list)");var 标题规则=".json(vod_name).or().json(art_name)";var 地址规则=".c(?ac=videolist&ids=).json(vod_id).or().json(art_id)";var 图片规则=".json(vod_pic).or().json(art_pic)";var 简介规则=".json(type_name).c().json(vod_time).or().json(art_time).c().json(vod_remarks).or().json(art_remarks)";var 图片底部规则="";var 左上规则="";var 右上规则="";var NEXTPAGE="";var PREPAGE="";}
+var 源码=getVar("源码");if(源码.indexOf("<rss")!=-1){var 列表=e2Arr(源码,".xml(video)");var 标题规则=".xml(name).ty(CDATA).tz2(])";var 地址规则=".c(?ac=videolist&ids=).xml(id).z(\\d+)";var 图片规则=".xml(pic).t().z(http.*\\S)";var 简介规则=".c(<font color='#0997F7'><b>).xml(dt).t().c(</b></font><br>).xml(last).t()";var NEXTPAGE="";var PREPAGE="";}else{var 列表=e2Arr(源码.replace(/<.*?>/g,""),".json(list)");var 标题规则=".json(vod_name).or().json(art_name)";var 地址规则=".c(?ac=videolist&ids=).json(vod_id).or().json(art_id)";var 图片规则=".json(vod_pic).or().json(art_pic)";var 简介规则=".json(type_name).c().json(vod_time).or().json(art_time).c().json(vod_remarks).or().json(art_remarks)";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
@@ -534,10 +534,10 @@ function 通用列表(){
             var 图片=图片+'@{"User-Agent":"Mozilla/5.0","Referer":"http://1090ys2.com/"}';
             }
         }
-        var 简介=e2Rex(CODE,简介规则);
-        var 图片底部=e2Rex(CODE,图片底部规则);
-        var 左上=e2Rex(CODE,左上规则);
-        var 右上=e2Rex(CODE,右上规则);
+        var 简介=简介规则.indexOf("@js=")!=-1?eval(简介规则.split("@js=")[1]):e2Rex(CODE,简介规则);
+        var 图片底部=图片底部规则.indexOf("@js=")!=-1?eval(图片底部规则.split("@js=")[1]):e2Rex(CODE,图片底部规则);
+        var 左上=左上规则.indexOf("@js=")!=-1?eval(左上规则.split("@js=")[1]):e2Rex(CODE,左上规则);
+        var 右上=右上规则.indexOf("@js=")!=-1?eval(右上规则.split("@js=")[1]):e2Rex(CODE,右上规则);
         items.push({title:标题,url:地址,img:图片,detail:简介,td:图片底部,zs:左上,ys:右上});
     }
     res.data=items;
@@ -562,21 +562,21 @@ function CMS选集列表(){
         var 分类CODE=分类[i];
         var 列表=e2Arr(分类CODE,列表规则).filter(Boolean);
         if(线路){
-        var 标题=e2Rex(线路[i],标题规则);
+        var 标题=标题规则.indexOf("@js=")!=-1?eval(标题规则.split("@js=")[1]):e2Rex(线路[i],标题规则);
         }else{
-        var 标题=e2Rex(分类CODE,标题规则);
+        var 标题=标题规则.indexOf("@js=")!=-1?eval(标题规则.split("@js=")[1]):e2Rex(分类CODE,标题规则);
         }
         var LIST=[];
         for(var j=0;j<列表.length;j++){
             if(列表[j].indexOf("$")!=-1){
-                var 选集=e2Rex(列表[j],选集规则);
+                var 选集=选集规则.indexOf("@js=")!=-1?eval(选集规则.split("@js=")[1]):e2Rex(列表[j],选集规则);
                 if(选集==""){
                 选集=j+1;
                 }
             }else{
               var 选集=j+1;
             }
-            var 选集地址=e2Rex(列表[j],选集地址规则);
+            var 选集地址=选集地址规则.indexOf("@js=")!=-1?eval(选集地址规则.split("@js=")[1]):e2Rex(列表[j],选集地址规则);
     //开始根据网址，线路判断前缀
     if(标题=="xhzy"){
           选集地址=选集地址;
@@ -744,9 +744,9 @@ function 选集列表(){
         var 分类CODE=分类[i];
         var 列表=e2Arr(分类CODE,列表规则);
         if(线路){
-        var 标题=e2Rex(线路[i],标题规则);
+        var 标题=标题规则.indexOf("@js=")!=-1?eval(标题规则.split("@js=")[1]):e2Rex(线路[i],标题规则);
         }else{
-        var 标题=e2Rex(分类CODE,标题规则);
+        var 标题=标题规则.indexOf("@js=")!=-1?eval(标题规则.split("@js=")[1]):e2Rex(分类CODE,标题规则);
         }
         if(baseURL.search(/\.php\/.+?\.vod/)!=-1){
            var PARSE=e2Rex(分类CODE,".json(player_info).json(parse)").split(",");
@@ -774,7 +774,7 @@ function 选集列表(){
         }
         var LIST=[];
         for(var j=0;j<列表.length;j++){
-            var 选集=e2Rex(列表[j],选集规则);
+            var 选集=选集规则.indexOf("@js=")!=-1?eval(选集规则.split("@js=")[1]):e2Rex(列表[j],选集规则);
             var 选集地址=选集地址规则.indexOf("@js=")!=-1?eval(选集地址规则.split("@js=")[1]):e2Rex(列表[j],选集地址规则);
             if(baseURL.indexOf("xgapp.php/v")!=-1||baseURL.indexOf("api.php/app/")!=-1||baseURL.search(/\.php\/.+?\.vod/)!=-1){
                if(选集地址.indexOf(".m3u8")>15||选集地址.indexOf(".mp4")>15){
