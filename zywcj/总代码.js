@@ -170,10 +170,8 @@ if(标题=="xhzy"){
   选集地址="https://www.meiju11.com/ckplayerx/m3u8.php?url="+选集地址;
 }else if(标题=="dmplay"||标题=="base"){
 选集地址="https://play.omofun.tv/m3u8.php?url="+选集地址;
-}else if(标题=="ltnb"||标题=="jrq"){
-  //选集地址="https://jifei.longtengzy.fun/video/?url="+选集地址;
-  //选集地址="http://jx.yinliub.cn/home/api?type=ys&uid=51213&key=chiprvyFHJNOTUVZ39&url="+选集地址;
-  选集地址="https://ltjx.bibilili.vip/home/api?type=ys&uid=2712935&key=adfgimpstzBFGIQUZ0&url="+选集地址;
+}else if(URL.indexOf("dianyingleida.com")!=-1){
+  选集地址="https://player.fxfkfz.top/player/ec.php?code=qw&if=1&url="+选集地址;
 }else if(选集地址.indexOf(".ruifenglb.com")!=-1){
    选集地址="https://js.jisujiexi.vip/home/api?type=ys&uid=196395&key=aejlnoprsABDNUZ159&url="+选集地址;
 }else if(选集地址.indexOf(".m3u8")>15||选集地址.indexOf(".mp4")>15){

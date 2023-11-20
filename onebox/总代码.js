@@ -698,8 +698,8 @@ function CMS选集列表(){
        选集地址="http://ip111.cn/?wd=https://js.jisujiexi.vip/home/api?type=ys&uid=196395&key=aejlnoprsABDNUZ159&url="+选集地址;
     }else if(选集地址.indexOf(".m3u8")>15||选集地址.indexOf(".mp4")>15){
           选集地址="http://ip111.cn/?wd="+选集地址;
-    }else if(标题=="4kdym"||标题=="8kvod"){
-          选集地址="http://ip111.cn/?wd="+decodeURIComponent(选集地址);
+    }else if(baseURL.indexOf("dianyingleida.com")!=-1){
+        选集地址="https://player.fxfkfz.top/player/ec.php?code=qw&if=1&url="+选集地址;
     }else if(标题=="789pan"||标题=="pll"){
         选集地址="https://dp.jiexi.work/bfq.php?url="+选集地址;
     }else if(标题=="zbkplayer"){
