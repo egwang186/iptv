@@ -17,9 +17,20 @@ iptv
 ###分类
 iptv
 ###数据
-港台
+麒麟
 ##
-远程$http://bad-ass.site/爬.txt
+远程$http://106.52.17.220:100/data/User/qilin/home/iptv.txt
+####
+
+####
+###type
+iptv
+###分类
+iptv
+###数据
+派大星
+##
+远程$http://tvkj.top/tvlive.txt
 ####
 
 ####
