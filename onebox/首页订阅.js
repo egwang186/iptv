@@ -30,7 +30,7 @@ iptv
 ###数据
 派大星
 ##
-远程$http://tvkj.top/tvlive.txt
+远程$https://tvkj.top/tvlive.txt
 ####
 
 ####
