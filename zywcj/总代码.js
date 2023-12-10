@@ -188,7 +188,7 @@ var 标题规则=".a(flag)";
 var 选集规则=".tz($)";
 var 选集地址规则=".z2(\\$\\([^\$|&]*\\)).or().z(.*)";选集列表();
 }else{
-if(URL.indexOf("/vodd/json")!=-1){
+if(basrURL.indexOf("/vodd/json")!=-1){
 var 分类=e2Arr(getVar("源码"),".json(data).json(vod_play_url).fg(\\$\\$\\$)");
 var 线路=e2Arr(getVar("源码"),".json(data).json(vod_play_from).fg(\\$\\$\\$)");
 var 选集地址规则=".z2(\\$\\(.*\\)).or().z(.*)";
@@ -197,7 +197,7 @@ var 列表规则=".fg(#)";
 var 标题规则=".t()";
 var 选集规则=".tz($)";选集列表();
 }else{
-      if(URL.indexOf("provide/art/")!=-1){
+      if(baseURL.indexOf("provide/art/")!=-1){
             if(e2Rex(getVar("源码").replace(/<.*?>/g,""),".json(list).json(art_content)")){ 
                   if(e2Rex(getVar("源码"),".json(list).json(art_content)").indexOf("<iframe")!=-1){
                         var 播放地址=e2Arr(getVar("源码"),".json(list).json(art_content).get(iframe)");
