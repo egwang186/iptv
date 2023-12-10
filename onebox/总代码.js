@@ -34,7 +34,7 @@ if(getVar("按钮")=="添加远程订阅"){
         for(var j in 输入条目){
            var title=输入条目[j].split(",")[0];
            var url=输入条目[j].split(",")[1];
-           var baseURL='"'+url+'";';var img="http://59.47.74.33:39000/tupian.php?text="+title;
+           var baseURL='"'+url+'";';var img="http://42.202.35.113:39000/tupian.php?text="+title;
            if(baseURL.indexOf("?")!=-1){
             var 分类地址='getVar("baseURL")+"&ac=videolist分类&pg=翻页";';
             var 首页地址='getVar("baseURL")+"&ac=list&pg=1";';
@@ -449,7 +449,7 @@ var playurl=uu.split("ip111.cn/?wd=")[1];
             }else{
                 function 切换解析(data){
                         if(data.split("url=")[1].indexOf("http")!=-1){
-                            return "web=http://59.47.74.33:39000/?url="+data.split("url=")[1];
+                            return "web=http://42.202.35.113:39000/?url="+data.split("url=")[1];
                         }else if(data.split("url=")[1].indexOf("renrenmi")!=-1){
                             return "web=https://jx.blbo.cc:4433/?url="+data.split("url=")[1];
                         }else if(data.split("url=")[1].indexOf("LT-")!=-1){
@@ -584,7 +584,7 @@ function 通用列表(){
         }else if(预图片.indexOf("http")==0||预图片.indexOf("res://")==0){
             var 图片=预图片;
         }else if(预图片==""){
-            var 图片="http://59.47.74.33:3000/apis/my-github/egwang186/iptv/main/onebox/kongbai.gif@{'User-Agent':'Mozilla/5.0'}";
+            var 图片="http://42.202.35.113:3000/apis/my-github/egwang186/iptv/main/onebox/kongbai.gif@{'User-Agent':'Mozilla/5.0'}";
         }else{
             var 图片=baseURL+预图片;
             if(baseURL.indexOf("1090ys2.com")!=-1){
@@ -646,7 +646,7 @@ function CMS选集列表(){
   }else if(标题=="autue"){
         选集地址=e2Rex(选集地址,".dn64()");
   }else if(选集地址.indexOf("html")!=-1||选集地址.indexOf("www.bilibili.com")!=-1||选集地址.indexOf("share.weiyun.")!=-1){
-        选集地址="http://59.47.74.33:39000/?url="+选集地址;
+        选集地址="http://42.202.35.113:39000/?url="+选集地址;
   }else if(选集地址.indexOf(":6688/player")!=-1){
         var hash=选集地址.split("player/")[1];
         var dd=hash.substring(0,2);
@@ -731,7 +731,7 @@ function 选集列表(){
               var 接口=baseURL.match(/https?:\/\/[^\/]*/)[0]+可用接口[0].match(/\/.+(url|v|vid|php\?id)=/)[0].replace("..",".");
               }
            }else{
-           var 接口="http://59.47.74.33:39000/?url=";
+           var 接口="http://42.202.35.113:39000/?url=";
            }
         }else if(baseURL.indexOf("api.php/app/")!=-1||baseURL.indexOf("xgapp.php/v")!=-1){
           var 接口=e2Rex(分类CODE,".json(parse_api)");

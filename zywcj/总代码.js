@@ -149,7 +149,7 @@ if(baseURL.indexOf("1080api.com")!=-1){
 }else if(标题=="autue"){
       选集地址=e2Rex(选集地址,".dn64()");
 }else if(选集地址.indexOf("html")!=-1||选集地址.indexOf("www.bilibili.com")!=-1||选集地址.indexOf("share.weiyun.")!=-1){
-      选集地址="http://59.47.74.33:39000/?url="+选集地址;
+      选集地址="http://42.202.35.113:39000/?url="+选集地址;
 }else if(选集地址.indexOf(":6688/player")!=-1){
       var hash=选集地址.split("player/")[1];
       var dd=hash.substring(0,2);
