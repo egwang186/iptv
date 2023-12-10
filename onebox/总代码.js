@@ -635,126 +635,35 @@ function CMS选集列表(){
             }
             var 选集地址=选集地址规则.indexOf("@js=")!=-1?eval(选集地址规则.split("@js=")[1]):e2Rex(列表[j],选集地址规则);
     //开始根据网址，线路判断前缀
-    if(标题=="xhzy"){
-          选集地址=选集地址;
-    }else if(baseURL.indexOf("api.yunboys.cn")!=-1){
-          选集地址="https://jx.yunboys.cn/?url="+选集地址;
-    }else if(baseURL.indexOf("ttky8.com")!=-1){
-          选集地址="http://ip111.cn/?wd="+选集地址;
-    }else if(标题.indexOf("Tcm3u8")!=-1){
-          选集地址="https://api.iopenyun.com:88/vips/?url="+选集地址;
-    }else if(标题.indexOf("bjhu")!=-1){
-        选集地址="http://124.223.69.144:8999/web/115?url="+选集地址;
-    }else if(baseURL.indexOf("ujuba.com")!=-1){
-          选集地址="https://www.dmplay.xyz/j0?url="+选集地址;
-    }else if(baseURL.indexOf("xinlangapi.com")!=-1){
-        if(标题=="xlm3u8"){
+    if(baseURL.indexOf("1080api.com")!=-1){
+        选集地址="https://vo.1080jx.com:7788/player?url="+选集地址;
+  }else if(标题=="mdm3u8"){
+        选集地址="https://m3u8.cmsv10.fun/?url="+选集地址;
+  }else if(baseURL.indexOf("hikan.xyz")!=-1){
+        选集地址="https://www.dmplay.xyz/d?url="+选集地址;
+  }else if(baseURL.indexOf("xinlangapi.com")!=-1){
         选集地址="https://www.xinlangjiexi.com/m3u8/?url="+选集地址;
-        }else{
-        选集地址=选集地址;  
-        }
-    }else if(标题=="ddzy"){
-        选集地址="http://qiqi.520say.cn/json/dd.php?url="+选集地址;
-    }else if(标题=="autue"){
+  }else if(标题=="autue"){
         选集地址=e2Rex(选集地址,".dn64()");
-    }else if(标题=="Mika"){
-        选集地址="https://mika.ovooa.com/api/player/xg.php?key=200OK&url="+选集地址;
-    }else if(baseURL.indexOf("app.netflixmi.com")!=-1){
-        选集地址="https://player.naifeimi.com/?url="+选集地址;
-    }else if(baseURL.indexOf("yanaifei.cn")!=-1||baseURL.indexOf("45.125.46.41:4433")!=-1){
-        /*if(标题=="VIP"){
-            选集地址="http://ip111.cn/?wd=http://www.yanaifei.cn/addons/dplayer/?pid="+选集地址;
-        }else if(标题=="qq"){
-            选集地址="http://ip111.cn/?wd=http://www.yanaifei.cn/addons/dplayer/qq.php?url="+选集地址;
-        }else if(标题=="VIP3"){
-            选集地址="http://ip111.cn/?wd=http://www.yanaifei.cn/addons/dplayer/rrjx.php?fid="+选集地址;
-        }else if(标题=="VIP2"){
-            选集地址="http://ip111.cn/?wd=http://www.yanaifei.cn/addons/dplayer/ddjx.php?url="+选集地址;
-        }else if(标题=="LIBVIO"){
-            选集地址="http://ip111.cn/?wd=http://www.yanaifei.cn/addons/dplayer/lbjx.php?url="+选集地址;
-        }else{
-            选集地址=选集地址;
-        }*/
-        选集地址="https://www.nfjx.xyz/player/?url="+选集地址;
-  }else if(baseURL.indexOf("apicdn.vipm3u8.com")!=-1){
-          选集地址="https://player.vipparsing.com/player?token=4732bUERfVb60lWNSLrsd5-2s1r70KeA89C3VwrGYYdByboQT9o4OzxIr5-8/cX9-sO6&vid="+选集地址;
-    }else if(选集地址.indexOf("html")!=-1||选集地址.indexOf("www.bilibili.com")!=-1||选集地址.indexOf("share.weiyun.")!=-1){
-          选集地址="http://59.47.74.33:39000/?url="+选集地址;
-    }else if(选集地址.indexOf(":6688/player")!=-1){
+  }else if(选集地址.indexOf("html")!=-1||选集地址.indexOf("www.bilibili.com")!=-1||选集地址.indexOf("share.weiyun.")!=-1){
+        选集地址="http://59.47.74.33:39000/?url="+选集地址;
+  }else if(选集地址.indexOf(":6688/player")!=-1){
         var hash=选集地址.split("player/")[1];
         var dd=hash.substring(0,2);
         选集地址="http://ip111.cn/?wd=https://qq.iqiyi3.b555b.com:7777/"+dd+"/"+hash+"/hd.m3u8";
   }else if(baseURL.indexOf("api.yparse.com")!=-1){
-          选集地址="https://yparse.jn1.cc/index.php?url="+选集地址;
-    }else if(标题.indexOf("rrm3u8")!=-1){
-      选集地址="https://www.meiju11.com/ckplayerx/m3u8.php?url="+选集地址;
-    }else if(标题=="dmplay"||标题=="base"){
-    选集地址="https://play.omofun.tv/m3u8.php?url="+选集地址;
-    }else if(标题.indexOf("ltnb")!=-1){
-      //选集地址="https://jifei.longtengzy.fun/video/?url="+选集地址;
-      //选集地址="http://jx.yinliub.cn/home/api?type=ys&uid=51213&key=chiprvyFHJNOTUVZ39&url="+选集地址;
-      选集地址="https://analysis.yikan.one/analysis/player/?uid=8&my=fjkmoqFJLORTVZ1359&url="+选集地址;
-    }else if(选集地址.indexOf(".ruifenglb.com")!=-1){
-       选集地址="http://ip111.cn/?wd=https://js.jisujiexi.vip/home/api?type=ys&uid=196395&key=aejlnoprsABDNUZ159&url="+选集地址;
-    }else if(选集地址.indexOf(".m3u8")>15||选集地址.indexOf(".mp4")>15){
-          选集地址="http://ip111.cn/?wd="+选集地址;
-    }else if(baseURL.indexOf("dianyingleida.com")!=-1){
-        选集地址="https://player.fxfkfz.top/player/ec.php?code=qw&if=1&url="+选集地址;
-    }else if(标题=="789pan"||标题=="pll"){
-        选集地址="https://dp.jiexi.work/bfq.php?url="+选集地址;
-    }else if(标题=="zbkplayer"){
-          选集地址="http://analysis.yikan.one/analysis/player/?uid=8&my=fjkmoqFJLORTVZ1359&url="+选集地址;
-    }else if(标题=="lekanzyw"){
-          //选集地址="https://bfq.ikan6.vip/m3u8.php?url="+选集地址+'@{"Referer":"https://ikan6.vip/","User-Agent":"Mozilla/5.0 Android"}';
-          选集地址='https://play.ekvod.com/play/?url='+选集地址;
-    }else if(标题.indexOf("miaoparty2")!=-1){
-      选集地址="https://vip5.jiexi.one?url="+选集地址;
-    }else if(标题.indexOf("miaoparty")!=-1){
-      选集地址="https://jx.yingciyuan.cn/?url="+选集地址;
-    }else if(标题.indexOf("mx771")!=-1||标题.indexOf("mengxin886")!=-1){
-      选集地址="https://vip.mengx.vip/home/api?type=ys&uid=2117076&key=abghklvyDEIJLNT025&url="+选集地址;
-    }else if(标题.indexOf("taiyi")!=-1){
-      选集地址="https://jx.cyu0.cn/?url="+选集地址;
-    }else if(标题.indexOf("x1play")!=-1){
-      选集地址="https://www.xing1.vip/player/dp/?url="+选集地址;
-    }else if(标题.indexOf("xfyun")!=-1){
-      选集地址="https://b.sigu.tv/api/type/?key=b08DPxVf9MCYrAX8fP&url="+选集地址;
-    }else if(标题=="rx"){
-      选集地址="https://svip.rongxingvr.top/api/?key=B26J6jO5MOnjUv3GqW&url="+选集地址;
-    }else if(标题=="renrenmi"){
-          //选集地址="http://www.1080kan.cc/jiexi/rrmi.php?url="+选集地址+'@{"Referer":"http://www.1080kan.cc/"}';
-          //选集地址="https://kuba.renrenmi.cc:2266/api/?key=2WzAj2s0pgQ1AYQoPT&url="+选集地址;
-          //选集地址="https://sudu.renrenmi.cc:2021/ku/?url="+选集地址;
-          //选集地址="https://jiexi.astv.vip/home/api?type=ys&uid=1&key=free&url="+选集地址;
-          选集地址="https://jx.blbo.cc:4433/?url="+选集地址;
-    }else if(baseURL.indexOf('fqzy.cc')!=-1){
-          选集地址="https://jx.fqzy.cc/jx.php?url="+选集地址;
-    }else if(标题=='dym3'){
-          选集地址="https://1.m3u8.shop/m3u8.php?url="+选集地址;
-    }else if(baseURL.indexOf('zy.7kjx.com')!=-1){
-          选集地址="https://jx.xmflv.vip/?url="+选集地址;
-    }else if(标题.indexOf('leduo')!=-1){
-          选集地址="https://api.ldjx.cc/wp-api/ifr.php?vid="+选集地址;
-    }else if(标题.indexOf("mengxin")!=-1){
-          选集地址="https://jx3.bifenvip.com/?url="+选集地址;
-    }else if(标题.indexOf("aly")!=-1){
-          选集地址="https://aly.178du.com/"+选集地址;
-    }else if(标题=='niux'){
-          选集地址="https://www.juztv.com/jx.php?id="+选集地址;
-    }else if(标题=='u'){
-          选集地址="https://jx.dxsdkw.cn/nv/"+选集地址+".m3u8";
-    }else if(标题=='youbo'){
-          选集地址="http://1090ys2.com/x2.php?id="+选集地址+'@{"Referer":"http://1090ys2.com/"}';
-    }else if(baseURL.indexOf('tvyb02.com')!=-1||baseURL.indexOf('zy.vodcdn.top')!=-1){
-          if(标题=='hkm3u8'){
-          选集地址="https://jxn.dxsdkw.cn/jm/x2.php?id="+选集地址+'@{"referer":"http://www.tvyb02.com/"}';
-          }else if(选集地址.indexOf(".m3u8")>15||选集地址.indexOf(".mp4")>15||选集地址.indexOf("/obj/tos")!=-1){
-          选集地址="http://ip111.cn/?wd="+选集地址;
-          }else if(标题=='banyun'||标题=='yunbo'){
-          var playurl="https://www.mayigq.com/vodzip/player.php?vid="+选集地址;
-          选集地址="http://ip111.cn/?wd="+playurl;
-          }
-    }
+        选集地址="https://yparse.jn1.cc/index.php?url="+选集地址;
+  }else if(标题.indexOf("rrm3u8")!=-1){
+    选集地址="https://www.meiju11.com/ckplayerx/m3u8.php?url="+选集地址;
+  }else if(标题=="dmplay"||标题=="base"){
+  选集地址="https://play.omofun.tv/m3u8.php?url="+选集地址;
+  }else if(baseURL.indexOf("dianyingleida.com")!=-1){
+    选集地址="https://player.fxfkfz.top/player/ec.php?code=qw&if=1&url="+选集地址;
+  }else if(选集地址.indexOf(".m3u8")>15||选集地址.indexOf(".mp4")>15){
+        选集地址="http://ip111.cn/?wd="+选集地址;
+  }else if(标题=="789pan"||标题=="pll"){
+        选集地址="http://dp.jiexi.work/jsonno.php?url="+选集地址;
+  }
     //结束判断
             LIST.push({title:选集,url:选集地址});
         }
