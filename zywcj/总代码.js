@@ -188,7 +188,7 @@ var 标题规则=".a(flag)";
 var 选集规则=".tz($)";
 var 选集地址规则=".z2(\\$\\([^\$|&]*\\)).or().z(.*)";选集列表();
 }else{
-if(basrURL.indexOf("/vodd/json")!=-1){
+if(baseURL.indexOf("/vodd/json")!=-1){
 var 分类=e2Arr(getVar("源码"),".json(data).json(vod_play_url).fg(\\$\\$\\$)");
 var 线路=e2Arr(getVar("源码"),".json(data).json(vod_play_from).fg(\\$\\$\\$)");
 var 选集地址规则=".z2(\\$\\(.*\\)).or().z(.*)";
