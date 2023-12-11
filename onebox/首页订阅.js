@@ -17,17 +17,6 @@ iptv
 ###分类
 iptv
 ###数据
-麒麟
-##
-远程$http://106.52.17.220:100/data/User/qilin/home/iptv.txt
-####
-
-####
-###type
-iptv
-###分类
-iptv
-###数据
 派大星
 ##
 远程$https://tvkj.top/tvlive.txt
@@ -97,17 +86,6 @@ iptv
 4K频道
 ##
 远程$http://egwang186.top:3000/apis/my-github/Ftindy/IPTV-URL/main/IPTV.m3u
-####
-
-####
-###type
-iptv
-###分类
-iptv
-###数据
-IPV6-ZHG
-##
-远程$http://egwang186.top:3000/apis/my-github/zhanghongguang/zhanghongguang.github.io/main/IPV6_IPTV.m3u
 ####
 
 ####
