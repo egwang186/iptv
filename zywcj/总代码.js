@@ -443,12 +443,7 @@ if(resp.code.search(/<div class="video"/)!=-1||resp.code.search(/<div id="video"
 if(uu.split("url=")[1].indexOf("http")!=-1){
 "web=http://1.117.152.239:39000/?url="+uu.split("url=")[1];
 }else{
-var id=uu.split("url=")[1];
-//var uuu="http://jx.jisujiexi.vip/home/api?type=ys&uid=5196896&key=ajortuvxzRTUWXZ037&url="+id;
-var uuu="https://json.5lp.net/json.php?url="+id;
-var resp=JZ(JSON.stringify({url:uuu}));
-var playurl=JSON.parse(resp.code).url||JSON.parse(resp.code).msg;
-JSON.stringify({url:playurl,name:"地址"});
+"web="+uu;
 }
 }
 }else if(resp.code.indexOf("#EXTINF")!=-1){
