@@ -298,7 +298,7 @@ Auete影视
 ###图片
 http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/auete.png
 ###BaseURL
-"https://aueteys.com";
+"https://auete.pro";
 ###首页地址
 getVar("baseURL")+"/";
 ###分类地址
@@ -320,7 +320,7 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(ul.threadlist li)");if
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-var uu=getVar("地址");var resp=JZ(uu);var script=e2Rex(resp.code,".get(div#video script).t().or().get(div#player script).t()");function base64decode(str){return e2Rex(str,".dn64()")}eval(script);if(pn=="i8i"){JSON.stringify({name:"地址",url:now,head:{"referer":"https://aueteys.com/js/player/i8i.html","user-agent":"Mozilla/5.0"}})}else if(pn=="m3u8hd"){if(now.indexOf("9yun")!=-1){var b="https://aueteys.com/api/9yun.php?url="+now.split("9yun")[0];var a=JZ(JSON.stringify({name:"地址",url:b,redirect:false,head:{"User-Agent":"Mozilla/5.0"}}));while(a.head.location||a.head.Location){var finalurl=a.head.location||a.head.Location;if(finalurl.indexOf(".mp4")>40){var a={"head":{"cookie":"ccccc"}}}else{var a=JZ(JSON.stringify({name:"地址",url:finalurl,redirect:false,head:{"User-Agent":"Mozilla/5.0 Android"}}))}}JSON.stringify({name:"地址",url:finalurl})}else{"web="+uu}}else{if(now.indexOf("http")!=-1){JSON.stringify({name:"地址",url:now,head:{"referer":"https://aueteys.com/js/player/i8i.html","user-agent":"Mozilla/5.0"}})}else{"web="+uu}}
+var uu=getVar("地址");var resp=JZ(uu);var script=e2Rex(resp.code,".get(div#video script).t().or().get(div#player script).t()");function base64decode(str){return e2Rex(str,".dn64()")}eval(script);if(pn=="i8i"){JSON.stringify({name:"地址",url:now,head:{"referer":"https://auete.pro/js/player/i8i.html","user-agent":"Mozilla/5.0"}})}else if(pn=="m3u8hd"){if(now.indexOf("9yun")!=-1){var b="https://auete.pro/api/9yun.php?url="+now.split("9yun")[0];var a=JZ(JSON.stringify({name:"地址",url:b,redirect:false,head:{"User-Agent":"Mozilla/5.0"}}));while(a.head.location||a.head.Location){var finalurl=a.head.location||a.head.Location;if(finalurl.indexOf(".mp4")>40){var a={"head":{"cookie":"ccccc"}}}else{var a=JZ(JSON.stringify({name:"地址",url:finalurl,redirect:false,head:{"User-Agent":"Mozilla/5.0 Android"}}))}}JSON.stringify({name:"地址",url:finalurl})}else{"web="+uu}}else{if(now.indexOf("http")!=-1){JSON.stringify({name:"地址",url:now,head:{"referer":"https://auete.pro/js/player/i8i.html","user-agent":"Mozilla/5.0"}})}else{"web="+uu}}
 ####
 
 ####
