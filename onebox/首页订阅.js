@@ -304,7 +304,7 @@ getVar("baseURL")+"/";
 ###分类地址
 getVar("baseURL")+"/分类/翻页.html";
 ###搜索地址
-getVar("baseURL")+"/search.php?searchword=关键字&page=翻页";
+getVar("baseURL")+"/auete3so.php?searchword=关键字&page=翻页";
 ###rule
 ##首页规则
 var 列表=e2Arr(getVar("源码"),".get(ul.threadlist li)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"当前请求地址\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回重新搜索即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(.title a).t()";var 地址规则=".get(.title a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(button).st().t().c().get(p).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
