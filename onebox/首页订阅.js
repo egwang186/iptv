@@ -368,7 +368,7 @@ web
 ###图片
 http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/555dy.png
 ###BaseURL
-"https://www.555dy1.com";
+"https://55vid.shop";
 ###首页地址
 getVar("baseURL")+"/";
 ###分类地址
