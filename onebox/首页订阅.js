@@ -377,7 +377,7 @@ getVar("baseURL")+"/vodshow/分类-----翻页---.html";
 getVar("baseURL")+"/vodsearch/关键字----------翻页---.html";
 ###rule
 ##首页规则
-var 列表=e2Arr(getVar("源码"),".get(div.module-items a.module-item)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"当前请求地址\");";var 图片规则=".get(img).a(data-original)";var 简介规则="长按网页打开，验证后返回重新搜索即可";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(a).a(title)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
+var 列表=e2Arr(getVar("源码"),".get(div.module-items a.module-item)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"当前请求地址\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回重新搜索即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(a).a(title)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-original)";var 简介规则=".t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
 ##筛选数据
 var a="分类+电影=1---+电视剧=2---+福利=124---+动漫=4---+Netflix电影=1---Netflix+Netflix剧=2---Netflix+剧情片=1---剧情+科幻片=1---科幻+动作片=1---动作+喜剧片=1---喜剧+爱情片=1---爱情+大陆剧=2-大陆--+香港剧=2-香港--+韩剧=2-韩国--+美剧=2-美国--+日剧=2-日本--";var b="";for(var i=1;i<50;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
 ##分类规则
