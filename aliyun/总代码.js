@@ -18,7 +18,7 @@ if(getVar("地址").indexOf("aliyundrive.com/s/")!=-1||getVar("地址").indexOf(
     if(getVar("share_token")!="null"&&getVar("share_token").length>1){
     getVar("share_token");
     }else{
-    JSON.parse(getHttp(JSON.stringify({url:"https://api.aliyundrive.com/v2/share_link/get_share_token",postJson:JSON.stringify({share_pwd:pwd,share_id:share_id})}))).share_token;
+    JSON.parse(getHttp(JSON.stringify({url:"https://api.alipan.com/v2/share_link/get_share_token",postJson:JSON.stringify({share_pwd:pwd,share_id:share_id})}))).share_token;
     }
 }else if(getVar("地址").indexOf("$$")!=-1){
     "";
@@ -55,7 +55,7 @@ if(readStr("阿里默认账号.txt")){
 }
 if(ALICOOKIE&&ALICOOKIE!="null"&&ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1){
 var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
-var code=getHttp(JSON.stringify({url:"https://auth.aliyundrive.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
+var code=getHttp(JSON.stringify({url:"https://auth.alipan.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
 if(JSON.parse(code).access_token){
 var access_token=JSON.parse(code).access_token;
 var xxx_id="drive_id-"+ALICOOKIE.match(/drive_id=(.*?)[\s;]/)[1];
@@ -78,7 +78,7 @@ if(readStr("阿里默认账号.txt")){
 }
 if(ALICOOKIE&&ALICOOKIE!="null"&&ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1){
 var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
-var code=getHttp(JSON.stringify({url:"https://auth.aliyundrive.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
+var code=getHttp(JSON.stringify({url:"https://auth.alipan.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
 if(JSON.parse(code).access_token){
 var access_token=JSON.parse(code).access_token;
 }else{
@@ -97,9 +97,9 @@ alert("请重新登陆阿里云盘网页");
 }
 }
 if(data.indexOf("query")!=-1){
-    var 目录数据=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v3/file/search",head:JSON.parse(HEAD),postJson:data}));
+    var 目录数据=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/search",head:JSON.parse(HEAD),postJson:data}));
 }else{
-    var 目录数据=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v3/file/list",head:JSON.parse(HEAD),postJson:data}));
+    var 目录数据=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/list",head:JSON.parse(HEAD),postJson:data}));
 }
 var items=JSON.parse(目录数据).items;
 function SIZE(size){
@@ -249,8 +249,8 @@ if(getVar("地址").indexOf("$$")!=-1){
             device_id=e2Rex(user_id,".md5()")
         }
         var d = [];
-        var A=JSON.stringify({url:"https://auth.aliyundrive.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})});
-        var S=JSON.stringify({url:"https://api.aliyundrive.com/v2/share_link/get_share_token",postJson:JSON.stringify({share_pwd:pwd,share_id:share_id})});
+        var A=JSON.stringify({url:"https://auth.alipan.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})});
+        var S=JSON.stringify({url:"https://api.alipan.com/v2/share_link/get_share_token",postJson:JSON.stringify({share_pwd:pwd,share_id:share_id})});
         var urls = []; //网址列表
         urls[0]=A;urls[1]=S;
         for (let index = 0; index < urls.length; index++) {
@@ -287,9 +287,9 @@ if(getVar("地址").indexOf("$$")!=-1){
     var videoname=getVar("地址").split("?wd=")[1].split("$$")[8];
     var u=getVar("地址").split("?wd=")[1].split("$$")[0];
     if(类型=="audio"){
-    var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,get_audio_play_info:true,file_id:file_id,expire_sec:600})}));
+    var code=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,get_audio_play_info:true,file_id:file_id,expire_sec:600})}));
     }else{
-    var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,file_id:file_id,expire_sec:600})}));
+    var code=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,file_id:file_id,expire_sec:600})}));
     }
     if(JSON.parse(code).code){
         alert("登陆已过期，请重新在浏览器登陆");
@@ -345,7 +345,7 @@ if(readStr("阿里默认账号.txt")){
 }
 if(ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1){
 var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
-var code=getHttp(JSON.stringify({url:"https://auth.aliyundrive.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
+var code=getHttp(JSON.stringify({url:"https://auth.alipan.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
 if(JSON.parse(code).access_token){
 var access_token=JSON.parse(code).access_token;
 var mydrive_id=ALICOOKIE.match(/drive_id=(.*?)[\s;]/)[1];
@@ -361,7 +361,7 @@ var HEAD=JSON.stringify({"Authorization":access_token});
     var file_id=getVar("地址").split("?wd=")[1].split("###")[2];
     var drive_id=getVar("地址").split("?wd=")[1].split("###")[1];
     var u=getVar("地址").split("?wd=")[1].split("###")[0];
-    var xincode=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v1/file/get_path",postJson:JSON.stringify({drive_id:drive_id,file_id:file_id}),head:JSON.parse(HEAD)}));
+    var xincode=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v1/file/get_path",postJson:JSON.stringify({drive_id:drive_id,file_id:file_id}),head:JSON.parse(HEAD)}));
     var 转码HQ='http://42.202.35.113:3000/apis/my-yun-audio/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/LQ/master.mp3';
     var 本地转码HQ='http://127.0.0.1:3000/apis/my-yun-audio/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/LQ/master.mp3';
     var 播放模式=getVar("播放模式")||"全部";
@@ -376,7 +376,7 @@ var HEAD=JSON.stringify({"Authorization":access_token});
         var file_id=getVar("地址").split("?wd=")[1].split("###")[2];
         var drive_id=getVar("地址").split("?wd=")[1].split("###")[1];
         var u=getVar("地址").split("?wd=")[1].split("###")[0];
-        var xincode=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v1/file/get_path",postJson:JSON.stringify({drive_id:mydrive_id,file_id:file_id}),head:JSON.parse(HEAD)}));
+        var xincode=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/get_path",postJson:JSON.stringify({drive_id:mydrive_id,file_id:file_id}),head:JSON.parse(HEAD)}));
         //alert(code)
         //var 转码1080='http://116.85.31.19:4000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/FHD/index.m3u8';
         //var 转码720='http://116.85.31.19:4000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/HD/index.m3u8';
@@ -410,7 +410,7 @@ if(readStr("阿里默认账号.txt")){
 }
     if(ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1){
         var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
-        var Acode=getHttp(JSON.stringify({url:"https://auth.aliyundrive.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
+        var Acode=getHttp(JSON.stringify({url:"https://auth.alipan.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
         if(JSON.parse(Acode).access_token){
            var access_token=JSON.parse(Acode).access_token;
         }else{
@@ -426,9 +426,9 @@ if(xxx_id.indexOf("share_id")!=-1){
     var data=JSON.stringify({share_id:xxx_id.split("-")[1],file_id:file_id});
 }else if(xxx_id.indexOf("drive_id")!=-1){
     var HEAD=JSON.stringify({"Authorization":access_token});
-    var data=JSON.stringify({drive_id:xxx_id.split("-")[1],file_id:file_id});
+    var data=JSON.stringify({drive_id:xxx_id.split("-")[1],file_id:file_id});alipan
 }
-var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/v2/file/get_office_preview_url",head:JSON.parse(HEAD),postJson:data}));
+var code=getHttp(JSON.stringify({url:"https://api.alipan.com/v2/file/get_office_preview_url",head:JSON.parse(HEAD),postJson:data}));
 if(JSON.parse(code).code){
   if(JSON.parse(code).code=="NotSupportedFileType"){
     alert("此文档格式不支持预览");
@@ -547,7 +547,7 @@ if(readStr("阿里默认账号.txt")){
 }
     if(ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1){
         var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
-        var Acode=getHttp(JSON.stringify({url:"https://auth.aliyundrive.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
+        var Acode=getHttp(JSON.stringify({url:"https://auth.alipan.com/v2/account/token",postJson:JSON.stringify({refresh_token:refresh_token,grant_type:"refresh_token"})}));
         if(JSON.parse(Acode).access_token){
            var access_token=JSON.parse(Acode).access_token;
         }else{
@@ -561,7 +561,7 @@ var file_id=getVar("地址").split("$$")[1];
 if(xxx_id.indexOf("share_id")!=-1){
     var HEAD=JSON.stringify({"Authorization":access_token,"X-Share-Token":getVar("share_token")});
     var data=JSON.stringify({share_id:xxx_id.split("-")[1],file_id:file_id,expire_sec:600});
-    var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/v2/file/get_share_link_download_url",head:JSON.parse(HEAD),postJson:data}));
+    var code=getHttp(JSON.stringify({url:"https://api.alipan.com/v2/file/get_share_link_download_url",head:JSON.parse(HEAD),postJson:data}));
 if(JSON.parse(code).code){
 alert(JSON.parse(code).code)
 }else{
