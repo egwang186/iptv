@@ -296,7 +296,7 @@ if(getVar("地址").indexOf("$$")!=-1){
     }else{
     if(JSON.parse(code).audio_template_list){
         //var resp=JZ(JSON.stringify({url:JSON.parse(code).audio_template_list[JSON.parse(code).audio_template_list.length-1].url,redirect:false,head:{"Referer":"https://www.aliyundrive.com/"}}));
-        var 转码HQ='https://cn.egwang186.top/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
+        var 转码HQ='http://cn.egwang186.top:3000/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
         var 本地转码HQ='http://127.0.0.1:3000/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
         var 播放模式=getVar("播放模式")||"全部";
         if(播放模式=="全部"||播放模式=="null"){
@@ -319,9 +319,9 @@ if(getVar("地址").indexOf("$$")!=-1){
             var _d=e2Rex(encodeURI(JSON.stringify(file_data)),".en64()").replace(/\//g,"$");*/
             //var 转码1080='http://116.85.31.19:4000/apis/yun-play/'+_d+'/'+access_token+'/'+share_token+'/FHD/index.m3u8';
             //var 转码720='http://116.85.31.19:4000/apis/yun-play/'+_d+'/'+access_token+'/'+share_token+'/HD/index.m3u8';
-            //var 转码1080='https://cn.egwang186.top/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/FHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
-            var 转码2K会员专享='https://cn.egwang186.top/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/QHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
-            var 转码720='https://cn.egwang186.top/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/HD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
+            //var 转码1080='http://cn.egwang186.top:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/FHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
+            var 转码2K会员专享='http://cn.egwang186.top:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/QHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
+            var 转码720='http://cn.egwang186.top:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/HD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
             var 本地转码2K会员专享='http://127.0.0.1:3000/apis/yun-play/'+share_id+'/'+file_id+'/'+access_token+'/'+share_token+'/QHD/'+mydrive_id+'/'+user_id+'/'+device_id+'/index.m3u8';
             
             var 播放模式=getVar("播放模式")||"全部";
@@ -362,7 +362,7 @@ var HEAD=JSON.stringify({"Authorization":access_token});
     var drive_id=getVar("地址").split("?wd=")[1].split("###")[1];
     var u=getVar("地址").split("?wd=")[1].split("###")[0];
     var xincode=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v1/file/get_path",postJson:JSON.stringify({drive_id:drive_id,file_id:file_id}),head:JSON.parse(HEAD)}));
-    var 转码HQ='https://cn.egwang186.top/apis/my-yun-audio/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/LQ/master.mp3';
+    var 转码HQ='http://cn.egwang186.top:3000/apis/my-yun-audio/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/LQ/master.mp3';
     var 本地转码HQ='http://127.0.0.1:3000/apis/my-yun-audio/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/LQ/master.mp3';
     var 播放模式=getVar("播放模式")||"全部";
     if(播放模式=="全部"||播放模式=="null"){
@@ -380,10 +380,10 @@ var HEAD=JSON.stringify({"Authorization":access_token});
         //alert(code)
         //var 转码1080='http://116.85.31.19:4000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/FHD/index.m3u8';
         //var 转码720='http://116.85.31.19:4000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/HD/index.m3u8';
-        //var 云端原画='https://cn.egwang186.top/apis/down-url/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/index.m3u8';
-        var 高画质转码='https://cn.egwang186.top/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/QHD/index.m3u8';
+        //var 云端原画='http://cn.egwang186.top:3000/apis/down-url/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/index.m3u8';
+        var 高画质转码='http://cn.egwang186.top:3000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/QHD/index.m3u8';
         var 本地高画质转码='http://127.0.0.1:3000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/QHD/index.m3u8';
-        var 转码720='https://cn.egwang186.top/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/HD/index.m3u8';
+        var 转码720='http://cn.egwang186.top:3000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/HD/index.m3u8';
         //var downloadurl='http://198.52.118.199:3000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/alidownloadurl/'+mydrive_id+'/'+user_id+'/'+device_id+"/"+videoname;
         //var 新原画code=getHttp(downloadurl)
         var 播放模式=getVar("播放模式")||"全部";
