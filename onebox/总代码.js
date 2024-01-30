@@ -369,10 +369,6 @@ JSON.stringify(items);
             }else if(uu.indexOf(".php")!=-1){
                 u=uu+"?type=.m3u8";
             }
-        }else if(u.indexOf(".php?")!=-1){
-            u=u+"&type=.m3u8";
-        }else if(u.indexOf(".php")!=-1){
-            u=u+"?type=.m3u8";
         }else if(u.length<40){
             if(uu.indexOf(".php?")!=-1){
                 u=uu+"&type=.m3u8";
