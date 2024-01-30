@@ -219,15 +219,12 @@ iptv
 ###数据
 Youtube(播放需VPN)
 ##
-中天新闻,https://www.youtube.com/watch?v=_QbRXRnHMVY
+中天新闻,https://www.youtube.com/watch?v=oIgbl7t0S_w
 台视新闻,https://www.youtube.com/watch?v=xL0ch83RAK8
-三立新闻,https://www.youtube.com/watch?v=EB4g7wecgTI
-凤凰资讯台,https://www.youtube.com/watch?v=8ysjF7BCtRE
-民视新闻,https://www.youtube.com/watch?v=P8DRJChuQQQ
-东森新闻,https://www.youtube.com/watch?v=R2iMq5LKXco
-中天娛樂頻道,https://www.youtube.com/watch?v=yR5vPeKBk-E
-新西兰华人电视台,https://www.youtube.com/watch?v=M_k7sKNAq6o
-Tvbs新闻台,https://www.youtube.com/watch?v=SfeCNoTVLr0
+三立新闻,https://www.youtube.com/watch?v=FoBfXvlOR6I
+凤凰资讯台,https://www.youtube.com/watch?v=0K6C6Rv4RR4
+东森新闻,https://www.youtube.com/watch?v=2dfAzcDf8Zg
+Tvbs新闻台,https://www.youtube.com/watch?v=ucr7z_-Wzb4
 The Good Life音乐电台,https://www.youtube.com/watch?v=36YnV9STBqc
 舒缓音乐电台,https://www.youtube.com/watch?v=Ej1KLUTrKsw
 ####
