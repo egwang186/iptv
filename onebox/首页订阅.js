@@ -242,7 +242,7 @@ iptv
 飙升榜,https://api.uomg.com/api/rand.music?sort=飙升榜&type=.php
 抖音榜,https://api.uomg.com/api/rand.music?sort=抖音榜&type=.php
 电音榜,https://api.uomg.com/api/rand.music?sort=电音榜&type=.php
-随机小姐姐,http://v.nrzj.vip/video.php
+随机小姐姐,http://v.nrzj.vip/video.php?time=0.1
 快手随机直播,http://mmitv.top/test/ks.php
 ####
 #####
