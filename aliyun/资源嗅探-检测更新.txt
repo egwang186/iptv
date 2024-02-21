@@ -6,6 +6,6 @@
 </ul>
 <ul class="更新提示">
 <li><font color="red"><b>有新版本!!![修复弹窗报错]点击安装</b></font>
-<p>mapi:qm/https://api.egwang186.top/apis/my-github/egwang186/iptv/main/aliyun/资源嗅探.mkz</p>
+<p>mapi:qm/http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/aliyun/资源嗅探.mkz</p>
 </li>
 </ul>
