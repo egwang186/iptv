@@ -287,24 +287,22 @@ if(getVar("地址").indexOf("$$")!=-1){
     var videoname=getVar("地址").split("?wd=")[1].split("$$")[8];
     var u=getVar("地址").split("?wd=")[1].split("$$")[0];
     if(类型=="audio"){
-    var code=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,get_audio_play_info:true,file_id:file_id,expire_sec:600})}));
+        var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,get_audio_play_info:true,file_id:file_id,expire_sec:600})}));
     }else{
-    var code=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/get_share_link_video_preview_play_info",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,file_id:file_id,expire_sec:600})}));
+        var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,file_id:file_id,expire_sec:600})}));
     }
-    if(JSON.parse(code).code){
-        alert("登陆已过期，请重新在浏览器登陆");
-    }else{
-    if(JSON.parse(code).audio_template_list){
+    
+    if(类型=="audio"){
         //var resp=JZ(JSON.stringify({url:JSON.parse(code).audio_template_list[JSON.parse(code).audio_template_list.length-1].url,redirect:false,head:{"Referer":"https://www.aliyundrive.com/"}}));
         var 转码HQ='http://cn.egwang186.top:3000/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
         var 本地转码HQ='http://127.0.0.1:3000/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
         var 播放模式=getVar("播放模式")||"全部";
         if(播放模式=="全部"||播放模式=="null"){
-            JSON.stringify([{name:"原始文件",url:JSON.parse(code).audio_template_list[JSON.parse(code).audio_template_list.length-1].url,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+            JSON.stringify([{name:"原始文件",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
         }else if(播放模式=="本地转码"){
-            JSON.stringify([{name:"原始文件",url:JSON.parse(code).audio_template_list[JSON.parse(code).audio_template_list.length-1].url,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+            JSON.stringify([{name:"原始文件",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
         }else{
-            JSON.stringify([{name:"原始文件",url:JSON.parse(code).audio_template_list[JSON.parse(code).audio_template_list.length-1].url,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+            JSON.stringify([{name:"原始文件",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
         }
         
     }else{
@@ -333,7 +331,7 @@ if(getVar("地址").indexOf("$$")!=-1){
                 JSON.stringify([{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}}]);
             }
     }
-    }
+    
 }else{
 var 类型=getVar("地址").split("?wd=")[1].split("###")[4];
 var videoname=getVar("地址").split("?wd=")[1].split("###")[5];
