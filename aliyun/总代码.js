@@ -326,9 +326,9 @@ if(getVar("地址").indexOf("$$")!=-1){
             
             var 播放模式=getVar("播放模式")||"全部";
             if(播放模式=="全部"||播放模式=="null"){
-                JSON.stringify([{name:"原画",url:JSON.parse(code).download_url,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+                JSON.stringify([{name:"原画",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
             }else if(播放模式=="本地转码"){
-                JSON.stringify([{name:"原画",url:JSON.parse(code).download_url,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+                JSON.stringify([{name:"原画",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
             }else{
                 JSON.stringify([{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}}]);
             }
