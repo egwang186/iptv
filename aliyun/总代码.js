@@ -359,7 +359,7 @@ var HEAD=JSON.stringify({"Authorization":access_token});
     var file_id=getVar("地址").split("?wd=")[1].split("###")[2];
     var drive_id=getVar("地址").split("?wd=")[1].split("###")[1];
     var u=getVar("地址").split("?wd=")[1].split("###")[0];
-    var xindownload=JZ(JSON.stringify({url:"https://api.alipan.com/v2/file/download?drive_id="+drive_id+"&file_id="+file_id,head:JSON.parse(HEAD)})).head.location;
+    var xindownload=JZ(JSON.stringify({url:"https://api.alipan.com/v2/file/download?drive_id="+drive_id+"&file_id="+file_id,head:JSON.parse(HEAD),redirect:false})).head.location;
     var 转码HQ='http://cn.egwang186.top:3000/apis/my-yun-audio/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/LQ/master.mp3';
     var 本地转码HQ='http://127.0.0.1:3000/apis/my-yun-audio/'+file_id+'/'+drive_id+'/'+access_token+'/'+user_id+'/'+device_id+'/LQ/master.mp3';
     var 播放模式=getVar("播放模式")||"全部";
@@ -374,7 +374,7 @@ var HEAD=JSON.stringify({"Authorization":access_token});
         var file_id=getVar("地址").split("?wd=")[1].split("###")[2];
         var drive_id=getVar("地址").split("?wd=")[1].split("###")[1];
         var u=getVar("地址").split("?wd=")[1].split("###")[0];
-        var xindownload=JZ(JSON.stringify({url:"https://api.alipan.com/v2/file/download?drive_id="+drive_id+"&file_id="+file_id,head:JSON.parse(HEAD)})).head.location;
+        var xindownload=JZ(JSON.stringify({url:"https://api.alipan.com/v2/file/download?drive_id="+drive_id+"&file_id="+file_id,head:JSON.parse(HEAD),redirect:false})).head.location;
         //alert(code)
         //var 转码1080='http://116.85.31.19:4000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/FHD/index.m3u8';
         //var 转码720='http://116.85.31.19:4000/apis/my-yun-play/'+file_id+'/'+drive_id+'/'+access_token+'/HD/index.m3u8';
