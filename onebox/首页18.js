@@ -55,7 +55,7 @@ web
 ###图片
 http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/byj.png
 ###BaseURL
-var qian="https://app.";var dz="https://app.byj13.tv/zhongzhuan/js/zhongzhuan.js";var jx=e2Rex(getHttp(dz),".ty(latestDomain=').tz(.tv)");var hou=".tv";var wz=qian+jx+hou;wz;
+var dz="https://app.byj13.tv/zhongzhuan/js/zhongzhuan.js";var js=e2Rex(getHttp(dz),".ty(域名).tz(提示)");eval(js);let mydomain=latestDomain_arr[parseInt(Math.random()*latestDomain_arr.length)];let domain=xtime+'.'+mydomain;let url="";let check=domain.includes("byj");if(check){url='https://'+domain}else{url='http://'+domain}url;
 ###首页地址
 getVar("baseURL")+"/html/index_m.html";
 ###分类地址
