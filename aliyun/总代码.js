@@ -231,7 +231,7 @@ if(过滤[i].tugourl.indexOf("drive_id")!=-1){
 JSON.stringify(过滤);
 ######视频地址7
 eval(readStr("QJS"));
-var 域名="https://cn.egwang186.top";
+var 域名="https://api.egwang186.top";
 if(getVar("地址").indexOf("$$")!=-1){
     var cm=android.webkit.CookieManager.getInstance();
     var ALICOOKIE=cm.getCookie("www.aliyundrive.com");
