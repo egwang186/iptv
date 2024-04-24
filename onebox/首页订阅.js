@@ -30,7 +30,7 @@ iptv
 ###数据
 VCtv
 ##
-远程$http://egwang186.top:3000/apis/my-github/vamoschuck/TV/main/M3U
+远程$https://api.egwang186.top/apis/my-github/vamoschuck/TV/main/M3U
 ####
 
 ####
@@ -41,7 +41,7 @@ iptv
 ###数据
 TcatIPTV
 ##
-远程$http://egwang186.top:3000/apis/my-github/TCatCloud/IPTV/Files/IPTV.m3u
+远程$https://api.egwang186.top/apis/my-github/TCatCloud/IPTV/Files/IPTV.m3u
 ####
 
 ####
@@ -74,7 +74,7 @@ iptv
 ###数据
 探索TV
 ##
-远程$http://egwang186.top:3000/apis/my-github/tansuotv/IPTVindex/main/tv.txt
+远程$https://api.egwang186.top/apis/my-github/tansuotv/IPTVindex/main/tv.txt
 ####
 
 ####
@@ -85,7 +85,7 @@ iptv
 ###数据
 4K频道
 ##
-远程$http://egwang186.top:3000/apis/my-github/Ftindy/IPTV-URL/main/IPTV.m3u
+远程$https://api.egwang186.top/apis/my-github/Ftindy/IPTV-URL/main/IPTV.m3u
 ####
 
 ####
@@ -96,7 +96,7 @@ iptv
 ###数据
 全球直播
 ##
-远程$http://egwang186.top:3000/apis/my-github/fanmingming/live/main/tv/m3u/global.m3u
+远程$https://api.egwang186.top/apis/my-github/fanmingming/live/main/tv/m3u/global.m3u
 ####
 
 ####
@@ -107,7 +107,7 @@ iptv
 ###数据
 调频广播
 ##
-远程$http://egwang186.top:3000/apis/my-github/fanmingming/live/main/radio/m3u/index.m3u
+远程$https://api.egwang186.top/apis/my-github/fanmingming/live/main/radio/m3u/index.m3u
 ####
 
 ####
@@ -128,7 +128,7 @@ iptv
 ###数据
 TVbox蓝朋友
 ##
-远程$http://egwang186.top:3000/apis/my-github/bluefriendCN/tvbox/main/live.txt
+远程$https://api.egwang186.top/apis/my-github/bluefriendCN/tvbox/main/live.txt
 ####
 ####
 ###type
@@ -138,7 +138,7 @@ iptv
 ###数据
 全国电视
 ##
-远程$http://egwang186.top:3000/apis/my-github/YanG-1989/m3u/main/Gather.m3u
+远程$https://api.egwang186.top/apis/my-github/YanG-1989/m3u/main/Gather.m3u
 ####
 
 ####
@@ -258,7 +258,7 @@ web
 ###标题
 骚火影视
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/saohuotv.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/saohuotv.png
 ###BaseURL
 "https://saohuo.vip";
 ###首页地址
@@ -293,7 +293,7 @@ web
 ###标题
 Auete影视
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/auete.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/auete.png
 ###BaseURL
 "https://auete.pro";
 ###首页地址
@@ -328,7 +328,7 @@ web
 ###标题
 蓝光影院
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/lgyy.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/lgyy.png
 ###BaseURL
 "https://www.lgyy.vip";
 ###首页地址
@@ -363,7 +363,7 @@ web
 ###标题
 555电影
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/555dy.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/555dy.png
 ###BaseURL
 "https://55vid.shop";
 ###首页地址
@@ -398,7 +398,7 @@ web
 ###标题
 星视界
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/histar.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/histar.png
 ###BaseURL
 "https://www.histar.tv";
 ###首页地址
@@ -448,7 +448,7 @@ web
 ###标题
 IPTV直播
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/iptv345.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/iptv345.png
 ###BaseURL
 "https://iptv345.com";
 ###首页地址
@@ -491,7 +491,7 @@ web
 ###标题
 TingFM直播
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/tingfm.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/tingfm.png
 ###BaseURL
 "https://tingfm.com";
 ###首页地址
@@ -554,7 +554,7 @@ web
 ###标题
 虎牙直播
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/huya.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/huya.png
 ###BaseURL
 "https://m.huya.com";
 ###首页地址

@@ -7,7 +7,7 @@ iptv
 ###数据
 直播
 ##
-远程$http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/大侠直播.txt
+远程$https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/大侠直播.txt
 ####
 
 ####
@@ -18,7 +18,7 @@ web
 ###标题
 XChina(VPN)
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/xchina.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/xchina.png
 ###BaseURL
 "https://xchina.co";
 ###首页地址
@@ -53,7 +53,7 @@ web
 ###标题
 搬淫家
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/byj.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/byj.png
 ###BaseURL
 var dz="https://app.byj13.tv/zhongzhuan/js/zhongzhuan.js";var js=e2Rex(getHttp(dz),".ty(域名).tz(提示)");eval(js);let mydomain=latestDomain_arr[parseInt(Math.random()*latestDomain_arr.length)];let domain=xtime+'.'+mydomain;let url="";let check=domain.includes("byj");if(check){url='https://'+domain}else{url='http://'+domain}url;
 ###首页地址
@@ -94,7 +94,7 @@ web
 ###标题
 直播盒子
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/zhibohezi.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/zhibohezi.png
 ###BaseURL
 "http://api.vipmisss.com:81";
 ###首页地址
@@ -128,7 +128,7 @@ web
 ###标题
 肉视频(VPN)
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/rouvideo.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/rouvideo.png
 ###BaseURL
 "https://rou.video";
 ###首页地址
@@ -163,7 +163,7 @@ web
 ###标题
 JAVHD(VPN)
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/javhd.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/javhd.png
 ###BaseURL
 "https://javhd.today";
 ###首页地址
@@ -198,7 +198,7 @@ web
 ###标题
 黄色仓库(VPN)
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/hsck.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/hsck.png
 ###BaseURL
 var url="http://hscangku.com/";var jx=e2Rex(getHttp(url),".z(http[^\"]+)");var code=JZ(JSON.stringify({url:jx+url,redirect:false}));code.head.Location;
 ###首页地址
@@ -233,7 +233,7 @@ web
 ###标题
 JableTV(VPN)
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/jable.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/jable.png
 ###BaseURL
 "https://jable.tv";
 ###首页地址
@@ -268,7 +268,7 @@ web
 ###标题
 CableAV(VPN)
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/cable.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/cable.png
 ###BaseURL
 "https://cableav.tv";
 ###首页地址
@@ -303,7 +303,7 @@ web
 ###标题
 风月同天(VPN)
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/fytt.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/fytt.png
 ###BaseURL
 "https://www.fengyuetongtian.com";
 ###首页地址
@@ -338,7 +338,7 @@ web
 ###标题
 CCAVB
 ###图片
-http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/ccavb.png
+https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/ccavb.png
 ###BaseURL
 var resp=getHttp("https://ccavb.tv");
 var id=resp.match(/"buildId":"(.+?)"/)[1];

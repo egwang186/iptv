@@ -9,6 +9,6 @@
 </ul>
 <ul class="更新提示">
 <li><font color="red"><b>有新版本!!![修复侧边栏选集]点击安装</b></font>
-<p>mapi:qm/http://egwang186.top:3000/apis/my-github/egwang186/iptv/main/onebox/一个盒子.mkz</p>
+<p>mapi:qm/https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/一个盒子.mkz</p>
 </li>
 </ul>

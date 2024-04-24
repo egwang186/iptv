@@ -7,7 +7,7 @@ cms
 ###标题
 6U资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=6U资源
+https://php.egwang186.top/tupian.php?text=6U资源
 ###BaseURL
 "http://www.6uzy.cc/inc/apijson_vod.php";
 ###首页地址
@@ -26,7 +26,7 @@ cms
 ###标题
 花旗资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=花旗资源
+https://php.egwang186.top/tupian.php?text=花旗资源
 ###BaseURL
 "https://seacms.huaqi.live/zyapi.php";
 ###首页地址
@@ -45,7 +45,7 @@ cms
 ###标题
 一点官采
 ###图片
-http://egwang186.top:39000/tupian.php?text=一点官采
+https://php.egwang186.top/tupian.php?text=一点官采
 ###BaseURL
 "https://collect.movurl.xyz/api.php/provide/vod/";
 ###首页地址
@@ -64,7 +64,7 @@ cms
 ###标题
 至圣云
 ###图片
-http://egwang186.top:39000/tupian.php?text=至圣云
+https://php.egwang186.top/tupian.php?text=至圣云
 ###BaseURL
 "http://82.156.40.118:1234/api.php/provide/vod/";
 ###首页地址
@@ -83,7 +83,7 @@ cms
 ###标题
 阿里影视
 ###图片
-http://egwang186.top:39000/tupian.php?text=阿里影视
+https://php.egwang186.top/tupian.php?text=阿里影视
 ###BaseURL
 "http://aliys.cn:90/api.php/provide/vod/";
 ###首页地址
@@ -104,7 +104,7 @@ cms
 ###标题
 小胡4K
 ###图片
-http://egwang186.top:39000/tupian.php?text=小胡4K
+https://php.egwang186.top/tupian.php?text=小胡4K
 ###BaseURL
 "http://c.xn--yetu07f.icu/api.php/provide/vod/";
 ###首页地址
@@ -123,7 +123,7 @@ cms
 ###标题
 种子短剧
 ###图片
-http://egwang186.top:39000/tupian.php?text=种子短剧
+https://php.egwang186.top/tupian.php?text=种子短剧
 ###BaseURL
 "https://zzdj.cc/api.php/provide/vod/";
 ###首页地址
@@ -142,7 +142,7 @@ cms
 ###标题
 U酷资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=U酷资源
+https://php.egwang186.top/tupian.php?text=U酷资源
 ###BaseURL
 "https://api.ukuapi.com/api.php/provide/vod/";
 ###首页地址
@@ -161,7 +161,7 @@ cms
 ###标题
 一点切片
 ###图片
-http://egwang186.top:39000/tupian.php?text=一点切片
+https://php.egwang186.top/tupian.php?text=一点切片
 ###BaseURL
 "https://m3u8.movurl.xyz/api.php/provide/vod/";
 ###首页地址
@@ -180,7 +180,7 @@ cms
 ###标题
 1080P资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=1080P资源
+https://php.egwang186.top/tupian.php?text=1080P资源
 ###BaseURL
 "https://1080api.com/api.php/provide/vod/";
 ###首页地址
@@ -199,7 +199,7 @@ cms
 ###标题
 淘片资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=淘片资源
+https://php.egwang186.top/tupian.php?text=淘片资源
 ###BaseURL
 "https://taopianapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -218,7 +218,7 @@ cms
 ###标题
 海外看资源(VPN)
 ###图片
-http://egwang186.top:39000/tupian.php?text=海外看资源(VPN)
+https://php.egwang186.top/tupian.php?text=海外看资源(VPN)
 ###BaseURL
 "https://haiwaikan.com/api.php/provide/vod/";
 ###首页地址
@@ -237,7 +237,7 @@ cms
 ###标题
 乐视资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=乐视资源
+https://php.egwang186.top/tupian.php?text=乐视资源
 ###BaseURL
 "https://leshizyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -256,7 +256,7 @@ cms
 ###标题
 49资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=49资源
+https://php.egwang186.top/tupian.php?text=49资源
 ###BaseURL
 "https://49zyw.com/api.php/provide/vod/";
 ###首页地址
@@ -275,7 +275,7 @@ cms
 ###标题
 68资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=68资源
+https://php.egwang186.top/tupian.php?text=68资源
 ###BaseURL
 "https://68zy88.com/api.php/provide/vod/";
 ###首页地址
@@ -294,7 +294,7 @@ cms
 ###标题
 极光资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=极光资源
+https://php.egwang186.top/tupian.php?text=极光资源
 ###BaseURL
 "https://jiguang.la/api.php/provide/vod/";
 ###首页地址
@@ -313,7 +313,7 @@ cms
 ###标题
 华为吧
 ###图片
-http://egwang186.top:39000/tupian.php?text=华为吧
+https://php.egwang186.top/tupian.php?text=华为吧
 ###BaseURL
 "https://hw8.live/api.php/provide/vod/";
 ###首页地址
@@ -332,7 +332,7 @@ cms
 ###标题
 熊掌资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=熊掌资源
+https://php.egwang186.top/tupian.php?text=熊掌资源
 ###BaseURL
 "https://xzcjz.com/api.php/provide/vod/";
 ###首页地址
@@ -351,7 +351,7 @@ cms
 ###标题
 索尼资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=索尼资源
+https://php.egwang186.top/tupian.php?text=索尼资源
 ###BaseURL
 "https://suoniapi.com/api.php/provide/vod/";
 ###首页地址
@@ -370,7 +370,7 @@ cms
 ###标题
 豪华资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=豪华资源
+https://php.egwang186.top/tupian.php?text=豪华资源
 ###BaseURL
 "https://hhzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -389,7 +389,7 @@ cms
 ###标题
 可可资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=可可资源
+https://php.egwang186.top/tupian.php?text=可可资源
 ###BaseURL
 "https://caiji.kekezyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -408,7 +408,7 @@ cms
 ###标题
 速博资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=速博资源
+https://php.egwang186.top/tupian.php?text=速博资源
 ###BaseURL
 "https://subocaiji.com/api.php/provide/vod/";
 ###首页地址
@@ -427,7 +427,7 @@ cms
 ###标题
 虎牙资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=虎牙资源
+https://php.egwang186.top/tupian.php?text=虎牙资源
 ###BaseURL
 "https://www.huyaapi.com/api.php/provide/vod/";
 ###首页地址
@@ -446,7 +446,7 @@ cms
 ###标题
 夸克资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=夸克资源
+https://php.egwang186.top/tupian.php?text=夸克资源
 ###BaseURL
 "http://kuakezy1.com/api.php/provide/vod/";
 ###首页地址
@@ -465,7 +465,7 @@ cms
 ###标题
 奇虎资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=奇虎资源
+https://php.egwang186.top/tupian.php?text=奇虎资源
 ###BaseURL
 "https://caiji.qhzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -484,7 +484,7 @@ cms
 ###标题
 魔都资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=魔都资源
+https://php.egwang186.top/tupian.php?text=魔都资源
 ###BaseURL
 "https://www.moduzy.com/api.php/provide/vod/";
 ###首页地址
@@ -503,7 +503,7 @@ cms
 ###标题
 享看资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=享看资源
+https://php.egwang186.top/tupian.php?text=享看资源
 ###BaseURL
 "https://xkanzy10.com/api.php/provide/vod/";
 ###首页地址
@@ -522,7 +522,7 @@ cms
 ###标题
 秒看资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=秒看资源
+https://php.egwang186.top/tupian.php?text=秒看资源
 ###BaseURL
 "https://mkzy.vip/api.php/provide/vod/";
 ###首页地址
@@ -541,7 +541,7 @@ cms
 ###标题
 看看资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=看看资源
+https://php.egwang186.top/tupian.php?text=看看资源
 ###BaseURL
 "https://zy.hikan.xyz/api.php/provide/vod/";
 ###首页地址
@@ -560,7 +560,7 @@ cms
 ###标题
 最大资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=最大资源
+https://php.egwang186.top/tupian.php?text=最大资源
 ###BaseURL
 "https://api.zuidapi.com/api.php/provide/vod/";
 ###首页地址
@@ -579,7 +579,7 @@ cms
 ###标题
 大漠资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=大漠资源
+https://php.egwang186.top/tupian.php?text=大漠资源
 ###BaseURL
 "http://142.4.103.17/api.php/provide/vod/";
 ###首页地址
@@ -598,7 +598,7 @@ cms
 ###标题
 暴风资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=暴风资源
+https://php.egwang186.top/tupian.php?text=暴风资源
 ###BaseURL
 "https://bfzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -617,7 +617,7 @@ cms
 ###标题
 快看资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=快看资源
+https://php.egwang186.top/tupian.php?text=快看资源
 ###BaseURL
 "https://kuaikan-api.com/api.php/provide/vod/";
 ###首页地址
@@ -636,7 +636,7 @@ cms
 ###标题
 快云资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=快云资源
+https://php.egwang186.top/tupian.php?text=快云资源
 ###BaseURL
 "https://www.kuaiyunzy.com/api.php/provide/vod/";
 ###首页地址
@@ -655,7 +655,7 @@ cms
 ###标题
 CK资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=CK资源
+https://php.egwang186.top/tupian.php?text=CK资源
 ###BaseURL
 "https://ckzy.me/api.php/provide/vod/";
 ###首页地址
@@ -674,7 +674,7 @@ cms
 ###标题
 CK资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=CK资源
+https://php.egwang186.top/tupian.php?text=CK资源
 ###BaseURL
 "http://www.feifei67.com/api.php/provide/vod/";
 ###首页地址
@@ -693,7 +693,7 @@ cms
 ###标题
 极速资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=极速资源
+https://php.egwang186.top/tupian.php?text=极速资源
 ###BaseURL
 "https://jszyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -712,7 +712,7 @@ cms
 ###标题
 火狐资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=火狐资源
+https://php.egwang186.top/tupian.php?text=火狐资源
 ###BaseURL
 "https://hhzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -731,7 +731,7 @@ cms
 ###标题
 速看资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=速看资源
+https://php.egwang186.top/tupian.php?text=速看资源
 ###BaseURL
 "https://ziyuan.skm3u8.com/api.php/provide/vod/";
 ###首页地址
@@ -750,7 +750,7 @@ cms
 ###标题
 步步高资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=步步高资源
+https://php.egwang186.top/tupian.php?text=步步高资源
 ###BaseURL
 "https://api.yparse.com/api/json";
 ###首页地址
@@ -769,7 +769,7 @@ cms
 ###标题
 金鹰资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=金鹰资源
+https://php.egwang186.top/tupian.php?text=金鹰资源
 ###BaseURL
 "https://jyzyapi.com/provide/vod/";
 ###首页地址
@@ -788,7 +788,7 @@ cms
 ###标题
 爱坤资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=爱坤资源
+https://php.egwang186.top/tupian.php?text=爱坤资源
 ###BaseURL
 "https://ikunzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -807,7 +807,7 @@ cms
 ###标题
 42资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=42资源
+https://php.egwang186.top/tupian.php?text=42资源
 ###BaseURL
 "https://www.42.la/api.php/provide/vod/";
 ###首页地址
@@ -826,7 +826,7 @@ cms
 ###标题
 非凡资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=非凡资源
+https://php.egwang186.top/tupian.php?text=非凡资源
 ###BaseURL
 "http://cj.ffzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -845,7 +845,7 @@ cms
 ###标题
 1080资源库
 ###图片
-http://egwang186.top:39000/tupian.php?text=1080资源库
+https://php.egwang186.top/tupian.php?text=1080资源库
 ###BaseURL
 "https://api.1080zyku.com/inc/api_mac10.php";
 ###首页地址
@@ -864,7 +864,7 @@ cms
 ###标题
 TOM资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=TOM资源
+https://php.egwang186.top/tupian.php?text=TOM资源
 ###BaseURL
 "https://api.tomcaiji.com/api.php/provide/vod/";
 ###首页地址
@@ -883,7 +883,7 @@ cms
 ###标题
 快车资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=快车资源
+https://php.egwang186.top/tupian.php?text=快车资源
 ###BaseURL
 "https://caiji.kczyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -902,7 +902,7 @@ cms
 ###标题
 量子资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=量子资源
+https://php.egwang186.top/tupian.php?text=量子资源
 ###BaseURL
 "http://cj.lziapi.com/api.php/provide/vod/";
 ###首页地址
@@ -921,7 +921,7 @@ cms
 ###标题
 卧龙资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=卧龙资源
+https://php.egwang186.top/tupian.php?text=卧龙资源
 ###BaseURL
 "https://collect.wolongzyw.com/api.php/provide/vod/";
 ###首页地址
@@ -940,7 +940,7 @@ cms
 ###标题
 红牛资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=红牛资源
+https://php.egwang186.top/tupian.php?text=红牛资源
 ###BaseURL
 "https://www.hongniuzy2.com/api.php/provide/vod/";
 ###首页地址
@@ -959,7 +959,7 @@ cms
 ###标题
 樱花资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=樱花资源
+https://php.egwang186.top/tupian.php?text=樱花资源
 ###BaseURL
 "https://m3u8.apiyhzy.com/api.php/provide/vod/";
 ###首页地址
@@ -978,7 +978,7 @@ cms
 ###标题
 易看资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=易看资源
+https://php.egwang186.top/tupian.php?text=易看资源
 ###BaseURL
 "https://api.yikanapi.com/api.php/provide/vod/";
 ###首页地址
@@ -997,7 +997,7 @@ cms
 ###标题
 闪电资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=闪电资源
+https://php.egwang186.top/tupian.php?text=闪电资源
 ###BaseURL
 "http://sdzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -1016,7 +1016,7 @@ cms
 ###标题
 飞速资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=飞速资源
+https://php.egwang186.top/tupian.php?text=飞速资源
 ###BaseURL
 "https://www.feisuzy.com/api.php/provide/vod/";
 ###首页地址
@@ -1035,7 +1035,7 @@ cms
 ###标题
 光速资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=光速资源
+https://php.egwang186.top/tupian.php?text=光速资源
 ###BaseURL
 "https://api.guangsuapi.com/api.php/provide/vod/";
 ###首页地址
@@ -1054,7 +1054,7 @@ cms
 ###标题
 新浪资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=新浪资源
+https://php.egwang186.top/tupian.php?text=新浪资源
 ###BaseURL
 "http://api.xinlangapi.com/xinlangapi.php/provide/vod/";
 ###首页地址
@@ -1073,7 +1073,7 @@ cms
 ###标题
 韩剧资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=韩剧资源
+https://php.egwang186.top/tupian.php?text=韩剧资源
 ###BaseURL
 "https://www.hanjuzy.com/inc/apijson_vod.php";
 ###首页地址
@@ -1092,7 +1092,7 @@ cms
 ###标题
 八戒资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=八戒资源
+https://php.egwang186.top/tupian.php?text=八戒资源
 ###BaseURL
 "http://cj.bajiecaiji.com/inc/apijson_vod.php";
 ###首页地址
@@ -1111,7 +1111,7 @@ cms
 ###标题
 百度资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=百度资源
+https://php.egwang186.top/tupian.php?text=百度资源
 ###BaseURL
 "https://api.apibdzy.com/api.php/provide/vod/";
 ###首页地址
@@ -1130,7 +1130,7 @@ cms
 ###标题
 无尽资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=无尽资源
+https://php.egwang186.top/tupian.php?text=无尽资源
 ###BaseURL
 "https://api.wujinapi.net/api.php/provide/vod/";
 ###首页地址
@@ -1149,7 +1149,7 @@ cms
 ###标题
 天空资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=天空资源
+https://php.egwang186.top/tupian.php?text=天空资源
 ###BaseURL
 "https://api.tiankongapi.com/api.php/provide/vod/";
 ###首页地址
@@ -1170,7 +1170,7 @@ cms
 ###标题
 四个圈影视
 ###图片
-http://egwang186.top:39000/tupian.php?text=四个圈影视
+https://php.egwang186.top/tupian.php?text=四个圈影视
 ###BaseURL
 "https://pg.fenwe078.cf/api.php/provide/vod/";
 ###首页地址
@@ -1189,7 +1189,7 @@ cms
 ###标题
 电影雷达
 ###图片
-http://egwang186.top:39000/tupian.php?text=电影雷达
+https://php.egwang186.top/tupian.php?text=电影雷达
 ###BaseURL
 "https://www.dianyingleida.com/api.php/provide/vod/";
 ###首页地址
@@ -1208,7 +1208,7 @@ cms
 ###标题
 人人影视
 ###图片
-http://egwang186.top:39000/tupian.php?text=人人影视
+https://php.egwang186.top/tupian.php?text=人人影视
 ###BaseURL
 "https://www.rrvipw.com/api.php/provide/vod/";
 ###首页地址
@@ -1227,7 +1227,7 @@ cms
 ###标题
 小小影视
 ###图片
-http://egwang186.top:39000/tupian.php?text=小小影视
+https://php.egwang186.top/tupian.php?text=小小影视
 ###BaseURL
 "http://haowywz.com/api.php/provide/vod/";
 ###首页地址
@@ -1246,7 +1246,7 @@ cms
 ###标题
 影图
 ###图片
-http://egwang186.top:39000/tupian.php?text=影图
+https://php.egwang186.top/tupian.php?text=影图
 ###BaseURL
 "https://cj.vodimg.top/api.php/provide/vod/";
 ###首页地址
@@ -1265,7 +1265,7 @@ cms
 ###标题
 飘零影院
 ###图片
-http://egwang186.top:39000/tupian.php?text=飘零影院
+https://php.egwang186.top/tupian.php?text=飘零影院
 ###BaseURL
 "https://p2100.net/api.php/provide/vod/";
 ###首页地址
@@ -1284,7 +1284,7 @@ cms
 ###标题
 新马影视
 ###图片
-http://egwang186.top:39000/tupian.php?text=新马影视
+https://php.egwang186.top/tupian.php?text=新马影视
 ###BaseURL
 "https://movie.gsl99.com/api.php/provide/vod/";
 ###首页地址
@@ -1305,7 +1305,7 @@ cms
 ###标题
 155资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=155资源
+https://php.egwang186.top/tupian.php?text=155资源
 ###BaseURL
 "https://155api.com/api.php/provide/vod/";
 ###首页地址
@@ -1324,7 +1324,7 @@ cms
 ###标题
 黄瓜资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=黄瓜资源
+https://php.egwang186.top/tupian.php?text=黄瓜资源
 ###BaseURL
 "https://www.zy018.com/api.php/provide/vod/";
 ###首页地址
@@ -1343,7 +1343,7 @@ cms
 ###标题
 黄瓜资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=黄瓜资源
+https://php.egwang186.top/tupian.php?text=黄瓜资源
 ###BaseURL
 "https://www.avre04.com/api.php/provide/vod/";
 ###首页地址
@@ -1362,7 +1362,7 @@ cms
 ###标题
 9色资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=9色资源
+https://php.egwang186.top/tupian.php?text=9色资源
 ###BaseURL
 "https://9szy.net/api.php/provide/vod/";
 ###首页地址
@@ -1381,7 +1381,7 @@ cms
 ###标题
 夜色资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=夜色资源
+https://php.egwang186.top/tupian.php?text=夜色资源
 ###BaseURL
 "https://www.yszy02.com/api.php/provide/vod/";
 ###首页地址
@@ -1400,7 +1400,7 @@ cms
 ###标题
 真不卡资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=真不卡资源
+https://php.egwang186.top/tupian.php?text=真不卡资源
 ###BaseURL
 "https://www.bukazyw.com/api.php/provide/vod/";
 ###首页地址
@@ -1419,7 +1419,7 @@ cms
 ###标题
 花都影视
 ###图片
-http://egwang186.top:39000/tupian.php?text=花都影视
+https://php.egwang186.top/tupian.php?text=花都影视
 ###BaseURL
 "https://hdys2.com/api.php/provide/vod/";
 ###首页地址
@@ -1438,7 +1438,7 @@ cms
 ###标题
 612021
 ###图片
-http://egwang186.top:39000/tupian.php?text=612021
+https://php.egwang186.top/tupian.php?text=612021
 ###BaseURL
 "https://612021.xyz/api.php/provide/art/";
 ###首页地址
@@ -1457,7 +1457,7 @@ cms
 ###标题
 快AV资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=快AV资源
+https://php.egwang186.top/tupian.php?text=快AV资源
 ###BaseURL
 "http://kuaiavzy.com/api.php/provide/vod/";
 ###首页地址
@@ -1476,7 +1476,7 @@ cms
 ###标题
 萝莉资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=萝莉资源
+https://php.egwang186.top/tupian.php?text=萝莉资源
 ###BaseURL
 "https://192.151.223.213/api.php/provide/vod/";
 ###首页地址
@@ -1495,7 +1495,7 @@ cms
 ###标题
 博民资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=博民资源
+https://php.egwang186.top/tupian.php?text=博民资源
 ###BaseURL
 "https://www.bominzy.com/api.php/provide/vod/";
 ###首页地址
@@ -1514,7 +1514,7 @@ cms
 ###标题
 狼友会资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=狼友会资源
+https://php.egwang186.top/tupian.php?text=狼友会资源
 ###BaseURL
 "https://api.lyhapi.com/api.php/provide/vod/";
 ###首页地址
@@ -1533,7 +1533,7 @@ cms
 ###标题
 KOK资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=KOK资源
+https://php.egwang186.top/tupian.php?text=KOK资源
 ###BaseURL
 "https://api.vodkok2.com/api.php/provide/vod/";
 ###首页地址
@@ -1552,7 +1552,7 @@ cms
 ###标题
 蜜桃视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=蜜桃视频
+https://php.egwang186.top/tupian.php?text=蜜桃视频
 ###BaseURL
 "https://mtav.art/api.php/provide/vod/";
 ###首页地址
@@ -1571,7 +1571,7 @@ cms
 ###标题
 七天
 ###图片
-http://egwang186.top:39000/tupian.php?text=七天
+https://php.egwang186.top/tupian.php?text=七天
 ###BaseURL
 "https://8day.icu/api.php/provide/vod/";
 ###首页地址
@@ -1590,7 +1590,7 @@ cms
 ###标题
 五播
 ###图片
-http://egwang186.top:39000/tupian.php?text=五播
+https://php.egwang186.top/tupian.php?text=五播
 ###BaseURL
 "https://5bo1.xyz/api.php/provide/vod/";
 ###首页地址
@@ -1609,7 +1609,7 @@ cms
 ###标题
 91视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=91视频
+https://php.egwang186.top/tupian.php?text=91视频
 ###BaseURL
 "https://91av.cyou/api.php/provide/vod/";
 ###首页地址
@@ -1628,7 +1628,7 @@ cms
 ###标题
 久爱
 ###图片
-http://egwang186.top:39000/tupian.php?text=久爱
+https://php.egwang186.top/tupian.php?text=久爱
 ###BaseURL
 "http://92free.icu/api.php/provide/vod/";
 ###首页地址
@@ -1647,7 +1647,7 @@ cms
 ###标题
 天美AV
 ###图片
-http://egwang186.top:39000/tupian.php?text=天美AV
+https://php.egwang186.top/tupian.php?text=天美AV
 ###BaseURL
 "https://tmav.art/api.php/provide/vod/";
 ###首页地址
@@ -1666,7 +1666,7 @@ cms
 ###标题
 色资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=色资源
+https://php.egwang186.top/tupian.php?text=色资源
 ###BaseURL
 "https://sezy.website/api.php/provide/vod/";
 ###首页地址
@@ -1685,7 +1685,7 @@ cms
 ###标题
 湿乐园
 ###图片
-http://egwang186.top:39000/tupian.php?text=湿乐园
+https://php.egwang186.top/tupian.php?text=湿乐园
 ###BaseURL
 "https://xxavs.com/api.php/provide/vod/";
 ###首页地址
@@ -1704,7 +1704,7 @@ cms
 ###标题
 QQ传媒
 ###图片
-http://egwang186.top:39000/tupian.php?text=QQ传媒
+https://php.egwang186.top/tupian.php?text=QQ传媒
 ###BaseURL
 "https://qqcm.sbs/api.php/provide/vod/";
 ###首页地址
@@ -1723,7 +1723,7 @@ cms
 ###标题
 优异资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=优异资源
+https://php.egwang186.top/tupian.php?text=优异资源
 ###BaseURL
 "https://a.uezy.pw/api.php/provide/vod/";
 ###首页地址
@@ -1742,7 +1742,7 @@ cms
 ###标题
 红袖资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=红袖资源
+https://php.egwang186.top/tupian.php?text=红袖资源
 ###BaseURL
 "https://hongxiuzy.com/api.php/provide/vod/";
 ###首页地址
@@ -1761,7 +1761,7 @@ cms
 ###标题
 老色逼资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=老色逼资源
+https://php.egwang186.top/tupian.php?text=老色逼资源
 ###BaseURL
 "https://apilsbzy1.com/api.php/provide/vod/";
 ###首页地址
@@ -1780,7 +1780,7 @@ cms
 ###标题
 橘猫资源(丝袜)
 ###图片
-http://egwang186.top:39000/tupian.php?text=橘猫资源(丝袜)
+https://php.egwang186.top/tupian.php?text=橘猫资源(丝袜)
 ###BaseURL
 "https://to.to-long.com/api.php/provide/vod/";
 ###首页地址
@@ -1799,7 +1799,7 @@ cms
 ###标题
 丝袜资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=丝袜资源
+https://php.egwang186.top/tupian.php?text=丝袜资源
 ###BaseURL
 "https://www.siwazyw.tv/api.php/provide/vod/";
 ###首页地址
@@ -1818,7 +1818,7 @@ cms
 ###标题
 丝袜海外
 ###图片
-http://egwang186.top:39000/tupian.php?text=丝袜海外
+https://php.egwang186.top/tupian.php?text=丝袜海外
 ###BaseURL
 "https://haiwai.siwazyw.tv/api.php/provide/vod/";
 ###首页地址
@@ -1837,7 +1837,7 @@ cms
 ###标题
 探探资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=探探资源
+https://php.egwang186.top/tupian.php?text=探探资源
 ###BaseURL
 "https://apittzy.com/api.php/provide/vod/";
 ###首页地址
@@ -1856,7 +1856,7 @@ cms
 ###标题
 色猫资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=色猫资源
+https://php.egwang186.top/tupian.php?text=色猫资源
 ###BaseURL
 "https://caiji.semaozy.net/inc/apijson_vod.php";
 ###首页地址
@@ -1875,7 +1875,7 @@ cms
 ###标题
 色窝资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=色窝资源
+https://php.egwang186.top/tupian.php?text=色窝资源
 ###BaseURL
 "https://sewozyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -1894,7 +1894,7 @@ cms
 ###标题
 花魁资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=花魁资源
+https://php.egwang186.top/tupian.php?text=花魁资源
 ###BaseURL
 "https://caiji.huakuiapi.com/inc/apijson_vod.php";
 ###首页地址
@@ -1913,7 +1913,7 @@ cms
 ###标题
 皇冠资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=皇冠资源
+https://php.egwang186.top/tupian.php?text=皇冠资源
 ###BaseURL
 "https://hghhh.com/api.php/provide/vod/";
 ###首页地址
@@ -1932,7 +1932,7 @@ cms
 ###标题
 滴滴资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=滴滴资源
+https://php.egwang186.top/tupian.php?text=滴滴资源
 ###BaseURL
 "https://api.ddapi.cc/api.php/provide/vod/";
 ###首页地址
@@ -1951,7 +1951,7 @@ cms
 ###标题
 雪豹资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=雪豹资源
+https://php.egwang186.top/tupian.php?text=雪豹资源
 ###BaseURL
 "https://api.xbapi.cc/api.php/provide/vod/";
 ###首页地址
@@ -1970,7 +1970,7 @@ cms
 ###标题
 森林资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=森林资源
+https://php.egwang186.top/tupian.php?text=森林资源
 ###BaseURL
 "https://slapibf.com/api.php/provide/vod/";
 ###首页地址
@@ -1989,7 +1989,7 @@ cms
 ###标题
 玉兔资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=玉兔资源
+https://php.egwang186.top/tupian.php?text=玉兔资源
 ###BaseURL
 "https://apiyutu.com/api.php/provide/vod/";
 ###首页地址
@@ -2008,7 +2008,7 @@ cms
 ###标题
 草榴资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=草榴资源
+https://php.egwang186.top/tupian.php?text=草榴资源
 ###BaseURL
 "https://www.caoliuzyw.com/api.php/provide/vod/";
 ###首页地址
@@ -2027,7 +2027,7 @@ cms
 ###标题
 伊人资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=伊人资源
+https://php.egwang186.top/tupian.php?text=伊人资源
 ###BaseURL
 "https://api.yirenziyuan.com/api.php/provide/vod/";
 ###首页地址
@@ -2046,7 +2046,7 @@ cms
 ###标题
 老鸨资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=老鸨资源
+https://php.egwang186.top/tupian.php?text=老鸨资源
 ###BaseURL
 "http://laobaozy.com/api.php/provide/vod/";
 ###首页地址
@@ -2065,7 +2065,7 @@ cms
 ###标题
 老鸭资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=老鸭资源
+https://php.egwang186.top/tupian.php?text=老鸭资源
 ###BaseURL
 "https://api.apilyzy.com/api.php/provide/vod/";
 ###首页地址
@@ -2084,7 +2084,7 @@ cms
 ###标题
 鸡坤资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=鸡坤资源
+https://php.egwang186.top/tupian.php?text=鸡坤资源
 ###BaseURL
 "https://jkunzyapi.com/api.php/provide/vod/";
 ###首页地址
@@ -2103,7 +2103,7 @@ cms
 ###标题
 速看资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=速看资源
+https://php.egwang186.top/tupian.php?text=速看资源
 ###BaseURL
 "https://ziyuan.skm3u8.com/api.php/provide/vod/";
 ###首页地址
@@ -2122,7 +2122,7 @@ cms
 ###标题
 色鸭资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=色鸭资源
+https://php.egwang186.top/tupian.php?text=色鸭资源
 ###BaseURL
 "https://api.seyavod.com/api.php/provide/vod/";
 ###首页地址
@@ -2141,7 +2141,7 @@ cms
 ###标题
 甜蜜资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=甜蜜资源
+https://php.egwang186.top/tupian.php?text=甜蜜资源
 ###BaseURL
 "https://timizy10.cc/api.php/provide/vod/";
 ###首页地址
@@ -2160,7 +2160,7 @@ cms
 ###标题
 奶香香资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=奶香香资源
+https://php.egwang186.top/tupian.php?text=奶香香资源
 ###BaseURL
 "https://naixxzy.com/api.php/provide/vod/";
 ###首页地址
@@ -2179,7 +2179,7 @@ cms
 ###标题
 奥斯卡资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=奥斯卡资源
+https://php.egwang186.top/tupian.php?text=奥斯卡资源
 ###BaseURL
 "https://aosikazy.com/api.php/provide/vod/";
 ###首页地址
@@ -2198,7 +2198,7 @@ cms
 ###标题
 色南国资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=色南国资源
+https://php.egwang186.top/tupian.php?text=色南国资源
 ###BaseURL
 "https://api.sexnguon.com/api.php/provide/vod/";
 ###首页地址
@@ -2217,7 +2217,7 @@ cms
 ###标题
 010爱资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=010爱资源
+https://php.egwang186.top/tupian.php?text=010爱资源
 ###BaseURL
 "http://100.42.227.80/api/macs.php";
 ###首页地址
@@ -2236,7 +2236,7 @@ cms
 ###标题
 抖阴视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=抖阴视频
+https://php.egwang186.top/tupian.php?text=抖阴视频
 ###BaseURL
 "https://www.888dav.com/api.php/provide/vod/";
 ###首页地址
@@ -2255,7 +2255,7 @@ cms
 ###标题
 麻豆视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=麻豆视频
+https://php.egwang186.top/tupian.php?text=麻豆视频
 ###BaseURL
 "http://www.madouse.la/api.php/provide/vod/";
 ###首页地址
@@ -2274,7 +2274,7 @@ cms
 ###标题
 蛋蛋视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=蛋蛋视频
+https://php.egwang186.top/tupian.php?text=蛋蛋视频
 ###BaseURL
 "http://156.249.29.8/inc/apijson_vod.php";
 ###首页地址
@@ -2293,7 +2293,7 @@ cms
 ###标题
 91麻豆
 ###图片
-http://egwang186.top:39000/tupian.php?text=91麻豆
+https://php.egwang186.top/tupian.php?text=91麻豆
 ###BaseURL
 "https://91md.me/api.php/provide/vod/";
 ###首页地址
@@ -2312,7 +2312,7 @@ cms
 ###标题
 美少女资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=美少女资源
+https://php.egwang186.top/tupian.php?text=美少女资源
 ###BaseURL
 "https://www.msnii.com/api/json.php";
 ###首页地址
@@ -2331,7 +2331,7 @@ cms
 ###标题
 淫水机资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=淫水机资源
+https://php.egwang186.top/tupian.php?text=淫水机资源
 ###BaseURL
 "https://www.xrbsp.com/api/json.php";
 ###首页地址
@@ -2350,7 +2350,7 @@ cms
 ###标题
 香奶儿资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=香奶儿资源
+https://php.egwang186.top/tupian.php?text=香奶儿资源
 ###BaseURL
 "https://www.gdlsp.com/api/json.php";
 ###首页地址
@@ -2369,7 +2369,7 @@ cms
 ###标题
 白嫖资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=白嫖资源
+https://php.egwang186.top/tupian.php?text=白嫖资源
 ###BaseURL
 "https://www.kxgav.com/api/json.php";
 ###首页地址
@@ -2388,7 +2388,7 @@ cms
 ###标题
 小湿妹资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=小湿妹资源
+https://php.egwang186.top/tupian.php?text=小湿妹资源
 ###BaseURL
 "https://www.afasu.com/api/json.php";
 ###首页地址
@@ -2407,7 +2407,7 @@ cms
 ###标题
 黄AV资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=黄AV资源
+https://php.egwang186.top/tupian.php?text=黄AV资源
 ###BaseURL
 "https://www.pgxdy.com/api/json.php";
 ###首页地址
@@ -2426,7 +2426,7 @@ cms
 ###标题
 大地资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=大地资源
+https://php.egwang186.top/tupian.php?text=大地资源
 ###BaseURL
 "https://dadiapi.com/api.php";
 ###首页地址
@@ -2445,7 +2445,7 @@ cms
 ###标题
 辣椒资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=辣椒资源
+https://php.egwang186.top/tupian.php?text=辣椒资源
 ###BaseURL
 "https://apilj.com/api.php/provide/vod/";
 ###首页地址
@@ -2464,7 +2464,7 @@ cms
 ###标题
 乐播资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=乐播资源
+https://php.egwang186.top/tupian.php?text=乐播资源
 ###BaseURL
 "https://lbapi9.com/api.php/provide/vod/";
 ###首页地址
@@ -2483,7 +2483,7 @@ cms
 ###标题
 博天堂
 ###图片
-http://egwang186.top:39000/tupian.php?text=博天堂
+https://php.egwang186.top/tupian.php?text=博天堂
 ###BaseURL
 "http://bttcj.com/inc/sapi.php";
 ###首页地址
@@ -2502,7 +2502,7 @@ cms
 ###标题
 环亚资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=环亚资源
+https://php.egwang186.top/tupian.php?text=环亚资源
 ###BaseURL
 "http://wmcj8.com/inc/sapi.php";
 ###首页地址
@@ -2521,7 +2521,7 @@ cms
 ###标题
 JAV名优馆
 ###图片
-http://egwang186.top:39000/tupian.php?text=JAV名优馆
+https://php.egwang186.top/tupian.php?text=JAV名优馆
 ###BaseURL
 "http://mygzycj.com/api.php";
 ###首页地址
@@ -2540,7 +2540,7 @@ cms
 ###标题
 色色资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=色色资源
+https://php.egwang186.top/tupian.php?text=色色资源
 ###BaseURL
 "http://secj8.com/inc/sapi.php";
 ###首页地址
@@ -2559,7 +2559,7 @@ cms
 ###标题
 玖玖资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=玖玖资源
+https://php.egwang186.top/tupian.php?text=玖玖资源
 ###BaseURL
 "http://99zywcj.com/inc/sapi.php";
 ###首页地址
@@ -2578,7 +2578,7 @@ cms
 ###标题
 久草资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=久草资源
+https://php.egwang186.top/tupian.php?text=久草资源
 ###BaseURL
 "http://jcspcj8.com/api";
 ###首页地址
@@ -2597,7 +2597,7 @@ cms
 ###标题
 狼少年
 ###图片
-http://egwang186.top:39000/tupian.php?text=狼少年
+https://php.egwang186.top/tupian.php?text=狼少年
 ###BaseURL
 "http://cjmygzy.com/inc/sapi.php";
 ###首页地址
@@ -2616,7 +2616,7 @@ cms
 ###标题
 富二代资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=富二代资源
+https://php.egwang186.top/tupian.php?text=富二代资源
 ###BaseURL
 "http://f2dcj6.com/sapi";
 ###首页地址
@@ -2635,7 +2635,7 @@ cms
 ###标题
 字幕网
 ###图片
-http://egwang186.top:39000/tupian.php?text=字幕网
+https://php.egwang186.top/tupian.php?text=字幕网
 ###BaseURL
 "http://zmcj88.com/sapi";
 ###首页地址
@@ -2654,7 +2654,7 @@ cms
 ###标题
 利来资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=利来资源
+https://php.egwang186.top/tupian.php?text=利来资源
 ###BaseURL
 "http://llzxcj.com/inc/sck.php";
 ###首页地址
@@ -2673,7 +2673,7 @@ cms
 ###标题
 番号资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=番号资源
+https://php.egwang186.top/tupian.php?text=番号资源
 ###BaseURL
 "http://fhapi9.com/api.php/provide/vod/";
 ###首页地址
@@ -2692,7 +2692,7 @@ cms
 ###标题
 鲨鱼资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=鲨鱼资源
+https://php.egwang186.top/tupian.php?text=鲨鱼资源
 ###BaseURL
 "https://shayuapi.com/api.php/provide/vod/";
 ###首页地址
@@ -2711,7 +2711,7 @@ cms
 ###标题
 速度资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=速度资源
+https://php.egwang186.top/tupian.php?text=速度资源
 ###BaseURL
 "http://www.ggmmzy.com:9999/inc/xml";
 ###首页地址
@@ -2730,7 +2730,7 @@ cms
 ###标题
 KK写真资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=KK写真资源
+https://php.egwang186.top/tupian.php?text=KK写真资源
 ###BaseURL
 "https://kkzy.me/api.php/provide/vod/";
 ###首页地址
@@ -2751,7 +2751,7 @@ cms
 ###标题
 色屌丝资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=色屌丝资源
+https://php.egwang186.top/tupian.php?text=色屌丝资源
 ###BaseURL
 "http://sdszyapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2770,7 +2770,7 @@ cms
 ###标题
 小姐姐资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=小姐姐资源
+https://php.egwang186.top/tupian.php?text=小姐姐资源
 ###BaseURL
 "https://xjjzyapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2789,7 +2789,7 @@ cms
 ###标题
 52AVAV
 ###图片
-http://egwang186.top:39000/tupian.php?text=52AVAV
+https://php.egwang186.top/tupian.php?text=52AVAV
 ###BaseURL
 "https://52zyapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2808,7 +2808,7 @@ cms
 ###标题
 我要啪啪
 ###图片
-http://egwang186.top:39000/tupian.php?text=我要啪啪
+https://php.egwang186.top/tupian.php?text=我要啪啪
 ###BaseURL
 "http://www.caiji21.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2827,7 +2827,7 @@ cms
 ###标题
 AV集中淫
 ###图片
-http://egwang186.top:39000/tupian.php?text=AV集中淫
+https://php.egwang186.top/tupian.php?text=AV集中淫
 ###BaseURL
 "https://www.caiji22.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2846,7 +2846,7 @@ cms
 ###标题
 夜夜撸资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=夜夜撸资源
+https://php.egwang186.top/tupian.php?text=夜夜撸资源
 ###BaseURL
 "https://www.caiji23.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2865,7 +2865,7 @@ cms
 ###标题
 大屌丝资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=大屌丝资源
+https://php.egwang186.top/tupian.php?text=大屌丝资源
 ###BaseURL
 "http://www.caiji24.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2884,7 +2884,7 @@ cms
 ###标题
 咪咪资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=咪咪资源
+https://php.egwang186.top/tupian.php?text=咪咪资源
 ###BaseURL
 "http://www.caiji25.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2903,7 +2903,7 @@ cms
 ###标题
 鲍鱼AV
 ###图片
-http://egwang186.top:39000/tupian.php?text=鲍鱼AV
+https://php.egwang186.top/tupian.php?text=鲍鱼AV
 ###BaseURL
 "http://caiji26.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2922,7 +2922,7 @@ cms
 ###标题
 精工厂资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=精工厂资源
+https://php.egwang186.top/tupian.php?text=精工厂资源
 ###BaseURL
 "https://jgczyapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2941,7 +2941,7 @@ cms
 ###标题
 点点娱乐
 ###图片
-http://egwang186.top:39000/tupian.php?text=点点娱乐
+https://php.egwang186.top/tupian.php?text=点点娱乐
 ###BaseURL
 "https://xx55zyapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2960,7 +2960,7 @@ cms
 ###标题
 大MM资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=大MM资源
+https://php.egwang186.top/tupian.php?text=大MM资源
 ###BaseURL
 "https://www.dmmapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2979,7 +2979,7 @@ cms
 ###标题
 老司鸡资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=老司鸡资源
+https://php.egwang186.top/tupian.php?text=老司鸡资源
 ###BaseURL
 "https://www.lsjapi.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -2998,7 +2998,7 @@ cms
 ###标题
 黄瓜TV资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=黄瓜TV资源
+https://php.egwang186.top/tupian.php?text=黄瓜TV资源
 ###BaseURL
 "https://www.caiji10.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3017,7 +3017,7 @@ cms
 ###标题
 快播盒子资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=快播盒子资源
+https://php.egwang186.top/tupian.php?text=快播盒子资源
 ###BaseURL
 "https://www.caiji09.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3036,7 +3036,7 @@ cms
 ###标题
 大香蕉资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=大香蕉资源
+https://php.egwang186.top/tupian.php?text=大香蕉资源
 ###BaseURL
 "https://www.caiji08.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3055,7 +3055,7 @@ cms
 ###标题
 日本AV在线
 ###图片
-http://egwang186.top:39000/tupian.php?text=日本AV在线
+https://php.egwang186.top/tupian.php?text=日本AV在线
 ###BaseURL
 "https://www.caiji07.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3074,7 +3074,7 @@ cms
 ###标题
 青青草视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=青青草视频
+https://php.egwang186.top/tupian.php?text=青青草视频
 ###BaseURL
 "https://www.caiji05.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3093,7 +3093,7 @@ cms
 ###标题
 麻豆视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=麻豆视频
+https://php.egwang186.top/tupian.php?text=麻豆视频
 ###BaseURL
 "https://www.caiji04.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3112,7 +3112,7 @@ cms
 ###标题
 一本道资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=一本道资源
+https://php.egwang186.top/tupian.php?text=一本道资源
 ###BaseURL
 "https://www.caiji03.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3131,7 +3131,7 @@ cms
 ###标题
 草榴视频
 ###图片
-http://egwang186.top:39000/tupian.php?text=草榴视频
+https://php.egwang186.top/tupian.php?text=草榴视频
 ###BaseURL
 "https://www.caiji02.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3150,7 +3150,7 @@ cms
 ###标题
 亚洲成人在线
 ###图片
-http://egwang186.top:39000/tupian.php?text=亚洲成人在线
+https://php.egwang186.top/tupian.php?text=亚洲成人在线
 ###BaseURL
 "https://www.caiji01.com/cjapi/mc10/vod/json.html";
 ###首页地址
@@ -3169,7 +3169,7 @@ cms
 ###标题
 99资源
 ###图片
-http://egwang186.top:39000/tupian.php?text=99资源
+https://php.egwang186.top/tupian.php?text=99资源
 ###BaseURL
 "http://99zy.pw/api.php/provide/vod/";
 ###首页地址
@@ -3188,7 +3188,7 @@ cms
 ###标题
 水蜜桃
 ###图片
-http://egwang186.top:39000/tupian.php?text=水蜜桃
+https://php.egwang186.top/tupian.php?text=水蜜桃
 ###BaseURL
 "https://smt999.cc/api.php/provide/vod/";
 ###首页地址

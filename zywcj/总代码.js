@@ -329,10 +329,7 @@ var playurl=uu.split("url=")[1];
 JSON.stringify({url:playurl,name:"地址",head:{"Referer":uu}});
 }else if(uu.indexOf("http://ip111.cn/?wd=")!=-1){
 var playurl=uu.split("wd=")[1];
-if(playurl.indexOf("http://1.117.152.239:39000/jiexi.php?url=")!=-1){
-var resp=JZ(JSON.stringify({url:playurl}));
-resp.code;
-}else if(playurl.indexOf("dxcc.meijutt.top")!=-1){
+if(playurl.indexOf("dxcc.meijutt.top")!=-1){
 var RF="https://www.psinu.com/static/player/aliplayer.html";
 var real=decodeURI(playurl);
 JSON.stringify({url:real,name:"地址",head:{"Referer":RF,"User-Agent":"Mozilla/5.0 Windows NT 10.0"}});
@@ -425,7 +422,7 @@ JSON.stringify({url:realurl,name:"地址",head:{"User-Agent":"Mozilla/5.0","Refe
 JSON.stringify({url:realurl,name:"地址"});
 }
 }else{
-"web=http://1.117.152.239:39000/?url="+playurl.split("url=")[1];
+"web=https://php.egwang186.top/?url="+playurl.split("url=")[1];
 }
 }else{
 JSON.stringify({url:playurl,name:"地址"});
@@ -441,7 +438,7 @@ if(resp.code.search(/<div class="video"/)!=-1||resp.code.search(/<div id="video"
       }
 }else{
 if(uu.split("url=")[1].indexOf("http")!=-1){
-"web=http://1.117.152.239:39000/?url="+uu.split("url=")[1];
+"web=https://php.egwang186.top/?url="+uu.split("url=")[1];
 }else{
 "web="+uu;
 }
@@ -475,7 +472,7 @@ var resp2=JZ(JSON.stringify({url:uuu}));
 var playurl=JSON.parse(resp2.code).url||JSON.parse(resp2.code).msg;
 JSON.stringify({url:playurl,name:"地址"});
 }else if(uu.split("url=")[1].indexOf("http")!=-1){
-"web=http://1.117.152.239:39000/?url="+uu.split("url=")[1];
+"web=https://php.egwang186.top/?url="+uu.split("url=")[1];
 }else{
 var id=uu.split("url=")[1];
 var uuu="https://vip.gaotian.love/api/?key=sRy0QAq8hqXRlrEtrq&url="+id;
