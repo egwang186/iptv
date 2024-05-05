@@ -307,6 +307,9 @@ if(getVar("地址").indexOf("$$")!=-1){
         var playurl=e2Rex(playcode,".json(url)")
         return playurl
     }
+    var 转存请求=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/batch",head:{"Authorization":access_token,"X-Share-Token":share_token,"x-canary":"client=web,app=share,version=2.3.1","Referer":"https://www.aliyundrive.com/"},postJson:JSON.stringify({"requests":[{"body":{"to_drive_id":odrive_id,"file_id":file_id,"to_parent_file_id":"root","share_id":share_id,"auto_rename":true},"headers":{"Content-Type":"application/json"},"id":"0","method":"POST","url":"/file/copy"}],"resource":"file"})}));
+    var xinfile_id=e2Rex(转存请求,".json(responses).json(body).json(file_id)")
+    
     if(readStr("alistORT")){
         var openaccess_token=getalistaccess()
         if(openaccess_token){
@@ -336,7 +339,7 @@ if(getVar("地址").indexOf("$$")!=-1){
             var playurl="alisttoken获取失败"
         }
     }
-    
+    var 转存删除=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/batch",head:{"Authorization":access_token,"X-Share-Token":share_token,"x-canary":"client=web,app=share,version=2.3.1","Referer":"https://www.aliyundrive.com/"},postJson:JSON.stringify({"requests":[{"body":{"drive_id":odrive_id,"file_id":xinfile_id},"headers":{"Content-Type":"application/json"},"id":file_id,"method":"POST","url":"/file/delete"}],"resource":"file"})}));
     if(类型=="audio"){
         var 转码HQ=域名+'/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
         var 本地转码HQ='http://127.0.0.1:3000/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
