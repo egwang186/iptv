@@ -125,7 +125,7 @@ if(JSON.parse(目录数据).items){
     if(xxx_id.indexOf("share_id")!=-1){
         for(var i in items){
            if(items[i].category=="video"||items[i].category=="doc"||items[i].category=="image"){
-           items[i].tugourl="q:"+items[i].category+"?url=share_id-"+items[i].share_id+"-"+items[i].drive_id+"$$"+items[i].file_id+"$$"+pwd+"$$"+getVar("地址").split("$$")[3];
+           items[i].tugourl="q:"+items[i].category+"?url=share_id-"+items[i].share_id+"$$"+items[i].file_id+"$$"+pwd+"$$"+getVar("地址").split("$$")[3];
            if(items[i].thumbnail){
             items[i].thumbnail=items[i].thumbnail+"@{'User-Agent':'Mozilla/5.0','Referer':'https://www.aliyundrive.com/'}";
            }else{
@@ -144,7 +144,7 @@ if(JSON.parse(目录数据).items){
             items[i].thumbnail="res://folder.png";
             items[i].size=SIZE(items[i].size);
            }else{
-           items[i].tugourl="q:video?url=share_id-"+items[i].share_id+"-"+items[i].drive_id+"$$"+items[i].file_id+"$$"+pwd;
+           items[i].tugourl="q:video?url=share_id-"+items[i].share_id+"$$"+items[i].file_id+"$$"+pwd;
            items[i].文件类型="<font color='red'><b>["+items[i].file_extension+"文件]</b></font>";
            items[i].thumbnail="res://otherfile.png";
            items[i].size=SIZE(items[i].size);
@@ -225,7 +225,7 @@ for(var i in 过滤){
 if(过滤[i].tugourl.indexOf("drive_id")!=-1){
     过滤[i].tugourl="http://ip111.cn/?wd="+过滤[i].url+"###"+过滤[i].drive_id+"###"+过滤[i].file_id+"###"+过滤[i].file_extension+"###"+过滤[i].category+"###"+过滤[i].name;
 }else{
-    过滤[i].tugourl="http://ip111.cn/?wd="+过滤[i].thumbnail+"$$"+过滤[i].share_id+"-"+过滤[i].drive_id+"$$"+过滤[i].file_id+"$$"+过滤[i].file_extension+"$$"+过滤[i].category+"$$"+getVar("地址").split("$$")[2]+"$$"+getVar("地址").split("$$")[3]+"$$"+过滤[i].parent_file_id+"$$"+过滤[i].name;
+    过滤[i].tugourl="http://ip111.cn/?wd="+过滤[i].thumbnail+"$$"+过滤[i].share_id+"$$"+过滤[i].file_id+"$$"+过滤[i].file_extension+"$$"+过滤[i].category+"$$"+getVar("地址").split("$$")[2]+"$$"+getVar("地址").split("$$")[3]+"$$"+过滤[i].parent_file_id+"$$"+过滤[i].name;
 }
 }
 JSON.stringify(过滤);
@@ -241,8 +241,8 @@ if(getVar("地址").indexOf("$$")!=-1){
     if(ALICOOKIE&&ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1&&ALICOOKIE.indexOf("user_id")!=-1){
         //
         var pwd=getVar("地址").split("?wd=")[1].split("$$")[5];
-        var share_id=getVar("地址").split("?wd=")[1].split("$$")[1].split("-")[0];
-        var odrive_id=getVar("地址").split("?wd=")[1].split("$$")[1].split("-")[1];
+        var share_id=getVar("地址").split("?wd=")[1].split("$$")[1]
+        var odrive_id=e2Rex(readStr("阿里默认账号.txt"),".json(resourceid)")
         var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
         var mydrive_id=ALICOOKIE.match(/drive_id=(.*?)[\s;]/)[1];
         var user_id=ALICOOKIE.match(/user_id=(.*?)[\s;]/)[1];
