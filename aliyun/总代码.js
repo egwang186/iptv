@@ -241,8 +241,8 @@ if(getVar("地址").indexOf("$$")!=-1){
     if(ALICOOKIE&&ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1&&ALICOOKIE.indexOf("user_id")!=-1){
         //
         var pwd=getVar("地址").split("?wd=")[1].split("$$")[5];
-        var share_id=getVar("地址").split("?wd=")[1].split("$$")[1]
-        var odrive_id=e2Rex(readStr("阿里默认账号.txt"),".json(resourceid)")
+        var share_id=getVar("地址").split("?wd=")[1].split("$$")[1];
+        var odrive_id=e2Rex(readStr("阿里默认账号.txt"),".json(resourceid)");
         var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
         var mydrive_id=ALICOOKIE.match(/drive_id=(.*?)[\s;]/)[1];
         var user_id=ALICOOKIE.match(/user_id=(.*?)[\s;]/)[1];
@@ -303,7 +303,7 @@ if(getVar("地址").indexOf("$$")!=-1){
         return openaccess_token
     }
     function getalistplay(){
-        var playcode=getHttp(JSON.stringify({url:"https://open.aliyundrive.com/adrive/v1.0/openFile/getDownloadUrl",head:{"Authorization":"Bearer "+openaccess_token,"Referer":"https://www.aliyundrive.com/"},postJson:JSON.stringify({file_id:file_id,drive_id:odrive_id})}));
+        var playcode=getHttp(JSON.stringify({url:"https://open.aliyundrive.com/adrive/v1.0/openFile/getDownloadUrl",head:{"Authorization":"Bearer "+openaccess_token,"Referer":"https://www.aliyundrive.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"},postJson:JSON.stringify({file_id:file_id,drive_id:odrive_id})}));
         var playurl=e2Rex(playcode,".json(url)")
         return playurl
     }
