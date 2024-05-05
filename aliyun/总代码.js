@@ -125,7 +125,7 @@ if(JSON.parse(目录数据).items){
     if(xxx_id.indexOf("share_id")!=-1){
         for(var i in items){
            if(items[i].category=="video"||items[i].category=="doc"||items[i].category=="image"){
-           items[i].tugourl="q:"+items[i].category+"?url=share_id-"+items[i].share_id+"$$"+items[i].file_id+"$$"+pwd+"$$"+getVar("地址").split("$$")[3];
+           items[i].tugourl="q:"+items[i].category+"?url=share_id-"+items[i].share_id+"-"+items[i].drive_id+"$$"+items[i].file_id+"$$"+pwd+"$$"+getVar("地址").split("$$")[3];
            if(items[i].thumbnail){
             items[i].thumbnail=items[i].thumbnail+"@{'User-Agent':'Mozilla/5.0','Referer':'https://www.aliyundrive.com/'}";
            }else{
@@ -144,7 +144,7 @@ if(JSON.parse(目录数据).items){
             items[i].thumbnail="res://folder.png";
             items[i].size=SIZE(items[i].size);
            }else{
-           items[i].tugourl="q:video?url=share_id-"+items[i].share_id+"$$"+items[i].file_id+"$$"+pwd;
+           items[i].tugourl="q:video?url=share_id-"+items[i].share_id+"-"+items[i].drive_id+"$$"+items[i].file_id+"$$"+pwd;
            items[i].文件类型="<font color='red'><b>["+items[i].file_extension+"文件]</b></font>";
            items[i].thumbnail="res://otherfile.png";
            items[i].size=SIZE(items[i].size);
@@ -225,7 +225,7 @@ for(var i in 过滤){
 if(过滤[i].tugourl.indexOf("drive_id")!=-1){
     过滤[i].tugourl="http://ip111.cn/?wd="+过滤[i].url+"###"+过滤[i].drive_id+"###"+过滤[i].file_id+"###"+过滤[i].file_extension+"###"+过滤[i].category+"###"+过滤[i].name;
 }else{
-    过滤[i].tugourl="http://ip111.cn/?wd="+过滤[i].thumbnail+"$$"+过滤[i].share_id+"$$"+过滤[i].file_id+"$$"+过滤[i].file_extension+"$$"+过滤[i].category+"$$"+getVar("地址").split("$$")[2]+"$$"+getVar("地址").split("$$")[3]+"$$"+过滤[i].parent_file_id+"$$"+过滤[i].name;
+    过滤[i].tugourl="http://ip111.cn/?wd="+过滤[i].thumbnail+"$$"+过滤[i].share_id+"-"+过滤[i].drive_id+"$$"+过滤[i].file_id+"$$"+过滤[i].file_extension+"$$"+过滤[i].category+"$$"+getVar("地址").split("$$")[2]+"$$"+getVar("地址").split("$$")[3]+"$$"+过滤[i].parent_file_id+"$$"+过滤[i].name;
 }
 }
 JSON.stringify(过滤);
@@ -241,7 +241,8 @@ if(getVar("地址").indexOf("$$")!=-1){
     if(ALICOOKIE&&ALICOOKIE.indexOf("access_token")!=-1&&ALICOOKIE.indexOf("refresh_token")!=-1&&ALICOOKIE.indexOf("user_id")!=-1){
         //
         var pwd=getVar("地址").split("?wd=")[1].split("$$")[5];
-        var share_id=getVar("地址").split("?wd=")[1].split("$$")[1];
+        var share_id=getVar("地址").split("?wd=")[1].split("$$")[1].split("-")[0];
+        var odrive_id=getVar("地址").split("?wd=")[1].split("$$")[1].split("-")[1];
         var refresh_token=ALICOOKIE.match(/refresh_token=(.*?)[\s;]/)[1];
         var mydrive_id=ALICOOKIE.match(/drive_id=(.*?)[\s;]/)[1];
         var user_id=ALICOOKIE.match(/user_id=(.*?)[\s;]/)[1];
@@ -287,10 +288,53 @@ if(getVar("地址").indexOf("$$")!=-1){
     var 类型=getVar("地址").split("?wd=")[1].split("$$")[4];
     var videoname=getVar("地址").split("?wd=")[1].split("$$")[8];
     var u=getVar("地址").split("?wd=")[1].split("$$")[0];
-    if(类型=="audio"){
-        var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,get_audio_play_info:true,file_id:file_id,expire_sec:600})}));
+    function getalistOCT(){
+        var authcode=getHttp(JSON.stringify({url:"https://open.aliyundrive.com/oauth/users/authorize?client_id=76917ccccd4441c39457a04f6084fb2f&redirect_uri=https://alist.nn.ci/tool/aliyundrive/callback&scope=user:base,file:all:read,file:all:write&state=",head:{"Authorization":access_token,"X-Share-Token":share_token,"x-canary":"client=web,app=share,version=2.3.1","Referer":"https://www.aliyundrive.com/"},postJson:JSON.stringify({authorize:1,scope:"user:base,file:all:read,file:all:write"})}));
+        var alistcode=e2Rex(authcode,".json(redirectUri).ty(code=)");
+        var openaccesscode=getHttp(JSON.stringify({url:"https://api.xhofe.top/alist/ali_open/code",head:{"x-canary":"client=web,app=share,version=2.3.1","Referer":"https://www.aliyundrive.com/"},postJson:JSON.stringify({code:alistcode,grant_type:"authorization_code"})}));
+        var alistORT=e2Rex(openaccesscode,".json(refresh_token)")
+        var alistOCT=e2Rex(openaccesscode,".json(access_token)")
+        writeStr("alistORT",alistORT)
+        return alistOCT
+    }
+    function getalistaccess(){
+        var openaccesscode=getHttp(JSON.stringify({url:"https://api.xhofe.top/alist/ali_open/code",head:{"x-canary":"client=web,app=share,version=2.3.1","Referer":"https://www.aliyundrive.com/"},postJson:JSON.stringify({refresh_token:readStr("alistORT"),grant_type:"refresh_token"})}));
+        var openaccess_token=e2Rex(openaccesscode,".json(access_token)")
+        return openaccess_token
+    }
+    function getalistplay(){
+        var playcode=getHttp(JSON.stringify({url:"https://open.aliyundrive.com/adrive/v1.0/openFile/getDownloadUrl",head:{"Authorization":"Bearer "+openaccess_token,"Referer":"https://www.aliyundrive.com/"},postJson:JSON.stringify({file_id:file_id,drive_id:odrive_id})}));
+        var playurl=e2Rex(playcode,".json(url)")
+        return playurl
+    }
+    if(readStr("alistORT")){
+        var openaccess_token=getalistaccess()
+        if(openaccess_token){
+            var playurl=getalistplay()
+            if(!playurl){
+            var playurl="alist接口异常"
+            }
+        }else{
+            var openaccess_token=getalistOCT()
+            if(openaccess_token){
+                var playurl=getalistplay()
+                if(!playurl){
+                var playurl="alist接口异常"
+                }
+            }else{
+                var playurl="alisttoken获取失败"
+            }
+        }
     }else{
-        var code=getHttp(JSON.stringify({url:"https://api.aliyundrive.com/adrive/v2/file/get_share_link_download_url",head:{"Authorization":access_token,"X-Share-Token":share_token},postJson:JSON.stringify({share_id:share_id,file_id:file_id,expire_sec:600})}));
+        var openaccess_token=getalistOCT()
+        if(openaccess_token){
+            var playurl=getalistplay()
+            if(!playurl){
+            var playurl="alist接口异常"
+            }
+        }else{
+            var playurl="alisttoken获取失败"
+        }
     }
     
     if(类型=="audio"){
@@ -298,11 +342,11 @@ if(getVar("地址").indexOf("$$")!=-1){
         var 本地转码HQ='http://127.0.0.1:3000/apis/yun-audio/'+file_id+'/'+share_id+'/'+access_token+'/'+share_token+'/HQ/master.mp3';
         var 播放模式=getVar("播放模式")||"全部";
         if(播放模式=="全部"||播放模式=="null"){
-            JSON.stringify([{name:"原始文件",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+            JSON.stringify([{name:"原始文件",url:playurl,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
         }else if(播放模式=="本地转码"){
-            JSON.stringify([{name:"原始文件",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+            JSON.stringify([{name:"原始文件",url:playurl,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高音质转码",url:本地转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
         }else{
-            JSON.stringify([{name:"原始文件",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+            JSON.stringify([{name:"原始文件",url:playurl,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"高音质转码",url:转码HQ,head:{"Referer":"https://www.aliyundrive.com/"}}]);
         }
         
     }else{
@@ -312,9 +356,9 @@ if(getVar("地址").indexOf("$$")!=-1){
             
             var 播放模式=getVar("播放模式")||"全部";
             if(播放模式=="全部"||播放模式=="null"){
-                JSON.stringify([{name:"原画",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+                JSON.stringify([{name:"原画",url:playurl,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
             }else if(播放模式=="本地转码"){
-                JSON.stringify([{name:"原画",url:"获取失败",head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
+                JSON.stringify([{name:"原画",url:playurl,head:{"Authorization":access_token,"Referer":"https://www.aliyundrive.com/"}},{name:"本地高画质转码(会员2K)",url:本地转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}}]);
             }else{
                 JSON.stringify([{name:"高画质转码(会员2K)",url:转码2K会员专享,head:{"Referer":"https://www.aliyundrive.com/"}},{name:"720P转码",url:转码720,head:{"Referer":"https://www.aliyundrive.com/"}}]);
             }
