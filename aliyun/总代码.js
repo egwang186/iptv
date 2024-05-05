@@ -303,7 +303,7 @@ if(getVar("地址").indexOf("$$")!=-1){
         return openaccess_token
     }
     function getalistplay(){
-        var playcode=getHttp(JSON.stringify({url:"https://open.aliyundrive.com/adrive/v1.0/openFile/getDownloadUrl",head:{"Authorization":"Bearer "+openaccess_token,"Referer":"https://www.aliyundrive.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"},postJson:JSON.stringify({file_id:file_id,drive_id:odrive_id})}));
+        var playcode=getHttp(JSON.stringify({url:"https://open.aliyundrive.com/adrive/v1.0/openFile/getDownloadUrl",head:{"Authorization":"Bearer "+openaccess_token,"Referer":"https://www.aliyundrive.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36"},postJson:JSON.stringify({file_id:xinfile_id,drive_id:odrive_id})}));
         var playurl=e2Rex(playcode,".json(url)")
         return playurl
     }
