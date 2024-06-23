@@ -67,9 +67,10 @@ var file_id="root";
 alert("请重新登陆阿里云盘网页");
 }
 }
+var next=readStr("next_marker")
 if(xxx_id.indexOf("share_id")!=-1){
     var HEAD=JSON.stringify({"X-Share-Token":getVar("share_token")});
-    var data=JSON.stringify({share_id:xxx_id.split("-")[1],parent_file_id:file_id,limit: 200,all:true,url_expire_sec:86400,image_thumbnail_process:"image/resize,w_160/format,jpeg",image_url_process:"image/resize,w_1920/format,jpeg",video_thumbnail_process:"video/snapshot,t_1000,f_jpg,ar_auto,w_300",order_by:"name",order_direction:"ASC"});
+    var data=JSON.stringify({share_id:xxx_id.split("-")[1],parent_file_id:file_id,limit: 200,all:true,url_expire_sec:86400,image_thumbnail_process:"image/resize,w_160/format,jpeg",image_url_process:"image/resize,w_1920/format,jpeg",video_thumbnail_process:"video/snapshot,t_1000,f_jpg,ar_auto,w_300",order_by:"name",order_direction:"ASC",marker:next});
 }else if(xxx_id.indexOf("drive_id")!=-1){
     var cm=android.webkit.CookieManager.getInstance();
 var ALICOOKIE=cm.getCookie("www.aliyundrive.com");
@@ -90,7 +91,7 @@ if(readStr("aliyunKEY")){
     writeStr("aliyunKEY","");
 }else{
     var HEAD=JSON.stringify({"Authorization":access_token});
-    var data=JSON.stringify({drive_id:xxx_id.split("-")[1],parent_file_id:file_id,limit:200,all:true,url_expire_sec:14400,image_thumbnail_process:"image/resize,w_160/format,jpeg",image_url_process:"image/resize,w_1920/format,jpeg",video_thumbnail_process:"video/snapshot,t_1000,f_jpg,ar_auto,w_300",order_by:"name",order_direction:"ASC"});
+    var data=JSON.stringify({drive_id:xxx_id.split("-")[1],parent_file_id:file_id,limit:200,all:true,url_expire_sec:14400,image_thumbnail_process:"image/resize,w_160/format,jpeg",image_url_process:"image/resize,w_1920/format,jpeg",video_thumbnail_process:"video/snapshot,t_1000,f_jpg,ar_auto,w_300",order_by:"name",order_direction:"ASC",marker:next});
 }
 }else{
 alert("请重新登陆阿里云盘网页");
@@ -102,6 +103,8 @@ if(data.indexOf("query")!=-1){
     var 目录数据=getHttp(JSON.stringify({url:"https://api.alipan.com/adrive/v2/file/list",head:JSON.parse(HEAD),postJson:data}));
 }
 var items=JSON.parse(目录数据).items;
+var nextmarker=e2(目录数据,".json(next_marker)");
+writeStr("next_marker",nextmarker)
 function SIZE(size){
     size=(size/1024).toFixed(2);
     if(size>1024){
