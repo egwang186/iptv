@@ -471,14 +471,14 @@ JSON.stringify([{name:name,url:url}]);
 }
 ######搜索链接9
 [
-    {"title":"阿里盘搜","url":"https://www.alipansou.com/search?k="},
-    {"title":"奈斯搜索","url":"https://www.niceso.fun/search/?q="},
-    {"title":"大盘搜","url":"https://dapanso.com/search?page=1&type=&keyword="},
+    {"title":"阿里盘搜","url":"https://www.alipanx.com/search?exact=false&page=1&q=%E8%AF%BE%E7%A8%8B#KEY#"},
+    {"title":"大盘搜","url":"https://dapanso.com/search?page=1&type=&keyword=#KEY#"},
     {"title":"UP云搜","url":"https://www.upyunso.com/search.html?page=1&keyword="},
     {"title":"云盘资源网","url":"https://www.yunpanziyuan.com/fontsearch.htm?fontname="},
-    {"title":"云盘资源分享社区","url":"https://alyunpan.com/?q="},
-    {"title":"阿里小站","url":"https://www.pan666.cn/?q="},
-    {"title":"霸王龙影库","url":"https://t-rex.tzfile.com/?s="},
+    {"title":"阿里搜","url":"https://aliso.cc/s/#KEY#-1-0.html"},
+    {"title":"小云搜索","url":"https://www.yunso.net/index/user/s?wd=#KEY#"},
+    {"title":"小纸条","url":"https://u.gitcafe.net/?wd="},
+    {"title":"阿里小站","url":"https://www.pan666.net/?q="},
     {"title":"TG_云盘资源发布","url":"https://tx.me/s/sharealiyun?q="},
     {"title":"TG_云盘盘","url":"https://tx.me/s/yunpanpan?q="},
     {"title":"TG_云盘影视共享","url":"https://tx.me/s/alypysgx?q="},
@@ -488,8 +488,7 @@ JSON.stringify([{name:name,url:url}]);
     {"title":"TG_影视必应阁","url":"https://tx.me/s/moviebyg?q="},
     {"title":"TG_4K影视资源","url":"https://tx.me/s/remux_2160p?q="},
     {"title":"TG_蓝光影音","url":"https://tx.me/s/voidrss?q="},
-    {"title":"TG_阿里云影视","url":"https://tx.me/s/aliyunys?q="},
-    {"title":"小纸条","url":"https://u.gitcafe.net/?wd="}
+    {"title":"TG_阿里云影视","url":"https://tx.me/s/aliyunys?q="}
 ]
 ######多链接10
 if(getVar("url")&&getVar("url")!="null"){
