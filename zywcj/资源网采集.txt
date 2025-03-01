@@ -33,11 +33,12 @@ CK资源,https://ckzy.me/api.php/provide/vod/
 新浪资源,http://api.xinlangapi.com/xinlangapi.php/provide/vod/
 百度资源,https://api.apibdzy.com/api.php/provide/vod/
 无尽资源,https://api.wujinapi.net/api.php/provide/vod/
-#
-#三方聚合
+如意资源,https://cj.rycjapi.com/api.php/provide/vod/
 影图,https://cj.vodimg.top/api.php/provide/vod/
 天翼影视,https://www.911ysw.top/tianyi.php/provide/vod/
 飘零影院,https://p2100.net/api.php/provide/vod/
+魔爪资源,https://mozhuazy.com/api.php/provide/vod/
+无限资源,https://api.wuxianzy.net/api.php/provide/vod/
 #
 #18+
 155资源,https://155api.com/api.php/provide/vod/
@@ -66,4 +67,10 @@ GAY资源,https://gayapi.com/api.php/provide/vod/
 番号资源,http://fhapi9.com/api.php/provide/vod/
 91视频,https://91av.cyou/api.php/provide/vod/
 环亚资源,http://hysscj.com/inc/sapi.php
+百万资源,https://api.bwzym3u8.com/api.php/provide/vod/
+豆瓣资源,https://caiji.dbzy.tv/api.php/provide/vod/
+奶香香资源,https://naixxzy1.com/api.php/provide/vod/
+奥斯卡资源,https://aosikazy2.com/api.php/provide/vod/
+X细胞资源,https://www.xxibaozyw.com/api.php/provide/vod/
+搜AV资源,https://api.souavzy.vip/api.php/provide/vod/
 #
