@@ -4,6 +4,7 @@
 #
 #切片资源
 U酷资源,https://api.ukuapi88.com/api.php/provide/vod/
+优质资源库,https://api.yzzy-api.com/inc/api_mac10.php
 360资源,https://360zy.com/api.php/provide/vod/
 黑木耳资源.https://json.heimuer.tv/api.php/provide/vod/
 鸭鸭资源,https://cj.yayazy.net/api.php/provide/vod/
