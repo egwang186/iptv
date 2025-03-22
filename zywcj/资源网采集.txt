@@ -46,6 +46,7 @@ CK资源,https://ckzy.me/api.php/provide/vod/
 #
 #18+
 155资源,https://155api.com/api.php/provide/vod/
+杏吧资源,https://xingba111.com/api.php/provide/vod/
 GAY资源,https://gayapi.com/api.php/provide/vod/
 桃花资源,https://thzy1.me/api.php/provide/vod/
 湿乐园,https://xxavs.com/api.php/provide/vod/
