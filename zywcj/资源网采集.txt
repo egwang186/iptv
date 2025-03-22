@@ -4,6 +4,7 @@
 虾米资源,https://zy.hls.one/api.php/provide/vod/
 #
 #切片资源
+小熊影视,http://47.94.99.16:3074/api.php/provide/vod/
 U酷资源,https://api.ukuapi88.com/api.php/provide/vod/
 优质资源库,https://api.yzzy-api.com/inc/api_mac10.php
 360资源,https://360zy.com/api.php/provide/vod/
