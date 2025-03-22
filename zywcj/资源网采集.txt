@@ -1,4 +1,5 @@
 #官方解析
+小猫咪资源,http://zy.xiaomaomi.cc/api.php/provide/vod/
 海洋资源,https://www.seacms.org/zyapi.php
 虾米资源,https://zy.hls.one/api.php/provide/vod/
 #
