@@ -1,64 +1,3 @@
-央视频,#genre#
-CCTV1,http://www.tvzb.com/iptv/tvzb82.php?id=cctv1
-CCTV2,http://www.tvzb.com/iptv/tvzb82.php?id=cctv2
-CCTV3,http://www.tvzb.com/iptv/tvzb82.php?id=cctv3
-CCTV4,http://www.tvzb.com/iptv/tvzb82.php?id=cctv4
-CCTV4k,http://www.tvzb.com/iptv/tvzb82.php?id=cctv4k
-CCTV5,http://www.tvzb.com/iptv/tvzb82.php?id=cctv5
-CCTV5+,http://www.tvzb.com/iptv/tvzb82.php?id=cctv5p
-CCTV6,http://www.tvzb.com/iptv/tvzb82.php?id=cctv6
-CCTV7,http://www.tvzb.com/iptv/tvzb82.php?id=cctv7
-CCTV8,http://www.tvzb.com/iptv/tvzb82.php?id=cctv8
-CCTV9,http://www.tvzb.com/iptv/tvzb82.php?id=cctv9
-CCTV10,http://www.tvzb.com/iptv/tvzb82.php?id=cctv10
-CCTV11,http://www.tvzb.com/iptv/tvzb82.php?id=cctv11
-CCTV12,http://www.tvzb.com/iptv/tvzb82.php?id=cctv12
-CCTV13,http://www.tvzb.com/iptv/tvzb82.php?id=cctv13
-CCTV14,http://www.tvzb.com/iptv/tvzb82.php?id=cctv14
-CCTV15,http://www.tvzb.com/iptv/tvzb82.php?id=cctv15
-CCTV16,http://www.tvzb.com/iptv/tvzb82.php?id=cctv16
-CCTV16,http://www.tvzb.com/iptv/tvzb82.php?id=cctv16-4k
-CCTV17,http://www.tvzb.com/iptv/tvzb82.php?id=cctv17
-CCTV兵器科技,http://www.tvzb.com/iptv/tvzb82.php?id=bqkj
-CCTV第一剧场,http://www.tvzb.com/iptv/tvzb82.php?id=dyjc
-CCTV电视指南,http://www.tvzb.com/iptv/tvzb82.php?id=dszn
-CCTV风云剧场,http://www.tvzb.com/iptv/tvzb82.php?id=fyjc
-CCTV风云音乐,http://www.tvzb.com/iptv/tvzb82.php?id=fyyy
-CCTV风云足球,http://www.tvzb.com/iptv/tvzb82.php?id=fyzq
-CCTV高尔夫网球,http://www.tvzb.com/iptv/tvzb82.php?id=gefwq
-CCTV怀旧剧场,http://www.tvzb.com/iptv/tvzb82.php?id=hjjc
-CCTV女性时尚,http://www.tvzb.com/iptv/tvzb82.php?id=nxss
-CCTV世界地理,http://www.tvzb.com/iptv/tvzb82.php?id=sjdl
-CCTV卫生健康,http://www.tvzb.com/iptv/tvzb82.php?id=wsjk
-CCTV央视台球,http://www.tvzb.com/iptv/tvzb82.php?id=ystq
-CCTV央视文化精品,http://www.tvzb.com/iptv/tvzb82.php?id=whjp
-CGTN,http://www.tvzb.com/iptv/tvzb82.php?id=cgtn
-CGTN阿语,http://www.tvzb.com/iptv/tvzb82.php?id=cgtna
-CGTN俄语,http://www.tvzb.com/iptv/tvzb82.php?id=cgtnr
-CGTN法语,http://www.tvzb.com/iptv/tvzb82.php?id=cgtnf
-CGTN纪录,http://www.tvzb.com/iptv/tvzb82.php?id=cgtnjl
-CGTN西语,http://www.tvzb.com/iptv/tvzb82.php?id=cgtne
-安徽卫视,http://www.tvzb.com/iptv/tvzb82.php?id=ahws
-北京卫视,http://www.tvzb.com/iptv/tvzb82.php?id=bjws
-东方卫视,http://www.tvzb.com/iptv/tvzb82.php?id=dfws
-东南卫视,http://www.tvzb.com/iptv/tvzb82.php?id=dnws
-广东卫视,http://www.tvzb.com/iptv/tvzb82.php?id=gdws
-广西卫视,http://www.tvzb.com/iptv/tvzb82.php?id=gxws
-贵州卫视,http://www.tvzb.com/iptv/tvzb82.php?id=gzws
-海南卫视,http://www.tvzb.com/iptv/tvzb82.php?id=hinws
-河北卫视,http://www.tvzb.com/iptv/tvzb82.php?id=hbws
-河南卫视,http://www.tvzb.com/iptv/tvzb82.php?id=hnws
-黑龙江卫视,http://www.tvzb.com/iptv/tvzb82.php?id=hljws
-湖北卫视,http://www.tvzb.com/iptv/tvzb82.php?id=hubws
-湖南卫视,http://www.tvzb.com/iptv/tvzb82.php?id=hunws
-江苏卫视,http://www.tvzb.com/iptv/tvzb82.php?id=jsws
-江西卫视,http://www.tvzb.com/iptv/tvzb82.php?id=jxws
-辽宁卫视,http://www.tvzb.com/iptv/tvzb82.php?id=lnws
-山东卫视,http://www.tvzb.com/iptv/tvzb82.php?id=sdws
-深圳卫视,http://www.tvzb.com/iptv/tvzb82.php?id=szws
-四川卫视,http://www.tvzb.com/iptv/tvzb82.php?id=scws
-浙江卫视,http://www.tvzb.com/iptv/tvzb82.php?id=zjws
-重庆卫视,http://www.tvzb.com/iptv/tvzb82.php?id=cqws
 广播频道,#genre#
 中国之声,http://ngcdn001.cnr.cn/live/zgzs/index.m3u8
 经济之声,http://ngcdn002.cnr.cn/live/jjzs/index.m3u8
@@ -90,100 +29,24 @@ CRI海峡飞虹,http://sk.cri.cn/hxfh.m3u8
 CRI客家之声,http://sk.cri.cn/hakka.m3u8
 CRI闽南之音,http://sk.cri.cn/minnan.m3u8
 CRINEWSPlusAM1008,http://sk.cri.cn/am1008.m3u8
-🔞🈲成人_,#genre#
-精艷臺(型男),http://18.svi-studio.com:8880/live/908957700097/132663288386/1.m3u8
-潘多拉完美臺(型男),http://18.svi-studio.com:8880/live/624372101145/418430465490/3.m3u8
-香蕉臺(型男),http://18.svi-studio.com:8880/live/624372101145/418430465490/4.m3u8
-松視1臺(型男),http://18.svi-studio.com:8880/live/584830114073/800309151021/5.m3u8
-松視2臺(型男),http://18.svi-studio.com:8880/live/917952932058/953281067271/6.m3u8
-松視3臺(型男),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
-🈲驚艷臺,http://125.227.210.55:8156/VideoInput/play.ts
-🍌香蕉臺,http://125.227.210.55:8159/VideoInput/play.ts
-👅奧視🔞3,http://125.227.210.55:8917/VideoInput/play.ts
-🔮奧視2,http://125.227.210.55:55643/VideoInput/play.ts
-松視1,http://z88.ubtvfans.com/live/rx3/402/2d5f45ef7b7b90e9b47c6963be6d5120/index.m3u8
-松視2,http://z88.ubtvfans.com/live/rx3/403/169cf37c3b80aa73066703f16f161f7d/index.m3u8
-松視3,http://z88.ubtvfans.com/live/rx3/404/f879380802739b846ed31d934c19b4de/index.m3u8
-玩美台,http://z88.ubtvfans.com/live/rx3/410/65c496a8a32fe34c9af6b1dce9988f28/index.m3u8
-免子臺,http://z88.ubtvfans.com/live/rx3/411/9bb448cd18b0d29aa46c24c9286c4d29/index.m3u8
-極限,http://z88.ubtvfans.com/live/rx3/405/f72f337b1279855143cddce063a60cd6/index.m3u8
-彩虹k,http://z88.ubtvfans.com/live/rx3/415/24833f79298189b7d1b60e9d59af0018/index.m3u8
-彩虹電影,http://z88.ubtvfans.com/live/rx3/413/f39876dcbac1ca67fd1c1015cfc2af27/index.m3u8
-彩虹E,http://z88.ubtvfans.com/live/rx3/406/6a7f30cbbe921e9a6809d4a8c131aef1/index.m3u8
-Babestv,http://z88.ubtvfans.com/live/rx3/458/48f056744305b13550c2f2b8b06c968d/index.m3u8
-HustLer,http://z88.ubtvfans.com/live/rx3/451/0beb7b22b55cbb81f36594df14b42858/index.m3u8
-Redlight,http://z88.ubtvfans.com/live/rx3/452/6b6f7f681d37860d87036d2099e3f99d/index.m3u8
-SEX ATION,http://z88.ubtvfans.com/live/rx3/459/3193839f524da42b740386d2b88754ca/index.m3u8
-Passie,http://z88.ubtvfans.com/live/rx3/461/5c00cfd7ef372e5376b3ad9bb5b48f4e/index.m3u8
-香蕉台,https://z88.ubtvfans.com:443/live/rx3/2930/3bd19ceb41bccf7790ee168b92b69985/index.m3u8
-驚艷台,https://z88.ubtvfans.com:443/live/rx4/2931/0abbe9024509c229983e5c124e987107/index.m3u8
-松視1,http://z88.ubtvfans.com/live/rx3/2905/daf5dc8e6ec09a9f9fa07764441d1ebc/index.m3u8
-松視2,http://z88.ubtvfans.com/live/rx3/2906/786522c38e02f6af5fea35725319e11a/index.m3u8
-松視3,http://z88.ubtvfans.com/live/rx3/2907/996ead584b34542d91ef9b92b8184d0a/index.m3u8
+台湾成人,#genre#
 驚艷台(18),http://18.svi-studio.com:8880/live/908957700097/132663288386/1.m3u8
 玩美台(18),http://18.svi-studio.com:8880/live/624372101145/418430465490/3.m3u8
 香蕉台(18),htt(18)p://18.svi-studio.com:8880/live/624372101145/418430465490/4.m3u8
 松視1(18),http://18.svi-studio.com:8880/live/584830114073/800309151021/5.m3u8
 松視2(18),http://18.svi-studio.com:8880/live/917952932058/953281067271/6.m3u8
 松視3(18),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
-極限(epg),https://epg.pw/stream/a4a9b7e7603d96e605468df45eb0d14be5b022328f927957290b981f8c7f7a6c.m3u8
-玩美台(epg),https://epg.pw/stream/e5cc080f8b849ce451705d59802c6d1605c643995772f60896098fd840b10255.m3u8
-彩虹電(epg),https://epg.pw/stream/8f647a29253c5b46f20972beade6fdda0a9b75d6e91b847c39c20b95ce97e78a.m3u8
-彩虹E(epg),https://epg.pw/stream/39d8f414d724fb9b7c2b1d6ae39871850ff5cf78d9db0ef0a2b8eea8ed84a39a.m3u8
-playboy(epg),https://epg.pw/stream/385fd6d8c9a4ddfe5059d9366fe628c37c8a333396cade99f04d579e79b63505.m3u8
-playboyplus(epg),https://epg.pw/stream/8e6610e5d455dee47a8885cf7806e59859bf8484069be8dc6fe9d678e3670333.m3u8
-brazzers tv europe(epg),https://epg.pw/stream/4889879e69d295625a17ec3631eae1e954b195af383e34bb03f8f276ffbe9046.m3u8
-eromania 4k(epg),https://epg.pw/stream/471d2c99f6e4ebd660ac257393d2d5f749bffda8cb45cc6d42a7f2ac50fd4bdf.m3u8
-barely legal(epg),https://epg.pw/stream/14f678af31b42c5b884255f167f0faa3625f68d03d475a8ce58b13cf22854bd5.m3u8
-redlight hd(epg),https://epg.pw/stream/6427c2f8d6182accb97736402bccf6e4413cc072063b72e67673558f1e22aea0.m3u8
-private tv(epg),https://epg.pw/stream/c9e0674e7641bc52f5c9353d74825b674f55cdc5a365a3fc0f3ac42f2afb385b.m3u8
-dorcel tv hd(epg),https://epg.pw/stream/8e9e09c65af2aeaea0925ad13d60ff0200a9c72dfbde41801ffc1fb0d38f8a73.m3u8
-o-la-la(epg),https://epg.pw/stream/4a1cf11b203fba9a504c5f60070ef6b31defcf1955582ae87d2103481c835ed2.m3u8
-vivid red hd(epg),https://epg.pw/stream/bde792b685628d8950301273920c33643e5ccd7b6f9765940f69adcbb788e9c8.m3u8
-exxxotica hd(epg),https://epg.pw/stream/6260dfbd530c2e36b9f0b93754bf0a633d2abff4e4956e0998da56e1850b2807.m3u8
-xxl(epg),https://epg.pw/stream/becee4c87dda5021e92cac7e9dd7ba49569559efce80140a4cde0884fba1be56.m3u8
-Hustler TVr,http://146.59.54.163/349/index.m3u8
-Extasy,http://146.59.54.163/350/tracks-v1a1/mono.m3u8
-Vividtv,http://146.59.54.163/361/tracks-v1a1/mono.m3u8
-Erox,http://146.59.54.163/363/tracks-v1a1/mono.m3u8
-Redlight HD,http://146.59.54.163/358/tracks-v1a1/mono.m3u8
-Pornbox0,http://cord-cutter.net:8080/YT6bvC/100111/159956
-Pornbox1,http://cord-cutter.net:8080/YT6bvC/100111/159951
-Pornbox2,http://cord-cutter.net:8080/YT6bvC/100111/159955
-Pornbox3,http://cord-cutter.net:8080/YT6bvC/100111/159958
-Pornbox4,http://cord-cutter.net:8080/YT6bvC/100111/159985
-Pornbox5,http://cord-cutter.net:8080/YT6bvC/100111/159962
-Pornbox6,http://cord-cutter.net:8080/YT6bvC/100111/159952
-Pornbox7,http://cord-cutter.net:8080/YT6bvC/100111/159965
-Pornbox8,http://cord-cutter.net:8080/YT6bvC/100111/159957
-Pornbox9,http://cord-cutter.net:8080/YT6bvC/100111/159963
-Miamitv,https://59ec5453559f0.streamlock.net/JennyForYou/smil:WEB3131/playlist.m3u8
-MiaMitv,https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexico/playlist.m3u8
 国外18台,#genre#
-松视1台,https://flv3948069e.live.126.net/live/sytv_8ca30b716e846bfa3b4ddeb5ce7734c8.flv
-松视2台,https://flv3948069e.live.126.net/live/sytv_56830b3d6e8464f8479dde69be773622.flv
-松视3台,https://flv3948069e.live.126.net/live/sytv_ca330b8dfe8461e4b3bdde39ce773e83.flv
-潘多拉完美,https://flv3948069e.live.126.net/live/sytv_30630b464e846ca2cb9ddefe0e773e87.flv
-松视4台,https://flv3948069e.live.126.net/live/sytv_02630be6be846d47da6dde603e773bc3.flv
+Penthouse Passion TV,https://ortepe.xyz:44447/tv/penthousepassion/chunks.m3u8
+Brazzers,https://ortepe.xyz:44447/tv/brazzers/chunks.m3u8
+Hustler HD,https://ortepe.xyz:44447/tv/hustlerhd/chunks.m3u8
+HustlerTV,https://ortepe.xyz:44447/tv/hustlertv/chunks.m3u8
+Penthouse TV,https://ortepe.xyz:44447/tv/penthouse/chunks.m3u8
 O-la-la,http://31.148.48.15:80/O-la-la/index.m3u8?token=test
-Penthouse Gold HD,http://51.159.102.100/PenthouseGold/index.m3u8
 Кино 18+,https://autopilot.catcast.tv/content/40381/index.m3u8
-Hustler HD,https://cdn-global.lolokoko.tv/HUSTLER.stream/chunks.m3u8
-Brazzers TV Europe,https://cdn-global.lolokoko.tv/BRAZZERS.stream/chunks.m3u8
-Redlight HD,https://cdn-global.lolokoko.tv/REDLIGHT.stream/chunks.m3u8
-EroXXX,https://cdn-global.lolokoko.tv/eroxxx.stream/chunks.m3u8
-DorcelTV,https://cdn-global.lolokoko.tv/DorcelTV.stream/chunks.m3u8
-xxl,https://cdn-global.lolokoko.tv/xxl.stream/chunks.m3u8
 Babestation,http://sdn-global-live-streaming-packager-cache-3qsdn.akamaized.net/9528/9528_264_live.m3u8
 Eropuls DE,https://api.alpaca.t62a.com/hls/9108/stream0.m3u8
-Jenny For You,http://59ec5453559f0.streamlock.net:1935/jennyforyou/jennyforyou/playlist.m3u8
 Jenny Live,http://59ec5453559f0.streamlock.net:1935/JennyLive/JennyLive/playlist.m3u8
-迈阿密WEB,https://59ec5453559f0.streamlock.net/miamitv/smil:miamitvWEB/playlist.m3u8
-迈阿密canal18,https://59ec5453559f0.streamlock.net/canal18/smil:canal18/playlist.m3u8
-迈阿密拉丁裔,https://5ee7c2b857b7f.streamlock.net/latino/latino/playlist.m3u8
-迈阿密墨西哥,https://59ec5453559f0.streamlock.net/mexicotv/smil:miamitvmexicoROKU/playlist.m3u8
-时尚电视米德尼特秘密,https://fash1043.cloudycdn.services/slive/ftv_ftv_midnite_k1y_27049_midnite_secr_108_hls.smil/playlist.m3u8
-茉莉电视Jasmin TV,http://109.71.162.112/live/hd.jasminchannel.stream/playlist.m3u8
 HOT欧美版,http://live.redtraffic.xyz:80/hardcore.m3u8
 K频道欧美版,http://live.redtraffic.xyz:80/threesome.m3u8
 松视1欧美版,http://live.redtraffic.xyz:80/fetish.m3u8
