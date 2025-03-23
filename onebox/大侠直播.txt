@@ -42,6 +42,26 @@ Brazzers,https://ortepe.xyz:44447/tv/brazzers/chunks.m3u8
 Hustler HD,https://ortepe.xyz:44447/tv/hustlerhd/chunks.m3u8
 HustlerTV,https://ortepe.xyz:44447/tv/hustlertv/chunks.m3u8
 Penthouse TV,https://ortepe.xyz:44447/tv/penthouse/chunks.m3u8
+Redlight HD,https://ortepe.xyz:15988/tv/redlight/chunks.m3u8
+Dorcel TV,https://ortepe.xyz:15988/tv/dorcel/chunks.m3u8
+SuperOne TV,https://ortepe.xyz:15988/tv/superone/chunks.m3u8
+Vivid TV,https://ortepe.xyz:15988/tv/vivid/chunks.m3u8
+OX-AX TV,https://ortepe.xyz:15988/tv/oxax/chunks.m3u8
+Passie TV,https://ortepe.xyz:15988/tv/passie/chunks.m3u8
+Eroxxx HD,https://ortepe.xyz:15988/tv/eroxxx/chunks.m3u8
+Playboy,https://ortepe.xyz:15988/tv/playboy/chunks.m3u8
+Pinko,https://ortepe.xyz:15988/tv/pinko/playlist.m3u8
+Extasy,https://ortepe.xyz:15988/tv/extasy/chunks.m3u8
+Penthouse Reality,https://ortepe.xyz:15988/tv/penthousereality/chunks.m3u8
+Pink erotic,https://ortepe.xyz:15988/tv/pinkerotic1/chunks.m3u8
+Pink erotic7,https://ortepe.xyz:15988/tv/pinkerotic7/chunks.m3u8
+Pink erotic8,https://ortepe.xyz:15988/tv/pinkerotic8/chunks.m3u8
+Private,https://ortepe.xyz:15988/tv/private/chunks.m3u8
+Holland，https://ortepe.xyz:15988/tv/meidenvanholland/chunks.m3u8
+Evil Angel,https://ortepe.xyz:15988/tv/evilangel/chunks.m3u8
+Barely,https://ortepe.xyz:15988/tv/barely/chunks.m3u8
+Cento X,https://ortepe.xyz:15988/tv/cento/chunks.m3u8
+Passion XXX,https://ortepe.xyz:15988/tv/passion/chunks.m3u8
 O-la-la,http://31.148.48.15:80/O-la-la/index.m3u8?token=test
 Кино 18+,https://autopilot.catcast.tv/content/40381/index.m3u8
 Babestation,http://sdn-global-live-streaming-packager-cache-3qsdn.akamaized.net/9528/9528_264_live.m3u8
