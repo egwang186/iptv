@@ -37,11 +37,11 @@ CRINEWSPlusAM1008,http://sk.cri.cn/am1008.m3u8
 松視2(18),http://18.svi-studio.com:8880/live/917952932058/953281067271/6.m3u8
 松視3(18),http://18.svi-studio.com:8880/live/271871095922/006886711863/20205.m3u8
 国外18台,#genre#
-Penthouse Passion TV,https://ortepe.xyz:44447/tv/penthousepassion/chunks.m3u8
-Brazzers,https://ortepe.xyz:44447/tv/brazzers/chunks.m3u8
-Hustler HD,https://ortepe.xyz:44447/tv/hustlerhd/chunks.m3u8
-HustlerTV,https://ortepe.xyz:44447/tv/hustlertv/chunks.m3u8
-Penthouse TV,https://ortepe.xyz:44447/tv/penthouse/chunks.m3u8
+Penthouse Passion TV,https://ortepe.xyz:15988/tv/penthousepassion/chunks.m3u8
+Brazzers,https://ortepe.xyz:15988/tv/brazzers/chunks.m3u8
+Hustler HD,https://ortepe.xyz:15988/tv/hustlerhd/chunks.m3u8
+HustlerTV,https://ortepe.xyz:15988/tv/hustlertv/chunks.m3u8
+Penthouse TV,https://ortepe.xyz:15988/tv/penthouse/chunks.m3u8
 Redlight HD,https://ortepe.xyz:15988/tv/redlight/chunks.m3u8
 Dorcel TV,https://ortepe.xyz:15988/tv/dorcel/chunks.m3u8
 SuperOne TV,https://ortepe.xyz:15988/tv/superone/chunks.m3u8
