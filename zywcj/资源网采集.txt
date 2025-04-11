@@ -84,4 +84,5 @@ X细胞资源,https://www.xxibaozyw.com/api.php/provide/vod/
 杏吧资源,https://xingba111.com/api.php/provide/vod/
 YES资源,https://www.yeszy1.com/api.php/provide/vod/
 番茄资源,https://fqzy4.me/api.php/provide/vod/
+黄色仓库,https://hsckzy.vip/api.php/provide/vod/
 #
