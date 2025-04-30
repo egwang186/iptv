@@ -2,11 +2,12 @@
 小猫咪资源,http://zy.xiaomaomi.cc/api.php/provide/vod/
 海洋资源,https://www.seacms.org/zyapi.php
 虾米资源,https://zy.hls.one/api.php/provide/vod/
+奈斯官采,http://120.3.216.95:1688/api.php/provide/vod/
 #
 #切片资源
 U酷资源,https://api.ukuapi88.com/api.php/provide/vod/
 360资源,https://360zy.com/api.php/provide/vod/
-黑木耳资源.https://json.heimuer.tv/api.php/provide/vod/
+黑木耳资源,https://json.heimuer.tv/api.php/provide/vod/
 鸭鸭资源,https://cj.yayazy.net/api.php/provide/vod/
 牛牛资源,https://api.niuniuzy.me/api.php/provide/vod/
 OK资源,https://api.okzy.org/api.php/provide/vod/
@@ -44,7 +45,7 @@ CK资源,https://ckzy.me/api.php/provide/vod/
 旺旺短剧,https://api.wwzy.tv/api.php/provide/vod/
 天涯资源,https://ty.tyyszy5.com/api.php/provide/vod/
 蜂巢片库,https://api.fczy888.me/api.php/provide/vod/
-电影天堂,http://156.251.233.90:445/api.php/provide/vod/
+电影天堂,https://caiji.dyttzyapi.com/api.php/provide/vod/
 爱奇艺资源,https://iqiyizyapi.com/api.php/provide/vod/
 小熊影视,http://47.94.99.16:3074/api.php/provide/vod/
 #
