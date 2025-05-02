@@ -3,6 +3,7 @@
 海洋资源,https://www.seacms.org/zyapi.php
 虾米资源,https://zy.hls.one/api.php/provide/vod/
 奈斯官采,http://120.3.216.95:1688/api.php/provide/vod/
+金蝉资源,https://zy.jinchancaiji.com/api.php/provide/vod/
 #
 #切片资源
 U酷资源,https://api.ukuapi88.com/api.php/provide/vod/
