@@ -100,4 +100,6 @@ YES资源,https://www.yeszy1.com/api.php/provide/vod/
 558资源,http://558zy.com/api.php/provide/vod/
 VOV伦理,https://vovzy.com/api.php/provide/vod/
 百花资源,https://bhziyuan.com/api.php/provide/vod/
+幸资源,https://xzybb1.com/api.php/provide/vod/
+91资源,https://91jpzyw.com/api.php/provide/vod/
 #
