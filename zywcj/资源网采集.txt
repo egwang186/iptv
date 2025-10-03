@@ -56,6 +56,7 @@ CK资源,https://ckzy.me/api.php/provide/vod/
 爱奇艺资源,https://iqiyizyapi.com/api.php/provide/vod/
 小熊影视,http://47.94.99.16:3074/api.php/provide/vod/
 优速资源,https://yszyw1.top/api.php/provide/vod/
+白狐资源,https://baihuzy.com/api.php/provide/vod/
 #
 #18+
 155资源,https://155api.com/api.php/provide/vod/
@@ -96,7 +97,6 @@ X细胞资源,https://www.xxibaozyw.com/api.php/provide/vod/
 YES资源,https://www.yeszy1.com/api.php/provide/vod/
 番茄资源,https://fqzy4.me/api.php/provide/vod/
 黄色仓库,https://hsckzy.vip/api.php/provide/vod/
-白狐资源,https://baihuzy.com/api.php/provide/vod/
 558资源,http://558zy.com/api.php/provide/vod/
 VOV伦理,https://vovzy.com/api.php/provide/vod/
 百花资源,https://bhziyuan.com/api.php/provide/vod/
