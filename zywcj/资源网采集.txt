@@ -60,6 +60,7 @@ CK资源,https://ckzy.me/api.php/provide/vod/
 #
 #18+
 155资源,https://155api.com/api.php/provide/vod/
+XX,https://mzts1.top/api.php/provide/vod/
 GAY资源,https://gayapi.com/api.php/provide/vod/
 大奶子资源,https://apidanaizi.com/api.php/provide/vod/
 小鸡资源,https://api.xiaojizy.live/provide/vod/
