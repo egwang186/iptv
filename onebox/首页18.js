@@ -165,7 +165,7 @@ JAVHD(VPN)
 ###图片
 https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/javhd.png
 ###BaseURL
-"https://javhd.today";
+"https://javhd.name";
 ###首页地址
 getVar("baseURL")+"/recent/";
 ###分类地址
@@ -258,116 +258,6 @@ var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
 JSON.stringify([{name:"地址",url:getVar("地址")}]);
-####
-
-####
-###type
-web
-###分类
-网页18站源
-###标题
-CableAV(VPN)
-###图片
-https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/cable.png
-###BaseURL
-"https://cableav.tv";
-###首页地址
-getVar("baseURL");
-###分类地址
-getVar("baseURL")+"/category/分类/翻页";
-###搜索地址
-getVar("baseURL")+"/page/翻页/?s=关键字";
-###rule
-##首页规则
-var 列表=e2Arr(getVar("源码"),".get(div.post-item-wrap)");var 标题规则=".get(h3).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-src)";var 简介规则=".get(div.categories-wrap).t().tx(&nbsp;).get(span.duration-text).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##筛选数据
-var a="分类+中國主播=chinese-live-porn+自拍流出=selfie-porn+韓國主播=korean-live-porn+主播福利=private-show-porn+网红福利=kol-selfie-porn+91大神=master-91porn+国产AV=chinese-av-porn";var b="第1页=";for(var i=2;i<999;i++){b=b+"+第"+i+"页=page/"+i+"/";}var b="翻页+"+b;a+"\n"+b;
-##分类规则
-var 列表=e2Arr(getVar("源码"),".get(div.post-item-wrap)");var 标题规则=".get(h3).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-src)";var 简介规则=".get(div.categories-wrap).t().tx(&nbsp;).get(span.duration-text).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##选集规则
-var 分类=e2Arr(getVar("源码"),".z(\\[\\{\"source_label\".+?\\}\\])");;var 简介="";var 线路="";var 列表规则=".json()";var 标题规则=".var(标题)";var 选集规则=".json(source_label)";var 选集地址规则=".json(source_file)";
-##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.post-item-wrap)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"baseURL\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回刷新即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(h3).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(data-src)";var 简介规则=".get(div.categories-wrap).t().tx(&nbsp;).get(span.duration-text).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
-##搜索翻页
-var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
-"翻页"+b;
-##免嗅探规则
-JSON.stringify([{name:"地址",url:getVar("地址")}]);
-####
-
-####
-###type
-web
-###分类
-网页18站源
-###标题
-风月同天(VPN)
-###图片
-https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/fytt.png
-###BaseURL
-"https://www.fengyuetongtian.com";
-###首页地址
-getVar("baseURL")+"/";
-###分类地址
-getVar("baseURL")+"/分类/list翻页.html";
-###搜索地址
-getVar("baseURL")+"/vodsearch/关键字----------翻页---.html";
-###rule
-##首页规则
-var 列表=e2Arr(getVar("源码"),".get(div.stui-vodlist__box)");var 标题规则=".get(h4).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".get(span.pic-text).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##筛选数据
-var a="分类+国产=ChinaPorn+日本=JapanPorn+欧美=WesternPorn+韩国=KoreaPorn+动漫=HentaiPorn+同性=HomosexualPorn";var b="第1页=";for(var i=2;i<999;i++){b=b+"+第"+i+"页="+"_"+i;}var b="翻页+"+b;a+"\n"+b;
-##分类规则
-var 列表=e2Arr(getVar("源码"),".get(div.stui-vodlist__box)");var 标题规则=".get(h4).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".get(span.pic-text).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##选集规则
-var 分类=e2Arr(getVar("源码"),".z(var player_.+?=.+)");var 线路="";var 简介="";var 列表规则=".ty(=).json(url).dn64().dn(utf8)";var 标题规则=".var(标题)";var 选集规则=".var(标题)";var 选集地址规则=".t()";
-##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.stui-vodlist__box)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"baseURL\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回刷新即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(h4).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(a).a(data-original)";var 简介规则=".get(span.pic-text).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
-##搜索翻页
-var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
-"翻页"+b;
-##免嗅探规则
-JSON.stringify([{name:"地址",url:getVar("地址")}]);
-####
-
-####
-###type
-web
-###分类
-网页18站源
-###标题
-CCAVB
-###图片
-https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/ccavb.png
-###BaseURL
-var resp=getHttp("https://ccavb.tv");
-var id=resp.match(/"buildId":"(.+?)"/)[1];
-"https://ccavb.tv/_next/data/"+id;
-###首页地址
-getVar("baseURL")+"/zh.json";
-###分类地址
-getVar("baseURL")+"/zh/category/分类/翻页.json";
-###搜索地址
-getVar("baseURL")+"/zh/search/关键字/翻页.json";
-###rule
-##首页规则
-var 预列表=e2Arr(getVar("源码"),".json(pageProps).json(resp)");var 列表=[];for(var i in 预列表){if(e2Arr(预列表[i],".json(content)").length>1){列表=列表.concat(e2Arr(预列表[i],".json(content)"))}}
-var 标题规则=".json(name)";var 地址规则=".c(/zh/video/).json(id).ct(.json)";var 图片规则="@js=var id=JSON.parse(CODE).id;var 前=id.split('-')[0];var 后=id.split('-')[1];if(id.indexOf('FC2-')==0){'https://ccavb.tv/static/img/'+前+'/'+后.substr(0,2)+'/'+后+'/'+id+'_1.jpg'}else{'https://ccavb.tv/static/img/'+前+'/'+后+'/'+id+'_1.jpg'}";var 简介规则=".json(types)";var 图片底部规则=".json(updateTime)";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##筛选数据
-var a="分类+最新上傳=最新上傳+熱門影片=熱門影片";var b="";for(var i=1;i<999;i++){b=b+"+第"+i+"页="+i;}var b="翻页"+b;a+"\n"+b;
-##分类规则
-var 预列表=e2Arr(getVar("源码"),".json(pageProps).json(resp)");var 列表=[];for(var i in 预列表){if(e2Arr(预列表[i],".json(content)").length>1){列表=列表.concat(e2Arr(预列表[i],".json(content)"))}}
-var 标题规则=".json(name)";var 地址规则=".c(/zh/video/).json(id).ct(.json)";var 图片规则="@js=var id=JSON.parse(CODE).id;var 前=id.split('-')[0];var 后=id.split('-')[1];if(id.indexOf('FC2-')==0){'https://ccavb.tv/static/img/'+前+'/'+后.substr(0,2)+'/'+后+'/'+id+'_1.jpg'}else{'https://ccavb.tv/static/img/'+前+'/'+后+'/'+id+'_1.jpg'}";var 简介规则=".json(types)";var 图片底部规则=".json(updateTime)";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##选集规则
-var 分类=e2Arr(getVar("源码"),".json(pageProps)");var 线路="";var 简介="";var 列表规则=".json(resp).i(-1).z(http.+)";var 标题规则=".var(标题)";var 选集规则=".var(标题)";var 选集地址规则=".t()";
-##搜索规则
-var 预列表=e2Arr(getVar("源码"),".json(pageProps).json(resp)");var 列表=[];for(var i in 预列表){if(e2Arr(预列表[i],".json(content)").length>1){列表=列表.concat(e2Arr(预列表[i],".json(content)"))}}
-if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"baseURL\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回刷新即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".json(name)";var 地址规则=".c(/zh/video/).json(id).ct(.json)";var 图片规则="@js=var id=JSON.parse(CODE).id;var 前=id.split('-')[0];var 后=id.split('-')[1];if(id.indexOf('FC2-')==0){'https://ccavb.tv/static/img/'+前+'/'+后.substr(0,2)+'/'+后+'/'+id+'_1.jpg'}else{'https://ccavb.tv/static/img/'+前+'/'+后+'/'+id+'_1.jpg'}";var 简介规则=".json(actor)";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
-##搜索翻页
-var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
-"翻页"+b;
-##免嗅探规则
-JSON.stringify([{name:"地址",url:getVar("地址")+"&_type=.m3u8",head:{"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.33","Referer":"http://ccavb.tv/"}}]);
 ####
 
 #####
