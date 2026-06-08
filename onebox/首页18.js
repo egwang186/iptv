@@ -85,41 +85,6 @@ web
 ###分类
 网页18站源
 ###标题
-肉视频(VPN)
-###图片
-https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/rouvideo.png
-###BaseURL
-"https://rou.video";
-###首页地址
-getVar("baseURL")+"/home";
-###分类地址
-getVar("baseURL")+"分类?page=翻页";
-###搜索地址
-getVar("baseURL")+"/search?q=关键字&page=翻页";
-###rule
-##首页规则
-var 列表=e2Arr(getVar("源码"),".get(div.text-card-foreground)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##筛选数据
-var code=getHttp(getVar("baseURL")+"/cat");var arr=e2Arr(code,".get(div.grid).i(0).get(a)");var sort=["分类+國產AV=/t/國產AV+自拍流出=/t/自拍流出+探花=/t/探花"];for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".t().ct(=)");let b=e2Rex(arr[i],".href()");sort.push(a+b);};var pn=["翻页"];for(let i=1;i<=99;i++){let a="第"+i+"页=";let b=i;pn.push(a+b);};sort.join("+")+"\n"+pn.join("+");
-##分类规则
-var 列表=e2Arr(getVar("源码"),".get(div.text-card-foreground)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
-##选集规则
-var apicode=getHttp(getVar("地址").replace('/v/','/api/v/'));var 分类=[];分类.push(apicode);var 简介="";var 线路="";var 列表规则=".json(video)";var 标题规则=".var(标题)";var 选集规则=".var(标题)";var 选集地址规则="@js=\"http://ip111.cn/?wd=\"+e2(列表[j],\".json(videoUrl)\").replace(/\\?/g,\"幻魔快修\");";
-##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.text-card-foreground)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"baseURL\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回重新搜索即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
-##搜索翻页
-var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
-"翻页"+b;
-##免嗅探规则
-var 头=getVar("地址").split("?wd=")[1].replace(/幻魔快修/g,"?").split("/hls")[0];var code=getHttp(getVar("地址").split("?wd=")[1].replace(/幻魔快修/g,"?")).match(/#EXT-X-STREAM-INF[^#]+/g);var playlist=[];for(var i in code){var title=code[i].match(/RESOLUTION=(.+)/)[1];var url=头+"/"+code[i].match(/hls.+/)[0];playlist.push({name:title,url:url});}JSON.stringify(playlist);
-####
-
-####
-###type
-web
-###分类
-网页18站源
-###标题
 JAVHD(VPN)
 ###图片
 https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/javhd.png
