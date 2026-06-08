@@ -51,47 +51,6 @@ web
 ###分类
 网页18站源
 ###标题
-搬淫家
-###图片
-https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/byj.png
-###BaseURL
-var dz="https://app.byj13.tv/zhongzhuan/js/zhongzhuan.js";var js=e2Rex(getHttp(dz),".ty(域名).tz(提示)");eval(js);let mydomain=latestDomain_arr[parseInt(Math.random()*latestDomain_arr.length)];let domain=xtime+'.'+mydomain;let url="";let check=domain.includes("byj");if(check){url='https://'+domain}else{url='http://'+domain}url;
-###首页地址
-getVar("baseURL")+"/html/index_m.html";
-###分类地址
-getVar("baseURL")+"分类翻页.html";
-###搜索地址
-getVar("baseURL")+"/search/video/?s=关键字&page=翻页";
-###rule
-##首页规则
-var 列表=e2Arr(getVar("源码"),".get(div.video_list_1)");var 标题规则=".get(div.video_list_1_2).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(.img_hengtiao_1).t().c(|).get(.img_hengtiao_2).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则=".z(vip)";var NEXTPAGE="";var PREPAGE="";
-##筛选数据
-var code=getHttp(getVar("baseURL")+"/label/topic");var sort=["分类"];var arr=e2Arr(code,".get(div.van-tab)");for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".get(span).t().ct(=)");let b=e2Rex(arr[i],".get(a).href().tz(.)");sort.push(a+b);}var arr=e2Arr(code,".get(a.topic-item)");for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".get(.title_column_1_1).t().z(\\S+).ct(=)");let b=e2Rex(arr[i],".get(a).href().tz(.)");sort.push(a+b);}var pn=["翻页+第1页="];for(let i=2;i<=999;i++){let a="第"+i+"页="let b="/page/"+i;pn.push(a+b);};sort.join("+")+"\n"+pn.join("+");
-##分类规则
-var 列表=e2Arr(getVar("源码"),".get(div.video_list_1)");var 标题规则=".get(div.video_list_1_2).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(.img_hengtiao_1).t().c(|).get(.img_hengtiao_2).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则=".z(vip)";var NEXTPAGE="";var PREPAGE="";
-##选集规则
-if(getVar("图片").indexOf("tmb")!=-1){
-    var p=e2Rex(getVar("图片"),".ty(tmb).tz2(/)");
-    var uri="https://video-neihanbofang.com/media/videos/hls"+p+"/";
-    var list=["1080p","720p","480p","playlist"];var title=["1080p","720p","480p","默认"];var res=[];for(var i=0;i<list.length;i++){var 标题=title[i];var 地址=uri+list[i]+".m3u8";res.push({name:标题,url:地址});};var 分类=e2Arr(JSON.stringify(res),".c()");;var 简介="";var 线路="";var 列表规则=".json()";var 标题规则=".var(标题)";var 选集规则=".json(name)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(url)";
-}else{
-    var res=[];res.push({name:"m3u8",url:getVar("图片").replace("1.jpg","m3u8/index.m3u8")});var 分类=e2Arr(JSON.stringify(res),".c()");;var 简介="";var 线路="";var 列表规则=".json()";var 标题规则=".var(标题)";var 选集规则=".json(name)";var 选集地址规则=".c(http://ip111.cn/?wd=).json(url)";
-}
-##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.video_list_1)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"baseURL\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回重新搜索即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(div.video_list_1_2).t()";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(.img_hengtiao_1).t().c(|).get(.img_hengtiao_2).t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则=".z(vip)";var NEXTPAGE="";var PREPAGE="";}
-##搜索翻页
-var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
-"翻页"+b;
-##免嗅探规则
-JSON.stringify({name:"地址",url:getVar("地址").split("http://ip111.cn/?wd=")[1]});
-####
-
-####
-###type
-web
-###分类
-网页18站源
-###标题
 直播盒子
 ###图片
 https://api.egwang186.top/apis/my-github/egwang186/iptv/main/onebox/zhibohezi.png
@@ -139,15 +98,15 @@ getVar("baseURL")+"分类?page=翻页";
 getVar("baseURL")+"/search?q=关键字&page=翻页";
 ###rule
 ##首页规则
-var 列表=e2Arr(getVar("源码"),".get(div.shadow.p-1)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
+var 列表=e2Arr(getVar("源码"),".get(div.text-card-foreground)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
 ##筛选数据
 var code=getHttp(getVar("baseURL")+"/cat");var arr=e2Arr(code,".get(div.grid).i(0).get(a)");var sort=["分类+國產AV=/t/國產AV+自拍流出=/t/自拍流出+探花=/t/探花"];for(let i=0;i<arr.length;i++){let a=e2Rex(arr[i],".t().ct(=)");let b=e2Rex(arr[i],".href()");sort.push(a+b);};var pn=["翻页"];for(let i=1;i<=99;i++){let a="第"+i+"页=";let b=i;pn.push(a+b);};sort.join("+")+"\n"+pn.join("+");
 ##分类规则
-var 列表=e2Arr(getVar("源码"),".get(div.shadow.p-1)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
+var 列表=e2Arr(getVar("源码"),".get(div.text-card-foreground)");var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";
 ##选集规则
 var apicode=getHttp(getVar("地址").replace('/v/','/api/v/'));var 分类=[];分类.push(apicode);var 简介="";var 线路="";var 列表规则=".json(video)";var 标题规则=".var(标题)";var 选集规则=".var(标题)";var 选集地址规则="@js=\"http://ip111.cn/?wd=\"+e2(列表[j],\".json(videoUrl)\").replace(/\\?/g,\"幻魔快修\");";
 ##搜索规则
-var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.shadow.p-1)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"baseURL\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回重新搜索即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
+var 源码=getVar("源码");var 列表=e2Arr(源码,".get(div.text-card-foreground)");if(!列表[0]){var 列表=["网页可能有搜索验证，去网页看看吧"];var 标题规则=".t()";var 地址规则="@js=getVar(\"baseURL\");";var 图片规则=".get(img).a(data-original)";var 简介规则="@js='长按网页打开，验证后返回重新搜索即可';";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}else{var 标题规则=".get(img).a(alt)";var 地址规则=".get(a).a(href)";var 图片规则=".get(img).a(src)";var 简介规则=".get(div.absolute).st().t()";var 图片底部规则="@js='';";var 左上规则="@js='';";var 右上规则="@js='';";var NEXTPAGE="";var PREPAGE="";}
 ##搜索翻页
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
