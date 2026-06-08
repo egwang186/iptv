@@ -222,7 +222,7 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(ul.stui-vodlist li).il
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-JSON.stringify([{name:"地址",url:getVar("地址")}]);
+"web="+getVar("地址");
 ####
 
 ####
