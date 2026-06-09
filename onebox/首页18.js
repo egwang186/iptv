@@ -146,7 +146,9 @@ var 源码=getVar("源码");var 列表=e2Arr(源码,".get(ul.stui-vodlist li).il
 var b="";for(var i=1;i<50;i=i+1){b=b+"+第"+i+"页="+i;}
 "翻页"+b;
 ##免嗅探规则
-"web="+getVar("地址");
+var id=getVar("地址").match(/\/(\d+?)-/)[1];var ad=getVar("地址").match(/(http.+?)\//)[1];var code=JZ(JSON.stringify({url:ad+"/api.php/provide/vod/?ac=videolist&ids="+id,head:{"Cookie":""}}));
+var url=JSON.parse(code.code).list[0].vod_play_url;
+JSON.stringify({name:"采集接口",url:url,head:{"Referer":getVar("地址")}})
 ####
 
 ####
