@@ -1,5 +1,5 @@
 {
-  "version":"1.9.5",
-  "release_notes":"使用本机工号更新状态;更新DRE查询接口",
+  "version":"1.9.5.1",
+  "release_notes":"添加Excel工具",
   "download_url":"https://php.egwang186.top/"
 }
