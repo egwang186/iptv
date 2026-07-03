@@ -10,6 +10,7 @@
 #切片资源
 U酷资源,https://api.ukuapi88.com/api.php/provide/vod/
 360资源,https://360zy.com/api.php/provide/vod/
+无水印资源,https://api.wsyzy.net/api.php/provide/vod/
 聚星资源,https://jxzyw.top/api.php/provide/vod/
 茅台资源,https://caiji.maotaizy.cc/api.php/provide/vod/
 金马资源,https://api.jmzy.com/api.php/provide/vod/
