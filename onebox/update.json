@@ -1,5 +1,5 @@
 {
-  "version":"1.9.5.1",
-  "release_notes":"添加Excel工具",
+  "version":"1.9.5.2",
+  "release_notes":"1.添加PDF编辑器; 2.申报单excel数据支持使用日期公式",
   "download_url":"https://php.egwang186.top/"
 }
